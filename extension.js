@@ -64,11 +64,23 @@ function activate(context) {
 		provideHover(document, position, token) {
 			const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
 			const word = document.getText(range);
-			const asmValue = 'mov.l' // the value we want to hover over, the previous regex is necessary to get the whole thing.
-			if (word == asmValue) {
+			const asmValue1 = 'mov.l' // the value we want to hover over, previous regex is necessary.
+			const asmValue2 = 'mov.b' // the value we want to hover over, previous regex is necessary.
+			const asmValue3 = 'mov.w' // the value we want to hover over, previous regex is necessary.
+			if (word == asmValue1) {
 				return new vscode.Hover({
 					language: "sh4asm",
-					value: "Popup text\nThis moves a long value"
+					value: "This moves a long (which is 4 bytes)"
+				});
+			} else if (word == asmValue2) {
+				return new vscode.Hover({
+					language: "sh4asm",
+					value: "This moves a byte (which is 1 byte)"
+				});
+			} else if (word == asmValue3) {
+				return new vscode.Hover({
+					language: "sh4asm",
+					value: "This moves a word (which is 2 bytes)"
 				});
 			}
 		}
