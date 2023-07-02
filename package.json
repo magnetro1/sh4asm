@@ -49,9 +49,28 @@
     ],
     "themes": [
       {
+          "id":"SH4ASM vsDark+",
+          "label":"SH4 vsDark+",
+          "uiTheme":"vs-dark",
+          "path":"./themes/sh4asm_darkPlus-themeExt-darkVS.json"
+      },
+      {
+          "id":"SH4ASM vsDark",
+          "label":"SH4 vsDark",
+          "uiTheme":"vs-dark",
+          "path":"./themes/sh4asm_darkVs-themeBase.json"
+      },
+      {
         "label": ".sh4asm",
         "uiTheme": "vs-dark",
-        "path": "./syntaxes/sh4asm-color-theme.json"
+        "path": "./themes/sh4asm-color-theme.json"
+      }
+  ],
+  "iconThemes":[
+      {
+          "id":"vs-minimal",
+          "label":"%minimalIconThemeLabel%",
+          "path":"./fileicons/vs_minimal-icon-theme.json"
       }
     ]
   },
