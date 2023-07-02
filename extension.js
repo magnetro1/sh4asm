@@ -1,5 +1,5 @@
 const vscode = require('vscode');
-const charHex2Names = require('./sh4asm_staticData.js');
+const staticData = require('./sh4asm_staticData.js');
 /**
  * @param {vscode.ExtensionContext} context
  */
@@ -7,7 +7,7 @@ function activate(context) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "sh4asm" is now active!');
+	// console.log('Congratulations, your extension "sh4asm" is now active!');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
@@ -61,15 +61,11 @@ function activate(context) {
 			const range = document.getWordRangeAtPosition(position);
 			const word = document.getText(range);
 
-			if (Object.entries(charHex2Names)[0][1][word]) {
+			if (Object.keys(staticData.charHex2Names[word])) {
 				return new vscode.Hover({
 					language: "sh4asm",
-					value: "found a name"
+					value: staticData.charHex2Names[word]
 				});
-				// log the first name of the charHex2Names object
-
-			} else {
-				console.log('Name:' + Object.entries(charHex2Names)[0][1][8])
 			}
 		}
 	});
