@@ -47,6 +47,14 @@
 			
 		  ],
 	},
+	"labelD": {
+		"prefix": "labelD",
+		"body": [
+			"$1:",
+			"    #data $2",
+			"$0"
+		  ],
+	},
 	"nCaseSwitchStatement": {
 		// "scope": "javascript,typescript",
 		"prefix": "switchN", // whatever prefix you want
