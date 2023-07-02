@@ -11,27 +11,45 @@
   ],
   "activationEvents": [],
   "main": "./extension.js",
-
   "contributes": {
-    "commands": [{
-      "command": "sh4asm-js-custom.helloWorld",
-      "title": "Hello World"
-    }],
-    "languages": [{
-      "id": "sh4asm",
-      "aliases": ["SH4-ASM", "asm", "sh4asm"],
-      "extensions": [".asm",".sh4asm",".sh4"],
-      "configuration": "./language-configuration.json"
-    }],
+    "commands": [
+      {
+        "command": "sh4asm.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "sh4asm",
+        "path": ".\\snippets\\snippets.code-snippets"
+      }
+    ],
+    "languages": [
+      {
+        "id": "sh4asm",
+        "aliases": [
+          "SH4-ASM",
+          "asm",
+          "sh4asm"
+        ],
+        "extensions": [
+          ".asm",
+          ".sh4asm",
+          ".sh4"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
     "grammars": [
-        {
-          "language": "sh4asm",
-          "scopeName": "source.sh4asm",
-          "path": "./syntaxes/sh4asm.tmLanguage.json"
-        }],
+      {
+        "language": "sh4asm",
+        "scopeName": "source.sh4asm",
+        "path": "./syntaxes/sh4asm.tmLanguage.json"
+      }
+    ],
     "themes": [
       {
-        "label": "sh4asm",
+        "label": ".sh4asm",
         "uiTheme": "vs-dark",
         "path": "./syntaxes/sh4asm-color-theme.json"
       }

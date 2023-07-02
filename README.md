@@ -1,6 +1,6 @@
-# asm-js-custom README
+# sh4asm README
 
-This is the README for your extension "asm-js-custom". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "sh4asm". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
