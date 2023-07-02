@@ -18,6 +18,9 @@
         {
 			"include": "#mov_opcodes"
 		},
+		{
+			"include": "#arithmetic_opcodes"
+		},
         {
 			"include": "#numbers"
 		}
@@ -132,6 +135,29 @@
                     "match": "\\b(mov)\\b"
                 }
             ]
+		},
+		"arithmetic_opcodes": {
+			"description": "§ 7.4 Arithmetic Operation Instructions",
+			"patterns": [
+				{
+					"name": "add.registers.sh4asm",
+					"description": [
+						"Add first parameter register to second parameter register. Augend rM, Addend/Sum rN",
+							"[ADD Rm,Rn]",
+							"Rn + Rm → Rn",
+							"0011nnnnmmmm1100",
+							"0x3nmA"
+					],
+					"match": "(add)\\b[\\s]+(r[0-9]{1,2},)(r[0-9]{1,2})",
+					"captures": {
+                        "1": { "name": "add_registers.opcode.sh4asm" },
+                        "2": { "name": "add_registers.augend.sh4asm" },
+                        "3": { "name": "add_registers.addend.sh4asm" }
+					}
+					
+				}
+			]
 		}
+
 	}
 }

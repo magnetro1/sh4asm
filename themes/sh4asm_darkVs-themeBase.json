@@ -293,6 +293,23 @@
             "scope":"variable.language",
             "settings":{ "foreground":"#569cd6" }
         },
+        // Arithmetic Operation Instructions Token Colors
+        // ADD Opcodes
+        {
+            "name":"add_registers_opcode",
+            "scope":"add_registers.opcode.sh4asm",
+            "settings":{ "foreground": "#44ff00" }
+        },
+        {
+            "name":"add_registers_augend",
+            "scope":"add_registers.augend.sh4asm",
+            "settings":{ "foreground": "#00a2ff" }
+        },
+        {
+            "name":"add_registers_addend",
+            "scope":"add_registers.addend.sh4asm",
+            "settings":{ "foreground": "#fbff00" }
+        },
         // MOV Token Colors
         // mov_imm.sh4asm
         {
