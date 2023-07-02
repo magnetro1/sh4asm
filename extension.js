@@ -21,15 +21,20 @@ function activate(context) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from asm-js!');
+		vscode.window.showInformationMessage('Hello World from sh4asm!');
 	});
 
-	// Making a new Command here. The command will wrap the selected text
-	// in a box using the '-' character multiple times.
-	// this command is registered inside of the package.json file
-	// under the "commands" array.
-	// To use it, select some text, then press F1 or Ctrl+Shift+P
-	// and type "Box Selection" and press enter.
+	/* 	
+
+	Making a new Command here. The command will wrap the selected text
+	in a box using the '-' character multiple times.
+	this command is registered inside of the package.json file
+	under the "commands" array.
+	To use it, select some text, then press F1 or Ctrl+Shift+P
+	and type "Box Selection" and press enter. 
+	
+	*/
+
 	let box = vscode.commands.registerCommand('sh4asm.box', function () {
 		// Get the active text editor
 		let editor = vscode.window.activeTextEditor;
@@ -49,10 +54,25 @@ function activate(context) {
 			});
 		}
 	});
-	// Register the commands
 
+	// Register the commands
 	context.subscriptions.push(box);
 	context.subscriptions.push(disposable);
+
+	// Hover over a word to get a popup
+	vscode.languages.registerHoverProvider('sh4asm', {
+		provideHover(document, position, token) {
+			const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
+			const word = document.getText(range);
+			const asmValue = 'mov.l' // the value we want to hover over, the previous regex is necessary to get the whole thing.
+			if (word == asmValue) {
+				return new vscode.Hover({
+					language: "sh4asm",
+					value: "Popup text\nThis moves a long value"
+				});
+			}
+		}
+	});
 }
 
 // This method is called when your extension is deactivated

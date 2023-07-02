@@ -12,6 +12,9 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
+    "capbilities": {
+      "hovesrProvider": true
+    },
     "commands": [
       {
         "command": "sh4asm.helloWorld",
@@ -25,7 +28,7 @@
     "snippets": [
       {
         "language": "sh4asm",
-        "path": ".\\snippets\\snippets.code-snippets"
+        "path": "./snippets/snippets.code-snippets"
       }
     ],
     "languages": [
