@@ -24,6 +24,34 @@ function activate(context) {
 		vscode.window.showInformationMessage('Hello World from asm-js!');
 	});
 
+	// Making a new Command here. The command will wrap the selected text
+	// in a box using the '-' character multiple times.
+	// this command is registered inside of the package.json file
+	// under the "commands" array.
+	// To use it, select some text, then press F1 or Ctrl+Shift+P
+	// and type "Box Selection" and press enter.
+	let box = vscode.commands.registerCommand('sh4asm.box', function () {
+		// Get the active text editor
+		let editor = vscode.window.activeTextEditor;
+		if (editor) {
+			// Get the document, then the selection, then the text
+			let doc = editor.document;
+			let selection = editor.selection;
+			let txt = doc.getText(selection);
+			// Surround the selected text with box characters
+			let surroundChar = ';*************************************\n';
+			let boxText = txt.split('\n').map(str => {
+				return surroundChar + str + '\n' + surroundChar;
+			}).join('');
+			// Replace the selection with box text
+			editor.edit(editBuilder => {
+				editBuilder.replace(selection, boxText);
+			});
+		}
+	});
+	// Register the commands
+
+	context.subscriptions.push(box);
 	context.subscriptions.push(disposable);
 }
 

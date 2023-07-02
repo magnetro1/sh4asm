@@ -16,6 +16,10 @@
       {
         "command": "sh4asm.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "sh4asm.box",
+        "title": "Box Selection"
       }
     ],
     "snippets": [
