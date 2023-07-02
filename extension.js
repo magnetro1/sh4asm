@@ -1,4 +1,5 @@
 const vscode = require('vscode');
+const path = require('path');
 const staticData = require('./sh4asm_staticData.js');
 /**
  * @param {vscode.ExtensionContext} context
@@ -56,14 +57,13 @@ function activate(context) {
 	context.subscriptions.push(disposable);
 
 
-	const charThumbnails = './supportMedia/characterThumbnails/';
+	const charThumbnailsPath = './supportMedia/characterThumbnails/';
 
 	// Hover over a word to get a popup
 	vscode.languages.registerHoverProvider('sh4asm', {
 		provideHover(document, position) {
 			const range = document.getWordRangeAtPosition(position);
 			const word = document.getText(range).toLocaleLowerCase();
-			// const assistOne
 			if (Object.keys(staticData.charHex2Names[word])) {
 				let hexPrefix = '0x';
 				let baseVal = parseInt(word, 16);
@@ -74,17 +74,29 @@ function activate(context) {
 				let assistC = baseVal + 128;
 				assistC = assistC.toString(16);
 
-				return new vscode.Hover({
-					language: "sh4asm",
-					// value: staticData.charHex2Names[word]
-					// value: `Name: ${staticData.charHex2Names[word]}\nHex: ${word}\nDecimal: ${parseInt(word, 16)}`
-					value: `Name: ${staticData.charHex2Names[word]}`
-						+ `\nHex: ${word}`
-						+ `\nDecimal: ${parseInt(word, 16)}`
-						+ `\nAssist-α: ${hexPrefix + assistA}`
-						+ `\nAssist-β: ${hexPrefix + assistB}`
-						+ `\nAssist-γ: ${hexPrefix + assistC}`
-				});
+				let image = `${charThumbnailsPath}charID_${word}.jpg`
+				// console.log(image);
+
+				// // Add image to hover popup
+				const content = new vscode.MarkdownString(`<img src="${image}"/>`);
+				content.supportHtml = true;
+				content.isTrusted = true;
+				content.supportThemeIcons = true;  // to supports codicons
+				content.baseUri = vscode.Uri.file(path.join(context.extensionPath, charThumbnailsPath, path.sep));
+				console.log(content.baseUri);
+				return new vscode.Hover(content, new vscode.Range(position, position));
+				// return new vscode.Hover(
+				// 	{
+				// 		language: "sh4asm",
+				// 		value: `Name: ${staticData.charHex2Names[word]} `
+				// 			+ `\nHex: ${word} `
+				// 			+ `\nDecimal: ${parseInt(word, 16)} `
+				// 			+ `\nAssist - α: ${hexPrefix + assistA} `
+				// 			+ `\nAssist - β: ${hexPrefix + assistB} `
+				// 			+ `\nAssist - γ: ${hexPrefix + assistC} `
+				// 		// + `\n\n${content}`
+				// 	},
+				// );
 			}
 		}
 
