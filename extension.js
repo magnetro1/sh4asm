@@ -65,11 +65,25 @@ function activate(context) {
 			const word = document.getText(range).toLocaleLowerCase();
 			// const assistOne
 			if (Object.keys(staticData.charHex2Names[word])) {
+				let hexPrefix = '0x';
+				let baseVal = parseInt(word, 16);
+				let assistA = baseVal;
+				assistA = assistA.toString(16);
+				let assistB = baseVal + 64;
+				assistB = assistB.toString(16);
+				let assistC = baseVal + 128;
+				assistC = assistC.toString(16);
+
 				return new vscode.Hover({
 					language: "sh4asm",
 					// value: staticData.charHex2Names[word]
 					// value: `Name: ${staticData.charHex2Names[word]}\nHex: ${word}\nDecimal: ${parseInt(word, 16)}`
-					value: `Name: ${staticData.charHex2Names[word]}\nHex: ${word}\nDecimal: ${parseInt(word, 16)}\nAssist-A: ${word}\nAssist-B: ${parseInt(word, 16) + parseInt(0x40, 16)}\nAssist-C: ${parseInt(word, 16) + parseInt(0x80, 16)}`
+					value: `Name: ${staticData.charHex2Names[word]}`
+						+ `\nHex: ${word}`
+						+ `\nDecimal: ${parseInt(word, 16)}`
+						+ `\nAssist-α: ${hexPrefix + assistA}`
+						+ `\nAssist-β: ${hexPrefix + assistB}`
+						+ `\nAssist-γ: ${hexPrefix + assistC}`
 				});
 			}
 		}
