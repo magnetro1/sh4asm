@@ -43,7 +43,7 @@
 			"patterns": [
                 {
                     "name": "keyword.control.sh4asm",
-                    "match": "\\b(bt|bra|bsr|(bt\\.s)|bf\\.s|bf)\\b"
+                    "match": "\\b(bt|bra|bsr|(bt.s)|bf\\.s|bf)\\b"
                 },
                 {
                     "name": "rts.control.sh4asm",
@@ -122,7 +122,7 @@
                 },
                 {
                     "name": "mov.mov_command.sh4asm",
-                    "match": "(\\@\\()([a-zA-Z0-9_\\_]+)(,PC\\)),(r[0-9]+)",
+                    "match": "(\\@\\()([a-zA-Z0-9_\\_]+)(,PC\\),)(r[0-9]+)",
 					"captures": {
                         "1": { "name": "offsetLoad.sh4asm" },
                         "2": { "name": "data_label.sh4asm" },
@@ -153,6 +153,22 @@
                         "1": { "name": "add_registers.opcode.sh4asm" },
                         "2": { "name": "add_registers.augend.sh4asm" },
                         "3": { "name": "add_registers.addend.sh4asm" }
+					}
+					
+				},
+				{
+					"name": "add.immidiate.sh4asm",
+					"description": [
+						"Add sign extended immediate to second parameter register. Augend imm, Addend/Sum rN",
+							"[ADD #imm,Rn]",
+							"Rn + imm → Rn",
+							"0111nnnniiiiiiii",
+							"0x7nii"
+					],
+					"match": "(add[\\s]+0x[0-F]{1,2},)(r[0-9]{1,2})",
+					"captures": {
+                        "1": { "name": "add_imm.opcode.sh4asm" },
+                        "2": { "name": "add_registers.addend.sh4asm" }
 					}
 					
 				}

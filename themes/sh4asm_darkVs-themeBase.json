@@ -306,6 +306,11 @@
             "settings":{ "foreground": "#00a2ff" }
         },
         {
+            "name":"add_imm_augend",
+            "scope":"add_imm.opcode.sh4asm",
+            "settings":{ "foreground": "#55ff00" }
+        },
+        {
             "name":"add_registers_addend",
             "scope":"add_registers.addend.sh4asm",
             "settings":{ "foreground": "#fbff00" }
