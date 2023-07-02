@@ -34,12 +34,94 @@
 				{
 					"captures": {
 						"1": {
+							"name": "comment.teams.listHeader.sh4asm"
+						}
+					},
+					"match": ";(.*Team List).*\\n",
+					"name": "comment.line.semicolon.sh4asm"
+				},
+				{
+					"captures": {
+						"1": {
+							"name": "comment.character.name.sh4asm"
+						},
+						"2": {
+							"name": "comment.assist.beta.sh4asm"
+						}
+					},
+					"match": ";(.*)(\\β).*\\n",
+					"name": "comment.line.semicolon.sh4asm"
+				},
+				{
+					"captures": {
+						"1": {
+							"name": "comment.character.name.sh4asm"
+						},
+						"2": {
+							"name": "comment.assist.gamma.sh4asm"
+						}
+					},
+					"match": ";(.*)(\\γ).*\\n",
+					"name": "comment.line.semicolon.sh4asm"
+				},
+				{
+					"captures": {
+						"1": {
+							"name": "comment.character.name.sh4asm"
+						},
+						"2": {
+							"name": "comment.assist.alpha.sh4asm"
+						}
+					},
+					"match": ";(.*)(\\α).*\\n",
+					"name": "comment.line.semicolon.sh4asm"
+				},
+				{
+					"captures": {
+						"1": {
+							"name": "comment.teams.start_team.sh4asm"
+						},
+						"2": {
+							"name": "comment.teams.name.sh4asm"
+						}
+					},
+					"match": "^;\\s+(Start\\s+Team)\\s+\\:(.*)\\n",
+					"name": "comment.teams.sh4asm"
+				},
+				{
+					"captures": {
+						"1": {
+							"name": "comment.teams.a1_team.sh4asm"
+						},
+						"2": {
+							"name": "comment.teams.name.sh4asm"
+						}
+					},
+					"match": "^;\\s+(A1\\s+Team)\\s+\\:(.*)\\n",
+					"name": "comment.teams.sh4asm"
+				},
+				{
+					"captures": {
+						"1": {
+							"name": "comment.teams.a2_team.sh4asm"
+						},
+						"2": {
+							"name": "comment.teams.name.sh4asm"
+						}
+					},
+					"match": "^;\\s+(A2\\s+Team)\\s+\\:(.*)\\n",
+					"name": "comment.teams.sh4asm"
+				},
+				{
+					"captures": {
+						"1": {
 							"name": "punctuation.definition.comment.sh4asm"
 						}
 					},
 					"match": "(;).*$\\n?",
 					"name": "comment.line.semicolon.sh4asm"
 				}
+				
 			]
 		},
 		"keywords": {
