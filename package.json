@@ -53,28 +53,28 @@
     ],
     "themes": [
       {
-          "id":"SH4ASM vsDark+",
-          "label":"SH4 vsDark+",
-          "uiTheme":"vs-dark",
-          "path":"./themes/sh4asm_darkPlus-themeExt-darkVS.json"
+        "id": "SH4ASM vsDark+",
+        "label": "SH4 vsDark+",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sh4asm_darkPlus-themeExt-darkVS.json"
       },
       {
-          "id":"SH4ASM vsDark",
-          "label":"SH4 vsDark",
-          "uiTheme":"vs-dark",
-          "path":"./themes/sh4asm_darkVs-themeBase.json"
+        "id": "SH4ASM vsDark",
+        "label": "SH4 vsDark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sh4asm_darkVs-themeBase.json"
       },
       {
         "label": ".sh4asm",
         "uiTheme": "vs-dark",
         "path": "./themes/sh4asm-color-theme.json"
       }
-  ],
-  "iconThemes":[
+    ],
+    "iconThemes": [
       {
-          "id":"vs-minimal",
-          "label":"%minimalIconThemeLabel%",
-          "path":"./fileicons/vs_minimal-icon-theme.json"
+        "id": "vs-minimal",
+        "label": "%minimalIconThemeLabel%",
+        "path": "./fileicons/vs_minimal-icon-theme.json"
       }
     ]
   },
@@ -82,6 +82,10 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "node ./test/runTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magnetro1/sh4asm.git"
   },
   "devDependencies": {
     "@types/vscode": "^1.79.0",
