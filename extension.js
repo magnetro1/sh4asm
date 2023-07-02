@@ -83,20 +83,20 @@ function activate(context) {
 				content.isTrusted = true;
 				content.supportThemeIcons = true;  // to supports codicons
 				content.baseUri = vscode.Uri.file(path.join(context.extensionPath, charThumbnailsPath, path.sep));
-				console.log(content.baseUri);
-				return new vscode.Hover(content, new vscode.Range(position, position));
-				// return new vscode.Hover(
-				// 	{
-				// 		language: "sh4asm",
-				// 		value: `Name: ${staticData.charHex2Names[word]} `
-				// 			+ `\nHex: ${word} `
-				// 			+ `\nDecimal: ${parseInt(word, 16)} `
-				// 			+ `\nAssist - α: ${hexPrefix + assistA} `
-				// 			+ `\nAssist - β: ${hexPrefix + assistB} `
-				// 			+ `\nAssist - γ: ${hexPrefix + assistC} `
-				// 		// + `\n\n${content}`
-				// 	},
-				// );
+				// console.log(content.baseUri);
+				// return new vscode.Hover(content, new vscode.Range(position, position));
+				return new vscode.Hover(
+					{
+						language: "sh4asm",
+						value: `Name: ${staticData.charHex2Names[word]} `
+							+ `\nHex: ${word} `
+							+ `\nDecimal: ${parseInt(word, 16)} `
+							+ `\nAssist - α: ${hexPrefix + assistA} `
+							+ `\nAssist - β: ${hexPrefix + assistB} `
+							+ `\nAssist - γ: ${hexPrefix + assistC} `
+						// + `\n\n${content}`
+					},
+				);
 			}
 		}
 
