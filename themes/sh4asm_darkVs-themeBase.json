@@ -293,53 +293,81 @@
             "scope":"variable.language",
             "settings":{ "foreground":"#569cd6" }
         },
+        // Keywords
+        {
+            "name":"keyword_align4.sh4asm",
+            "scope":"keyword.align4.sh4asm",
+            "settings":{ "foreground":"#d3517c" }
+        },
+        {
+            "name":"keyword_align4_nop.sh4asm",
+            "scope":"keyword.align4_nop.sh4asm",
+            "settings":{ "foreground":"#fbff00" }
+        },
+        {
+            "name":"keyword_align16.sh4asm",
+            "scope":"keyword.align16.sh4asm",
+            "settings":{ "foreground":"#ff3b7c" }
+        },
         // Arithmetic Operation Instructions Token Colors
         // ADD Opcodes
         {
-            "name":"add_registers_opcode",
+            "name":"add_registers_opcode.sh4asm",
             "scope":"add_registers.opcode.sh4asm",
-            "settings":{ "foreground": "#44ff00" }
+            "settings":{ "foreground": "#FF007F" }
         },
         {
-            "name":"add_registers_augend",
+            "name":"add_registers_augend.sh4asm",
             "scope":"add_registers.augend.sh4asm",
-            "settings":{ "foreground": "#00a2ff" }
+            "settings":{ "foreground": "#fbff00" }
         },
         {
-            "name":"add_imm_augend",
+            "name":"add_imm_augend.sh4asm",
             "scope":"add_imm.opcode.sh4asm",
-            "settings":{ "foreground": "#55ff00" }
+            "settings":{ "foreground": "#FF007F" }
         },
         {
             "name":"add_registers_addend",
             "scope":"add_registers.addend.sh4asm",
-            "settings":{ "foreground": "#fbff00" }
+            "settings":{ "foreground": "#00a2ff" }
+        },
+        // § 9.24 EXTU (Zero Extension)
+        // EXTend as Unsigned
+        {
+            "name":"extu_byte.sh4asm",
+            "scope":"extu.byte.sh4asm",
+            "settings":{ "foreground": "#52cbff" }
+        },
+        {
+            "name":"extu_word.sh4asm",
+            "scope":"extu.word.sh4asm",
+            "settings":{ "foreground": "#86ff52" }
         },
         // MOV Token Colors
         // mov_imm.sh4asm
         {
-            "name":"mov_imm_opcode",
+            "name":"mov_imm_opcode.sh4asm",
             "scope":"mov_imm.opcode.sh4asm",
             "settings":{ "foreground": "#ffa200" }
         },
         {
-            "name":"mov_imm_register",
+            "name":"mov_imm_register.sh4asm",
             "scope":"mov_imm.register.sh4asm",
             "settings":{ "foreground": "#00b612" }
         },
         {
-            "name":"mov_byte",
-            "scope":"mov_byte.sh4asm",
+            "name":"mov_byte.sh4asm",
+            "scope":"mov.byte.sh4asm",
             "settings":{ "foreground": "#52cbff" }
         },
         {
-            "name":"mov_word",
-            "scope":"mov_word.sh4asm",
+            "name":"mov_word.sh4asm",
+            "scope":"mov.word.sh4asm",
             "settings":{ "foreground": "#86ff52" }
         },
         {
-            "name":"mov_long",
-            "scope":"mov_long.sh4asm",
+            "name":"mov_long.sh4asm",
+            "scope":"mov.long.sh4asm",
             "settings":{ "foreground": "#a652ff" }
         },
         {
