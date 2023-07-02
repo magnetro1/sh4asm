@@ -1,0 +1,126 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "SuperH-4 ASM",
+    "scopeName": "source.sh4asm",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+        {
+            "include": "#labels"
+        },
+		{
+			"include": "#strings"
+		},
+        {
+			"include": "#mov_commands"
+		},
+        {
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"captures": {
+						"1": {
+							"name": "punctuation.definition.comment.sh4asm"
+						}
+					},
+					"match": "(;).*$\\n?",
+					"name": "comment.line.semicolon.sh4asm"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+                {
+                    "name": "keyword.control.sh4asm",
+                    "match": "\\b(bt|bra|bsr|(bt\\.s)|bf\\.s|bf)\\b"
+                },
+                {
+                    "name": "rts.control.sh4asm",
+                    "match": "\\b(rts)\\b"
+                },
+                {
+                    "name": "keyword.data.sh4asm",
+                    "match": "(\\#data)\\b"
+                }
+            ]
+		},
+		"strings": {
+			"name": "string.quoted.double.sh4asm",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.sh4asm",
+					"match": "\\\\."
+				}
+			]
+		},
+        "labels": {
+			"patterns": [
+				{
+					"match": "([a-zA-Z]+[a-zA-Z_\\_0-9]+)+:",
+					"name": "label.sh4asm"
+				}
+			]
+		},
+        "numbers": {
+			"patterns": [
+				{
+					"match": "(0x[0-9a-fA-F]{8})",
+					"name": "long.data.sh4asm"
+				},
+                {
+					"match": "(0x[0-9a-fA-F]{4})\\b",
+					"name": "word.data.sh4asm"
+				}
+			]
+		},
+        "mov_commands": {
+			"patterns": [
+                {
+                    "name": "mov.mov_command.sh4asm",
+                    "match": "(mov)[\\s]+(0x[0-F]{2}),(r[0-9]+)",
+					"captures": {
+						"1": { "name": "keyword.control.sh4asm"    },
+                        "2": { "name": "constant.parameter.sh4asm" },
+                        "3": { "name": "variable.parameter.sh4asm" }
+					}
+                },
+                {
+                    "name": "mov_long.sh4asm",
+                    "match": "(mov\\.l)"
+                },
+                {
+                    "name": "mov_word.sh4asm",
+                    "match": "(mov\\.w)"
+                },
+                {
+                    "name": "mov_byte.sh4asm",
+                    "match": "(mov\\.b)"
+                },
+                {
+                    "name": "mov.mov_command.sh4asm",
+                    "match": "(\\@\\()([a-zA-Z0-9_\\_]+)(,PC\\)),(r[0-9]+)",
+					"captures": {
+                        "1": { "name": "offsetLoad.sh4asm" },
+                        "2": { "name": "data_label.sh4asm" },
+                        "3": { "name": "offsetLoad.sh4asm" },
+                        "4": { "name": "variable.parameter.sh4asm" }
+					}
+                },
+                {
+                    "name": "mov.mov_command.sh4asm",
+                    "match": "\\b(mov)\\b"
+                }
+            ]
+		}
+	}
+}
