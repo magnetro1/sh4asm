@@ -1,10 +1,5 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
-
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
-
+const charHex2Names = require('./sh4asm_staticData.js');
 /**
  * @param {vscode.ExtensionContext} context
  */
@@ -23,6 +18,7 @@ function activate(context) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from sh4asm!');
 	});
+
 
 	/* 	
 
@@ -61,30 +57,36 @@ function activate(context) {
 
 	// Hover over a word to get a popup
 	vscode.languages.registerHoverProvider('sh4asm', {
-		provideHover(document, position, token) {
-			const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
+		provideHover(document, position) {
+			const range = document.getWordRangeAtPosition(position);
 			const word = document.getText(range);
-			const asmValue1 = 'mov.l' // the value we want to hover over, previous regex is necessary.
-			const asmValue2 = 'mov.b' // the value we want to hover over, previous regex is necessary.
-			const asmValue3 = 'mov.w' // the value we want to hover over, previous regex is necessary.
-			if (word == asmValue1) {
+
+			if (Object.entries(charHex2Names)[0][1][word]) {
 				return new vscode.Hover({
 					language: "sh4asm",
-					value: "This moves a long (which is 4 bytes)"
+					value: "found a name"
 				});
-			} else if (word == asmValue2) {
-				return new vscode.Hover({
-					language: "sh4asm",
-					value: "This moves a byte (which is 1 byte)"
-				});
-			} else if (word == asmValue3) {
-				return new vscode.Hover({
-					language: "sh4asm",
-					value: "This moves a word (which is 2 bytes)"
-				});
+				// log the first name of the charHex2Names object
+
+			} else {
+				console.log('Name:' + Object.entries(charHex2Names)[0][1][8])
 			}
 		}
 	});
+
+	// vscode.languages.registerHoverProvider('sh4asm', {
+	// 	provideHover(document, position, token) {
+	// 		const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
+	// 		const word = document.getText(range);
+
+	// 		if (word == asmValue1) {
+	// 			return new vscode.Hover({
+	// 				language: "sh4asm",
+	// 				value: "This moves a long (which is 4 bytes)"
+	// 			});
+	// 		}
+	// 	}
+	// });
 }
 
 // This method is called when your extension is deactivated
