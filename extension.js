@@ -55,19 +55,25 @@ function activate(context) {
 	context.subscriptions.push(box);
 	context.subscriptions.push(disposable);
 
+
+	const charThumbnails = './supportMedia/characterThumbnails/';
+
 	// Hover over a word to get a popup
 	vscode.languages.registerHoverProvider('sh4asm', {
 		provideHover(document, position) {
 			const range = document.getWordRangeAtPosition(position);
-			const word = document.getText(range);
-
+			const word = document.getText(range).toLocaleLowerCase();
+			// const assistOne
 			if (Object.keys(staticData.charHex2Names[word])) {
 				return new vscode.Hover({
 					language: "sh4asm",
-					value: staticData.charHex2Names[word]
+					// value: staticData.charHex2Names[word]
+					// value: `Name: ${staticData.charHex2Names[word]}\nHex: ${word}\nDecimal: ${parseInt(word, 16)}`
+					value: `Name: ${staticData.charHex2Names[word]}\nHex: ${word}\nDecimal: ${parseInt(word, 16)}\nAssist-A: ${word}\nAssist-B: ${parseInt(word, 16) + parseInt(0x40, 16)}\nAssist-C: ${parseInt(word, 16) + parseInt(0x80, 16)}`
 				});
 			}
 		}
+
 	});
 
 	// vscode.languages.registerHoverProvider('sh4asm', {
