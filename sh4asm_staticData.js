@@ -62,4 +62,12 @@ const characters_Hex_2_Names = {
     '0x39': 'Wolverine-B',
     '0x3a': 'Servbot'
 };
+const characters_Assists = {
+    'a.Ryu': '0x00',
+    'b.Ryu': '0x40',
+    'c.Ryu': '0x80',
+}
+
+
 exports.charHex2Names = characters_Hex_2_Names;
+exports.charAssists = characters_Assists;
