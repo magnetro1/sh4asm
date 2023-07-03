@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "SuperH-4 ASM",
-    "scopeName": "source.sh4asm",
+	"scopeName": "source.sh4asm",
 	"patterns": [
 		{
 			"include": "#comments"
@@ -9,19 +9,19 @@
 		{
 			"include": "#keywords"
 		},
-        {
-            "include": "#labels"
-        },
+		{
+			"include": "#labels"
+		},
 		{
 			"include": "#strings"
 		},
-        {
+		{
 			"include": "#mov_opcodes"
 		},
 		{
 			"include": "#arithmetic_opcodes"
 		},
-        {
+		{
 			"include": "#numbers"
 		},
 		{
@@ -126,31 +126,31 @@
 		},
 		"keywords": {
 			"patterns": [
-                {
-                    "name": "keyword.control.sh4asm",
-                    "match": "\\b(bt|bra|bsr|(bt.s)|bf\\.s|bf)\\b"
-                },
-                {
-                    "name": "rts.control.sh4asm",
-                    "match": "\\b(rts)\\b"
-                },
 				{
-                    "name": "keyword.align4.sh4asm",
-                    "match": "(\\#align4)\\b"
-                },
+					"name": "keyword.control.sh4asm",
+					"match": "\\b(bt|bra|bsr|(bt.s)|bf\\.s|bf)\\b"
+				},
 				{
-                    "name": "keyword.align4_nop.sh4asm",
-                    "match": "(\\#align4_nop)\\b"
-                },
+					"name": "rts.control.sh4asm",
+					"match": "\\b(rts)\\b"
+				},
 				{
-                    "name": "keyword.align16.sh4asm",
-                    "match": "(\\#align16)\\b"
-                },
-                {
-                    "name": "keyword.data.sh4asm",
-                    "match": "(\\#data)\\b"
-                }
-            ]
+					"name": "keyword.align4.sh4asm",
+					"match": "(\\#align4)\\b"
+				},
+				{
+					"name": "keyword.align4_nop.sh4asm",
+					"match": "(\\#align4_nop)\\b"
+				},
+				{
+					"name": "keyword.align16.sh4asm",
+					"match": "(\\#align16)\\b"
+				},
+				{
+					"name": "keyword.data.sh4asm",
+					"match": "(\\#data)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.sh4asm",
@@ -163,7 +163,7 @@
 				}
 			]
 		},
-        "labels": {
+		"labels": {
 			"patterns": [
 				{
 					"match": "([a-zA-Z]+[a-zA-Z_\\_0-9]+)+:",
@@ -171,13 +171,13 @@
 				}
 			]
 		},
-        "numbers": {
+		"numbers": {
 			"patterns": [
 				{
 					"match": "(0x[0-9a-fA-F]{8})\\b",
 					"name": "long.data.sh4asm"
 				},
-                {
+				{
 					"match": "(0x[0-9a-fA-F]{4})\\b",
 					"name": "word.data.sh4asm"
 				}
@@ -190,10 +190,10 @@
 					"name": "mov_imm.sh4asm",
 					"description": [
 						"Set a register with a sign extended byte.",
-							"[MOV #imm,Rn]",
-							"imm → sign extension → Rn",
-							"1110nnnniiiiiiii",
-							"0xErII"					
+						"[MOV #imm,Rn]",
+						"imm → sign extension → Rn",
+						"1110nnnniiiiiiii",
+						"0xErII"
 					],
 					"match": "(mov 0x[0-F]{2},)(r[0-9]{1,2})",
 					"captures": {
@@ -205,33 +205,41 @@
 						}
 					}
 				},
-                {
-                    "name": "mov.long.sh4asm",
-                    "match": "(mov\\.l)"
-                },
-                {
-                    "name": "mov.word.sh4asm",
-                    "match": "(mov\\.w)"
-                },
-                {
-                    "name": "mov.byte.sh4asm",
-                    "match": "(mov\\.b)"
-                },
-                {
-                    "name": "mov.mov_command.sh4asm",
-                    "match": "(\\@\\()([a-zA-Z0-9_\\_]+)(,PC\\),)(r[0-9]+)",
+				{
+					"name": "mov.long.sh4asm",
+					"match": "(mov\\.l)"
+				},
+				{
+					"name": "mov.word.sh4asm",
+					"match": "(mov\\.w)"
+				},
+				{
+					"name": "mov.byte.sh4asm",
+					"match": "(mov\\.b)"
+				},
+				{
+					"name": "mov.mov_command.sh4asm",
+					"match": "(\\@\\()([a-zA-Z0-9_\\_]+)(,PC\\),)(r[0-9]+)",
 					"captures": {
-                        "1": { "name": "offsetLoad.sh4asm" },
-                        "2": { "name": "data_label.sh4asm" },
-                        "3": { "name": "offsetLoad.sh4asm" },
-                        "4": { "name": "variable.parameter.sh4asm" }
+						"1": {
+							"name": "offsetLoad.sh4asm"
+						},
+						"2": {
+							"name": "data_label.sh4asm"
+						},
+						"3": {
+							"name": "offsetLoad.sh4asm"
+						},
+						"4": {
+							"name": "variable.parameter.sh4asm"
+						}
 					}
-                },
-                {
-                    "name": "mov.mov_command.sh4asm",
-                    "match": "\\b(mov)\\b"
-                }
-            ]
+				},
+				{
+					"name": "mov.mov_command.sh4asm",
+					"match": "\\b(mov)\\b"
+				}
+			]
 		},
 		"arithmetic_opcodes": {
 			"description": "§ 7.4 Arithmetic Operation Instructions",
@@ -240,57 +248,65 @@
 					"name": "add.registers.sh4asm",
 					"description": [
 						"Add first parameter register to second parameter register. Addend rM, Augend/Sum rN",
-							"[ADD Rm,Rn]",
-							"Rn + Rm → Rn",
-							"0011nnnnmmmm1100",
-							"0x3nmA"
+						"[ADD Rm,Rn]",
+						"Rn + Rm → Rn",
+						"0011nnnnmmmm1100",
+						"0x3nmA"
 					],
 					"match": "(add)\\b[\\s]+(r[0-9]{1,2},)(r[0-9]{1,2})",
 					"captures": {
-                        "1": { "name": "add_registers.opcode.sh4asm" },
-                        "2": { "name": "add_registers.addend.sh4asm" },
-                        "3": { "name": "add_registers.augend.sh4asm" }
+						"1": {
+							"name": "add_registers.opcode.sh4asm"
+						},
+						"2": {
+							"name": "add_registers.addend.sh4asm"
+						},
+						"3": {
+							"name": "add_registers.augend.sh4asm"
+						}
 					}
-					
 				},
 				{
 					"name": "add.immidiate.sh4asm",
 					"description": [
 						"Add sign extended immediate to second parameter register. Augend imm, Addend/Sum rN",
-							"[ADD #imm,Rn]",
-							"Rn + imm → Rn",
-							"0111nnnniiiiiiii",
-							"0x7nii"
+						"[ADD #imm,Rn]",
+						"Rn + imm → Rn",
+						"0111nnnniiiiiiii",
+						"0x7nii"
 					],
 					"match": "(add[\\s]+0x[0-F]{1,2},)(r[0-9]{1,2})",
 					"captures": {
-                        "1": { "name": "add_imm.opcode.sh4asm" },
-                        "2": { "name": "add_registers.augend.sh4asm" }
+						"1": {
+							"name": "add_imm.opcode.sh4asm"
+						},
+						"2": {
+							"name": "add_registers.augend.sh4asm"
+						}
 					}
 				},
 				{
-                    "name": "extu.word.sh4asm",
+					"name": "extu.word.sh4asm",
 					"description": [
 						"This instruction zero-extends the contents of general register Rm and stores the result in Rn.",
-							"[EXTU.W Rm,Rn]",
-							"Rm zero-extended from word → Rn",
-							"0110nnnnmmmm1101",
-							"0x6nmB"
+						"[EXTU.W Rm,Rn]",
+						"Rm zero-extended from word → Rn",
+						"0110nnnnmmmm1101",
+						"0x6nmB"
 					],
-                    "match": "(extu\\.w)"
-                },
-                {
-                    "name": "extu.byte.sh4asm",
+					"match": "(extu\\.w)"
+				},
+				{
+					"name": "extu.byte.sh4asm",
 					"description": [
 						"This instruction zero-extends the contents of general register Rm and stores the result in Rn.",
-							"[EXTU.B Rm,Rn]",
-							"Rm zero-extended from byte → Rn",
-							"0110nnnnmmmm1100",
-							"0x6nmA"
+						"[EXTU.B Rm,Rn]",
+						"Rm zero-extended from byte → Rn",
+						"0110nnnnmmmm1100",
+						"0x6nmA"
 					],
-                    "match": "(extu\\.b)"
-                }
-
+					"match": "(extu\\.b)"
+				}
 			]
 		},
 		"registers": {
@@ -300,19 +316,25 @@
 					"name": "registers.indexed_indirect.sh4asm",
 					"description": [
 						"Indexed register indirect. Effective address is sum of register Rn and R0 contents.",
-							"[@(R0, Rn)]",
-							"Rn + R0 → EA"
+						"[@(R0, Rn)]",
+						"Rn + R0 → EA"
 					],
 					"match": "(\\@\\()(r[0-9]{1,2},)(r[0-9]{1,2})(\\),)",
 					"captures": {
-                        "1": { "name": "offsetLoad.sh4asm" },
-                        "2": { "name": "add_registers.addend.sh4asm" },
-                        "3": { "name": "add_registers.augend.sh4asm" },
-						"4": { "name": "offsetLoad.sh4asm" }
+						"1": {
+							"name": "offsetLoad.sh4asm"
+						},
+						"2": {
+							"name": "add_registers.addend.sh4asm"
+						},
+						"3": {
+							"name": "add_registers.augend.sh4asm"
+						},
+						"4": {
+							"name": "offsetLoad.sh4asm"
+						}
 					}
-					
 				}
-				
 			]
 		}
 	}

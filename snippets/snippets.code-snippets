@@ -76,22 +76,21 @@
 			";===============================================================",
 			"; $1",
 			";---------------------------------------------------------------"
-		  ],
+		],
 	},
 	"dashSep": {
 		"prefix": "dashSep",
 		"body": [
 			";---------------------------------------------------------------",
 			"; $1"
-		  ],
+		],
 	},
 	"dashSepB": {
 		"prefix": "dashSepB",
 		"body": [
 			"; $1",
 			";---------------------------------------------------------------"
-			
-		  ],
+		],
 	},
 	"labelD": {
 		"prefix": "labelD",
@@ -99,7 +98,7 @@
 			"$1:",
 			"    #data $2",
 			"$0"
-		  ],
+		],
 	},
 	"nCaseSwitchStatement": {
 		// "scope": "javascript,typescript",
@@ -108,5 +107,713 @@
 			"switch ($2) {",
 			"${1/(.)/\tcase \"$\":\n\t\t# code\n\t\tbreak;\n/g}}"
 		]
-	}
+	},
+	"A.Ryu": {
+		"prefix": "A.Ryu",
+		"body": "0x00"
+	},
+	"A.Zangief": {
+		"prefix": "A.Zangief",
+		"body": "0x01"
+	},
+	"A.Guile": {
+		"prefix": "A.Guile",
+		"body": "0x02"
+	},
+	"A.Morrigan": {
+		"prefix": "A.Morrigan",
+		"body": "0x03"
+	},
+	"A.Anakaris": {
+		"prefix": "A.Anakaris",
+		"body": "0x04"
+	},
+	"A.Strider Hiryu": {
+		"prefix": "A.Strider Hiryu",
+		"body": "0x05"
+	},
+	"A.Cyclops": {
+		"prefix": "A.Cyclops",
+		"body": "0x06"
+	},
+	"A.Wolverine": {
+		"prefix": "A.Wolverine",
+		"body": "0x07"
+	},
+	"A.Psylocke": {
+		"prefix": "A.Psylocke",
+		"body": "0x08"
+	},
+	"A.Iceman": {
+		"prefix": "A.Iceman",
+		"body": "0x09"
+	},
+	"A.Rogue": {
+		"prefix": "A.Rogue",
+		"body": "0x0a"
+	},
+	"A.Captain America": {
+		"prefix": "A.Captain America",
+		"body": "0x0b"
+	},
+	"A.Spider-Man": {
+		"prefix": "A.Spider-Man",
+		"body": "0x0c"
+	},
+	"A.Hulk": {
+		"prefix": "A.Hulk",
+		"body": "0x0d"
+	},
+	"A.Venom": {
+		"prefix": "A.Venom",
+		"body": "0x0e"
+	},
+	"A.Doctor Doom": {
+		"prefix": "A.Doctor Doom",
+		"body": "0x0f"
+	},
+	"A.Tron Bonne": {
+		"prefix": "A.Tron Bonne",
+		"body": "0x10"
+	},
+	"A.Jill": {
+		"prefix": "A.Jill",
+		"body": "0x11"
+	},
+	"A.Hayato": {
+		"prefix": "A.Hayato",
+		"body": "0x12"
+	},
+	"A.Ruby Heart": {
+		"prefix": "A.Ruby Heart",
+		"body": "0x13"
+	},
+	"A.Sonson": {
+		"prefix": "A.Sonson",
+		"body": "0x14"
+	},
+	"A.Amingo": {
+		"prefix": "A.Amingo",
+		"body": "0x15"
+	},
+	"A.Marrow": {
+		"prefix": "A.Marrow",
+		"body": "0x16"
+	},
+	"A.Cable": {
+		"prefix": "A.Cable",
+		"body": "0x17"
+	},
+	"A.Abyss-A": {
+		"prefix": "A.Abyss-A",
+		"body": "0x18"
+	},
+	"A.Abyss-B": {
+		"prefix": "A.Abyss-B",
+		"body": "0x19"
+	},
+	"A.Abyss-C": {
+		"prefix": "A.Abyss-C",
+		"body": "0x1a"
+	},
+	"A.Chun-Li": {
+		"prefix": "A.Chun-Li",
+		"body": "0x1b"
+	},
+	"A.Megaman": {
+		"prefix": "A.Megaman",
+		"body": "0x1c"
+	},
+	"A.Roll": {
+		"prefix": "A.Roll",
+		"body": "0x1d"
+	},
+	"A.Akuma": {
+		"prefix": "A.Akuma",
+		"body": "0x1e"
+	},
+	"A.B.B. Hood": {
+		"prefix": "A.B.B. Hood",
+		"body": "0x1f"
+	},
+	"A.Felicia": {
+		"prefix": "A.Felicia",
+		"body": "0x20"
+	},
+	"A.Charlie": {
+		"prefix": "A.Charlie",
+		"body": "0x21"
+	},
+	"A.Sakura": {
+		"prefix": "A.Sakura",
+		"body": "0x22"
+	},
+	"A.Dan": {
+		"prefix": "A.Dan",
+		"body": "0x23"
+	},
+	"A.Cammy": {
+		"prefix": "A.Cammy",
+		"body": "0x24"
+	},
+	"A.Dhalsim": {
+		"prefix": "A.Dhalsim",
+		"body": "0x25"
+	},
+	"A.M.Bison": {
+		"prefix": "A.M.Bison",
+		"body": "0x26"
+	},
+	"A.Ken": {
+		"prefix": "A.Ken",
+		"body": "0x27"
+	},
+	"A.Gambit": {
+		"prefix": "A.Gambit",
+		"body": "0x28"
+	},
+	"A.Juggernaut": {
+		"prefix": "A.Juggernaut",
+		"body": "0x29"
+	},
+	"A.Storm": {
+		"prefix": "A.Storm",
+		"body": "0x2a"
+	},
+	"A.Sabretooth": {
+		"prefix": "A.Sabretooth",
+		"body": "0x2b"
+	},
+	"A.Magneto": {
+		"prefix": "A.Magneto",
+		"body": "0x2c"
+	},
+	"A.Shuma-Gorath": {
+		"prefix": "A.Shuma-Gorath",
+		"body": "0x2d"
+	},
+	"A.War Machine": {
+		"prefix": "A.War Machine",
+		"body": "0x2e"
+	},
+	"A.Silver Samurai": {
+		"prefix": "A.Silver Samurai",
+		"body": "0x2f"
+	},
+	"A.Omega Red": {
+		"prefix": "A.Omega Red",
+		"body": "0x30"
+	},
+	"A.Spiral": {
+		"prefix": "A.Spiral",
+		"body": "0x31"
+	},
+	"A.Colossus": {
+		"prefix": "A.Colossus",
+		"body": "0x32"
+	},
+	"A.Iron Man": {
+		"prefix": "A.Iron Man",
+		"body": "0x33"
+	},
+	"A.Sentinel": {
+		"prefix": "A.Sentinel",
+		"body": "0x34"
+	},
+	"A.Blackheart": {
+		"prefix": "A.Blackheart",
+		"body": "0x35"
+	},
+	"A.Thanos": {
+		"prefix": "A.Thanos",
+		"body": "0x36"
+	},
+	"A.Jin": {
+		"prefix": "A.Jin",
+		"body": "0x37"
+	},
+	"A.Captain Commando": {
+		"prefix": "A.Captain Commando",
+		"body": "0x38"
+	},
+	"A.Wolverine-B": {
+		"prefix": "A.Wolverine-B",
+		"body": "0x39"
+	},
+	"A.Servbot": {
+		"prefix": "A.Servbot",
+		"body": "0x3a"
+	},
+	"B.Ryu": {
+		"prefix": "B.Ryu",
+		"body": "0x40"
+	},
+	"B.Zangief": {
+		"prefix": "B.Zangief",
+		"body": "0x41"
+	},
+	"B.Guile": {
+		"prefix": "B.Guile",
+		"body": "0x42"
+	},
+	"B.Morrigan": {
+		"prefix": "B.Morrigan",
+		"body": "0x43"
+	},
+	"B.Anakaris": {
+		"prefix": "B.Anakaris",
+		"body": "0x44"
+	},
+	"B.Strider Hiryu": {
+		"prefix": "B.Strider Hiryu",
+		"body": "0x45"
+	},
+	"B.Cyclops": {
+		"prefix": "B.Cyclops",
+		"body": "0x46"
+	},
+	"B.Wolverine": {
+		"prefix": "B.Wolverine",
+		"body": "0x47"
+	},
+	"B.Psylocke": {
+		"prefix": "B.Psylocke",
+		"body": "0x48"
+	},
+	"B.Iceman": {
+		"prefix": "B.Iceman",
+		"body": "0x49"
+	},
+	"B.Rogue": {
+		"prefix": "B.Rogue",
+		"body": "0x4a"
+	},
+	"B.Captain America": {
+		"prefix": "B.Captain America",
+		"body": "0x4b"
+	},
+	"B.Spider-Man": {
+		"prefix": "B.Spider-Man",
+		"body": "0x4c"
+	},
+	"B.Hulk": {
+		"prefix": "B.Hulk",
+		"body": "0x4d"
+	},
+	"B.Venom": {
+		"prefix": "B.Venom",
+		"body": "0x4e"
+	},
+	"B.Doctor Doom": {
+		"prefix": "B.Doctor Doom",
+		"body": "0x4f"
+	},
+	"B.Tron Bonne": {
+		"prefix": "B.Tron Bonne",
+		"body": "0x50"
+	},
+	"B.Jill": {
+		"prefix": "B.Jill",
+		"body": "0x51"
+	},
+	"B.Hayato": {
+		"prefix": "B.Hayato",
+		"body": "0x52"
+	},
+	"B.Ruby Heart": {
+		"prefix": "B.Ruby Heart",
+		"body": "0x53"
+	},
+	"B.Sonson": {
+		"prefix": "B.Sonson",
+		"body": "0x54"
+	},
+	"B.Amingo": {
+		"prefix": "B.Amingo",
+		"body": "0x55"
+	},
+	"B.Marrow": {
+		"prefix": "B.Marrow",
+		"body": "0x56"
+	},
+	"B.Cable": {
+		"prefix": "B.Cable",
+		"body": "0x57"
+	},
+	"B.Abyss-A": {
+		"prefix": "B.Abyss-A",
+		"body": "0x58"
+	},
+	"B.Abyss-B": {
+		"prefix": "B.Abyss-B",
+		"body": "0x59"
+	},
+	"B.Abyss-C": {
+		"prefix": "B.Abyss-C",
+		"body": "0x5a"
+	},
+	"B.Chun-Li": {
+		"prefix": "B.Chun-Li",
+		"body": "0x5b"
+	},
+	"B.Megaman": {
+		"prefix": "B.Megaman",
+		"body": "0x5c"
+	},
+	"B.Roll": {
+		"prefix": "B.Roll",
+		"body": "0x5d"
+	},
+	"B.Akuma": {
+		"prefix": "B.Akuma",
+		"body": "0x5e"
+	},
+	"B.B.B. Hood": {
+		"prefix": "B.B.B. Hood",
+		"body": "0x5f"
+	},
+	"B.Felicia": {
+		"prefix": "B.Felicia",
+		"body": "0x60"
+	},
+	"B.Charlie": {
+		"prefix": "B.Charlie",
+		"body": "0x61"
+	},
+	"B.Sakura": {
+		"prefix": "B.Sakura",
+		"body": "0x62"
+	},
+	"B.Dan": {
+		"prefix": "B.Dan",
+		"body": "0x63"
+	},
+	"B.Cammy": {
+		"prefix": "B.Cammy",
+		"body": "0x64"
+	},
+	"B.Dhalsim": {
+		"prefix": "B.Dhalsim",
+		"body": "0x65"
+	},
+	"B.M.Bison": {
+		"prefix": "B.M.Bison",
+		"body": "0x66"
+	},
+	"B.Ken": {
+		"prefix": "B.Ken",
+		"body": "0x67"
+	},
+	"B.Gambit": {
+		"prefix": "B.Gambit",
+		"body": "0x68"
+	},
+	"B.Juggernaut": {
+		"prefix": "B.Juggernaut",
+		"body": "0x69"
+	},
+	"B.Storm": {
+		"prefix": "B.Storm",
+		"body": "0x6a"
+	},
+	"B.Sabretooth": {
+		"prefix": "B.Sabretooth",
+		"body": "0x6b"
+	},
+	"B.Magneto": {
+		"prefix": "B.Magneto",
+		"body": "0x6c"
+	},
+	"B.Shuma-Gorath": {
+		"prefix": "B.Shuma-Gorath",
+		"body": "0x6d"
+	},
+	"B.War Machine": {
+		"prefix": "B.War Machine",
+		"body": "0x6e"
+	},
+	"B.Silver Samurai": {
+		"prefix": "B.Silver Samurai",
+		"body": "0x6f"
+	},
+	"B.Omega Red": {
+		"prefix": "B.Omega Red",
+		"body": "0x70"
+	},
+	"B.Spiral": {
+		"prefix": "B.Spiral",
+		"body": "0x71"
+	},
+	"B.Colossus": {
+		"prefix": "B.Colossus",
+		"body": "0x72"
+	},
+	"B.Iron Man": {
+		"prefix": "B.Iron Man",
+		"body": "0x73"
+	},
+	"B.Sentinel": {
+		"prefix": "B.Sentinel",
+		"body": "0x74"
+	},
+	"B.Blackheart": {
+		"prefix": "B.Blackheart",
+		"body": "0x75"
+	},
+	"B.Thanos": {
+		"prefix": "B.Thanos",
+		"body": "0x76"
+	},
+	"B.Jin": {
+		"prefix": "B.Jin",
+		"body": "0x77"
+	},
+	"B.Captain Commando": {
+		"prefix": "B.Captain Commando",
+		"body": "0x78"
+	},
+	"B.Wolverine-B": {
+		"prefix": "B.Wolverine-B",
+		"body": "0x79"
+	},
+	"B.Servbot": {
+		"prefix": "B.Servbot",
+		"body": "0x7a"
+	},
+	"C.Ryu": {
+		"prefix": "C.Ryu",
+		"body": "0x80"
+	},
+	"C.Zangief": {
+		"prefix": "C.Zangief",
+		"body": "0x81"
+	},
+	"C.Guile": {
+		"prefix": "C.Guile",
+		"body": "0x82"
+	},
+	"C.Morrigan": {
+		"prefix": "C.Morrigan",
+		"body": "0x83"
+	},
+	"C.Anakaris": {
+		"prefix": "C.Anakaris",
+		"body": "0x84"
+	},
+	"C.Strider Hiryu": {
+		"prefix": "C.Strider Hiryu",
+		"body": "0x85"
+	},
+	"C.Cyclops": {
+		"prefix": "C.Cyclops",
+		"body": "0x86"
+	},
+	"C.Wolverine": {
+		"prefix": "C.Wolverine",
+		"body": "0x87"
+	},
+	"C.Psylocke": {
+		"prefix": "C.Psylocke",
+		"body": "0x88"
+	},
+	"C.Iceman": {
+		"prefix": "C.Iceman",
+		"body": "0x89"
+	},
+	"C.Rogue": {
+		"prefix": "C.Rogue",
+		"body": "0x8a"
+	},
+	"C.Captain America": {
+		"prefix": "C.Captain America",
+		"body": "0x8b"
+	},
+	"C.Spider-Man": {
+		"prefix": "C.Spider-Man",
+		"body": "0x8c"
+	},
+	"C.Hulk": {
+		"prefix": "C.Hulk",
+		"body": "0x8d"
+	},
+	"C.Venom": {
+		"prefix": "C.Venom",
+		"body": "0x8e"
+	},
+	"C.Doctor Doom": {
+		"prefix": "C.Doctor Doom",
+		"body": "0x8f"
+	},
+	"C.Tron Bonne": {
+		"prefix": "C.Tron Bonne",
+		"body": "0x90"
+	},
+	"C.Jill": {
+		"prefix": "C.Jill",
+		"body": "0x91"
+	},
+	"C.Hayato": {
+		"prefix": "C.Hayato",
+		"body": "0x92"
+	},
+	"C.Ruby Heart": {
+		"prefix": "C.Ruby Heart",
+		"body": "0x93"
+	},
+	"C.Sonson": {
+		"prefix": "C.Sonson",
+		"body": "0x94"
+	},
+	"C.Amingo": {
+		"prefix": "C.Amingo",
+		"body": "0x95"
+	},
+	"C.Marrow": {
+		"prefix": "C.Marrow",
+		"body": "0x96"
+	},
+	"C.Cable": {
+		"prefix": "C.Cable",
+		"body": "0x97"
+	},
+	"C.Abyss-A": {
+		"prefix": "C.Abyss-A",
+		"body": "0x98"
+	},
+	"C.Abyss-B": {
+		"prefix": "C.Abyss-B",
+		"body": "0x99"
+	},
+	"C.Abyss-C": {
+		"prefix": "C.Abyss-C",
+		"body": "0x9a"
+	},
+	"C.Chun-Li": {
+		"prefix": "C.Chun-Li",
+		"body": "0x9b"
+	},
+	"C.Megaman": {
+		"prefix": "C.Megaman",
+		"body": "0x9c"
+	},
+	"C.Roll": {
+		"prefix": "C.Roll",
+		"body": "0x9d"
+	},
+	"C.Akuma": {
+		"prefix": "C.Akuma",
+		"body": "0x9e"
+	},
+	"C.B.B. Hood": {
+		"prefix": "C.B.B. Hood",
+		"body": "0x9f"
+	},
+	"C.Felicia": {
+		"prefix": "C.Felicia",
+		"body": "0xa0"
+	},
+	"C.Charlie": {
+		"prefix": "C.Charlie",
+		"body": "0xa1"
+	},
+	"C.Sakura": {
+		"prefix": "C.Sakura",
+		"body": "0xa2"
+	},
+	"C.Dan": {
+		"prefix": "C.Dan",
+		"body": "0xa3"
+	},
+	"C.Cammy": {
+		"prefix": "C.Cammy",
+		"body": "0xa4"
+	},
+	"C.Dhalsim": {
+		"prefix": "C.Dhalsim",
+		"body": "0xa5"
+	},
+	"C.M.Bison": {
+		"prefix": "C.M.Bison",
+		"body": "0xa6"
+	},
+	"C.Ken": {
+		"prefix": "C.Ken",
+		"body": "0xa7"
+	},
+	"C.Gambit": {
+		"prefix": "C.Gambit",
+		"body": "0xa8"
+	},
+	"C.Juggernaut": {
+		"prefix": "C.Juggernaut",
+		"body": "0xa9"
+	},
+	"C.Storm": {
+		"prefix": "C.Storm",
+		"body": "0xaa"
+	},
+	"C.Sabretooth": {
+		"prefix": "C.Sabretooth",
+		"body": "0xab"
+	},
+	"C.Magneto": {
+		"prefix": "C.Magneto",
+		"body": "0xac"
+	},
+	"C.Shuma-Gorath": {
+		"prefix": "C.Shuma-Gorath",
+		"body": "0xad"
+	},
+	"C.War Machine": {
+		"prefix": "C.War Machine",
+		"body": "0xae"
+	},
+	"C.Silver Samurai": {
+		"prefix": "C.Silver Samurai",
+		"body": "0xaf"
+	},
+	"C.Omega Red": {
+		"prefix": "C.Omega Red",
+		"body": "0xb0"
+	},
+	"C.Spiral": {
+		"prefix": "C.Spiral",
+		"body": "0xb1"
+	},
+	"C.Colossus": {
+		"prefix": "C.Colossus",
+		"body": "0xb2"
+	},
+	"C.Iron Man": {
+		"prefix": "C.Iron Man",
+		"body": "0xb3"
+	},
+	"C.Sentinel": {
+		"prefix": "C.Sentinel",
+		"body": "0xb4"
+	},
+	"C.Blackheart": {
+		"prefix": "C.Blackheart",
+		"body": "0xb5"
+	},
+	"C.Thanos": {
+		"prefix": "C.Thanos",
+		"body": "0xb6"
+	},
+	"C.Jin": {
+		"prefix": "C.Jin",
+		"body": "0xb7"
+	},
+	"C.Captain Commando": {
+		"prefix": "C.Captain Commando",
+		"body": "0xb8"
+	},
+	"C.Wolverine-B": {
+		"prefix": "C.Wolverine-B",
+		"body": "0xb9"
+	},
+	"C.Servbot": {
+		"prefix": "C.Servbot",
+		"body": "0xba"
+	},
 }

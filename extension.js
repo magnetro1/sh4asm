@@ -1,11 +1,12 @@
 const vscode = require('vscode');
 const path = require('path');
+
 const staticData = require('./sh4asm_staticData.js');
+
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	// console.log('Congratulations, your extension "sh4asm" is now active!');
@@ -57,7 +58,7 @@ function activate(context) {
 	context.subscriptions.push(disposable);
 
 
-	const charThumbnailsPath = './supportMedia/characterThumbnails/';
+	// const charThumbnailsPath = './supportMedia/characterThumbnails/';
 
 	// Hover over a word to get a popup
 	vscode.languages.registerHoverProvider('sh4asm', {
@@ -74,16 +75,15 @@ function activate(context) {
 				let assistC = baseVal + 128;
 				assistC = assistC.toString(16);
 
-				let image = `${charThumbnailsPath}charID_${word}.jpg`
+				// let image = `${charThumbnailsPath}charID_${word}.jpg`
 				// console.log(image);
 
 				// // Add image to hover popup
-				const content = new vscode.MarkdownString(`<img src="${image}"/>`);
-				content.supportHtml = true;
-				content.isTrusted = true;
-				content.supportThemeIcons = true;  // to supports codicons
-				content.baseUri = vscode.Uri.file(path.join(context.extensionPath, charThumbnailsPath, path.sep));
-				// console.log(content.baseUri);
+				// const content = new vscode.MarkdownString(`<img src="${image}"/>`);
+				// content.supportHtml = true;
+				// content.isTrusted = true;
+				// content.supportThemeIcons = true;  // to supports codicons
+				// content.baseUri = vscode.Uri.file(path.join(context.extensionPath, charThumbnailsPath, path.sep));
 				// return new vscode.Hover(content, new vscode.Range(position, position));
 				return new vscode.Hover(
 					{
