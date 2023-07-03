@@ -2,13 +2,13 @@ const originalNames = [
     'Ryu', 'Zangief', 'Guile', 'Morrigan', 'Anakaris', 'Strider Hiryu', 'Cyclops', 'Wolverine', 'Psylocke', 'Iceman', 'Rogue', 'CaptainAmerica', 'Spider-Man', 'Hulk', 'Venom', 'Doctor Doom', 'Tron Bonne', 'Jill', 'Hayato', 'Ruby Heart', 'Sonson', 'Amingo', 'Marrow', 'Cable', 'Abyss-A', 'Abyss-B', 'Abyss-C', 'Chun-Li', 'Megaman', 'Roll', 'Akuma', 'B.B. Hood', 'Felicia', 'Charlie', 'Sakura', 'Dan', 'Cammy', 'Dhalsim', 'M.Bison', 'Ken', 'Gambit', 'Juggernaut', 'Storm', 'Sabretooth', 'Magneto', 'Shuma-Gorath', 'War Machine', 'Silver Samurai', 'Omega Red', 'Spiral', 'Colossus', 'Iron Man', 'Sentinel', 'Blackheart', 'Thanos', 'Jin', 'Captain Commando', 'Wolverine-B', 'Servbot'
 ];
 const aNames = [
-    'A.Ryu', 'A.Zangief', 'A.Guile', 'A.Morrigan', 'A.Anakaris', 'A.Strider Hiryu', 'A.Cyclops', 'A.Wolverine', 'A.Psylocke', 'A.Iceman', 'A.Rogue', 'A.Captain America', 'A.Spider-Man', 'A.Hulk', 'A.Venom', 'A.Doctor Doom', 'A.Tron Bonne', 'A.Jill', 'A.Hayato', 'A.Ruby Heart', 'A.Sonson', 'A.Amingo', 'A.Marrow', 'A.Cable', 'A.Abyss-A', 'A.Abyss-B', 'A.Abyss-C', 'A.Chun-Li', 'A.Megaman', 'A.Roll', 'A.Akuma', 'A.B.B. Hood', 'A.Felicia', 'A.Charlie', 'A.Sakura', 'A.Dan', 'A.Cammy', 'A.Dhalsim', 'A.M.Bison', 'A.Ken', 'A.Gambit', 'A.Juggernaut', 'A.Storm', 'A.Sabretooth', 'A.Magneto', 'A.Shuma-Gorath', 'A.War Machine', 'A.Silver Samurai', 'A.Omega Red', 'A.Spiral', 'A.Colossus', 'A.Iron Man', 'A.Sentinel', 'A.Blackheart', 'A.Thanos', 'A.Jin', 'A.Captain Commando', 'A.Wolverine-B', 'A.Servbot'
+    'a.Ryu','a.Zangief','a.Guile','a.Morrigan','a.Anakaris','a.Strider Hiryu','a.Cyclops','a.Wolverine','a.Psylocke','a.Iceman','a.Rogue','a.CaptainAmerica','a.Spider-Man','a.Hulk','a.Venom','a.Doctor Doom','a.Tron Bonne','a.Jill','a.Hayato','a.Ruby Heart','a.Sonson','a.Amingo','a.Marrow','a.Cable','a.Abyss-A','a.Abyss-B','a.Abyss-C','a.Chun-Li','a.Megaman','a.Roll','a.Akuma','a.B.B. Hood','a.Felicia','a.Charlie','a.Sakura','a.Dan','a.Cammy','a.Dhalsim','a.M.Bison','a.Ken','a.Gambit','a.Juggernaut','a.Storm','a.Sabretooth','a.Magneto','a.Shuma-Gorath','a.War Machine','a.Silver Samurai','a.Omega Red','a.Spiral','a.Colossus','a.Iron Man','a.Sentinel','a.Blackheart','a.Thanos','a.Jin','a.Captain Commando','a.Wolverine-B','a.Servbot'
 ];
 const bNames = [
-    'B.Ryu', 'B.Zangief', 'B.Guile', 'B.Morrigan', 'B.Anakaris', 'B.Strider Hiryu', 'B.Cyclops', 'B.Wolverine', 'B.Psylocke', 'B.Iceman', 'B.Rogue', 'B.Captain America', 'B.Spider-Man', 'B.Hulk', 'B.Venom', 'B.Doctor Doom', 'B.Tron Bonne', 'B.Jill', 'B.Hayato', 'B.Ruby Heart', 'B.Sonson', 'B.Amingo', 'B.Marrow', 'B.Cable', 'B.Abyss-A', 'B.Abyss-B', 'B.Abyss-C', 'B.Chun-Li', 'B.Megaman', 'B.Roll', 'B.Akuma', 'B.B.B. Hood', 'B.Felicia', 'B.Charlie', 'B.Sakura', 'B.Dan', 'B.Cammy', 'B.Dhalsim', 'B.M.Bison', 'B.Ken', 'B.Gambit', 'B.Juggernaut', 'B.Storm', 'B.Sabretooth', 'B.Magneto', 'B.Shuma-Gorath', 'B.War Machine', 'B.Silver Samurai', 'B.Omega Red', 'B.Spiral', 'B.Colossus', 'B.Iron Man', 'B.Sentinel', 'B.Blackheart', 'B.Thanos', 'B.Jin', 'B.Captain Commando', 'B.Wolverine-B', 'B.Servbot'
+    'b.Ryu','b.Zangief','b.Guile','b.Morrigan','b.Anakaris','b.Strider Hiryu','b.Cyclops','b.Wolverine','b.Psylocke','b.Iceman','b.Rogue','b.CaptainAmerica','b.Spider-Man','b.Hulk','b.Venom','b.Doctor Doom','b.Tron Bonne','b.Jill','b.Hayato','b.Ruby Heart','b.Sonson','b.Amingo','b.Marrow','b.Cable','b.Abyss-A','b.Abyss-B','b.Abyss-C','b.Chun-Li','b.Megaman','b.Roll','b.Akuma','b.B.B. Hood','b.Felicia','b.Charlie','b.Sakura','b.Dan','b.Cammy','b.Dhalsim','b.M.Bison','b.Ken','b.Gambit','b.Juggernaut','b.Storm','b.Sabretooth','b.Magneto','b.Shuma-Gorath','b.War Machine','b.Silver Samurai','b.Omega Red','b.Spiral','b.Colossus','b.Iron Man','b.Sentinel','b.Blackheart','b.Thanos','b.Jin','b.Captain Commando','b.Wolverine-B','b.Servbot'
 ];
 const cNames = [
-    'C.Ryu', 'C.Zangief', 'C.Guile', 'C.Morrigan', 'C.Anakaris', 'C.Strider Hiryu', 'C.Cyclops', 'C.Wolverine', 'C.Psylocke', 'C.Iceman', 'C.Rogue', 'C.Captain America', 'C.Spider-Man', 'C.Hulk', 'C.Venom', 'C.Doctor Doom', 'C.Tron Bonne', 'C.Jill', 'C.Hayato', 'C.Ruby Heart', 'C.Sonson', 'C.Amingo', 'C.Marrow', 'C.Cable', 'C.Abyss-A', 'C.Abyss-B', 'C.Abyss-C', 'C.Chun-Li', 'C.Megaman', 'C.Roll', 'C.Akuma', 'C.B.B. Hood', 'C.Felicia', 'C.Charlie', 'C.Sakura', 'C.Dan', 'C.Cammy', 'C.Dhalsim', 'C.M.Bison', 'C.Ken', 'C.Gambit', 'C.Juggernaut', 'C.Storm', 'C.Sabretooth', 'C.Magneto', 'C.Shuma-Gorath', 'C.War Machine', 'C.Silver Samurai', 'C.Omega Red', 'C.Spiral', 'C.Colossus', 'C.Iron Man', 'C.Sentinel', 'C.Blackheart', 'C.Thanos', 'C.Jin', 'C.Captain Commando', 'C.Wolverine-B', 'C.Servbot'
+    'y.Ryu','y.Zangief','y.Guile','y.Morrigan','y.Anakaris','y.Strider Hiryu','y.Cyclops','y.Wolverine','y.Psylocke','y.Iceman','y.Rogue','y.CaptainAmerica','y.Spider-Man','y.Hulk','y.Venom','y.Doctor Doom','y.Tron Bonne','y.Jill','y.Hayato','y.Ruby Heart','y.Sonson','y.Amingo','y.Marrow','y.Cable','y.Abyss-A','y.Abyss-B','y.Abyss-C','y.Chun-Li','y.Megaman','y.Roll','y.Akuma','y.B.B. Hood','y.Felicia','y.Charlie','y.Sakura','y.Dan','y.Cammy','y.Dhalsim','y.M.Bison','y.Ken','y.Gambit','y.Juggernaut','y.Storm','y.Sabretooth','y.Magneto','y.Shuma-Gorath','y.War Machine','y.Silver Samurai','y.Omega Red','y.Spiral','y.Colossus','y.Iron Man','y.Sentinel','y.Blackheart','y.Thanos','y.Jin','y.Captain Commando','y.Wolverine-B','y.Servbot'
 ];
 
 const aAddresses = [
@@ -44,13 +44,13 @@ const namesA = []
 const namesB = []
 const namesC = []
 originalNames.forEach((name) => {
-    namesA.push('A.' + name);
-    namesB.push('B.' + name);
-    namesC.push('C.' + name);
+    namesA.push('\'a.' + name + '\'');
+    namesB.push('\'b.' + name + '\'');
+    namesC.push('\'y.' + name + '\'');
 });
 console.log('A-Names: ' + namesA);
 console.log('B-Names: ' + namesB);
-console.log('C-Names: ' + namesC);
+console.log('Y-Names: ' + namesC);
 
 // Make Final Snippets🌟
 let resultA = '';
@@ -62,17 +62,17 @@ for (let i = 0; i < originalNames.length; i++) {
         `
 "${aNames[i]}": {\r
     "prefix": "${aNames[i]}",\r
-    "body": "${aAddresses[i]} ; ${aNames[i]} α"\r
+    "body": "${aAddresses[i]} ; ${originalNames[i]} α"\r
 },\r`
     resultB += `
 "${bNames[i]}": {\r
     "prefix": "${bNames[i]}",\r
-    "body": "${bAddresses[i]} ; ${bNames[i]} β"\r
+    "body": "${bAddresses[i]} ; ${originalNames[i]} β"\r
 },\r`
     resultC += `
 "${cNames[i]}": {\r
     "prefix": "${cNames[i]}",\r
-    "body": "${cAddresses[i]} ; ${cNames[i]} γ"\r
+    "body": "${cAddresses[i]} ; ${originalNames[i]} γ"\r
 },\r`
 }
 console.log(resultA);
