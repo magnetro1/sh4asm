@@ -15,6 +15,52 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"snipEncodeAssist":{
+		"prefix": "snipEncodeAssist",
+		"body":[
+				"\"$1.$2\": {",
+					"\"prefix\": \"${1}.${2}\"",
+					"\"body\": \"0x$3\"",
+				"},",
+		]
+	},
+	"teamEncodedListTable":{
+		"prefix": "teamListBasic",
+		"body": [
+			// $1{PlayerName}
+			// $2(PlayerID, [0x01-0x10])
+			// $3{nameID: [Ex.0] tvi}
+			";============================================================",
+			"; $1 Team List",
+			";------------------------------------------------------------",
+			"; Start Team : MSP",
+			"nameID_$2_TeamStart:",
+			"\t#data 0x2a ; Storm α",
+			"\t#data 0x2c ; Mags  α",
+			"\t#data 0x78 ; Psy   α",
+			"\t#data 0xFF 0xFF 0xFF ; Colors",
+			";------------------------------------------------------------",
+			"; A1 Team : Santhrax",
+			"nameID_${2}_TeamA1:",
+			"\t#data 0xb4 ; Sent   γ",
+			"\t#data 0x2a ; Storm  α",
+			"\t#data 0x78 ; CapCom β",
+			"\t#data 0xFF 0xFF 0xFF ; Colors",
+			";------------------------------------------------------------",
+			"; A2 Team : Scrub",
+			"nameID_${2}_TeamA2:",
+			"\t#data 0x57 ; Cable  β",
+			"\t#data 0x2a ; Sent   γ",
+			"\t#data 0x78 ; CapCom β",
+			"\t#data 0xFF 0xFF 0xFF ; Colors",
+			";============================================================",
+			"NameID_${2}_TeamList:",
+			"\t#data nameID_${2}_TeamStart ; nameID_${2}_TeamStart",
+			"\t#data nameID_${2}_TeamStart ; nameID_${2}_TeamA1",
+			"\t#data nameID_${2}_TeamStart ; nameID_${2}_TeamA2\n\n",
+		  ],
+	},
+	
 	"teamPointerTable": {
 		"prefix": "teamPtr",
 		"body": [
