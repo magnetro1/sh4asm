@@ -63,7 +63,7 @@ function activate(context) {
 	// Hover over a word to get a popup
 	vscode.languages.registerHoverProvider('sh4asm', {
 		provideHover(document, position) {
-			const range = document.getWordRangeAtPosition(position);
+			const range = document.getWordRangeAtPosition(position, /0x\d+\w+(?=.*char)|0x\d+\d+(?=.*char)/);
 			const word = document.getText(range).toLocaleLowerCase();
 			if (Object.keys(staticData.charHex2Names[word])) {
 				let hexPrefix = '0x';
@@ -102,19 +102,20 @@ function activate(context) {
 
 	});
 
-	// vscode.languages.registerHoverProvider('sh4asm', {
-	// 	provideHover(document, position, token) {
-	// 		const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
-	// 		const word = document.getText(range);
+	vscode.languages.registerHoverProvider('sh4asm', {
+		provideHover(document, position, token) {
+			let asmValue1 = "mov.l";
+			const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
+			const word = document.getText(range);
 
-	// 		if (word == asmValue1) {
-	// 			return new vscode.Hover({
-	// 				language: "sh4asm",
-	// 				value: "This moves a long (which is 4 bytes)"
-	// 			});
-	// 		}
-	// 	}
-	// });
+			if (word == asmValue1) {
+				return new vscode.Hover({
+					language: "sh4asm",
+					value: "This moves a long (which is 4 bytes)"
+				});
+			}
+		}
+	});
 }
 
 // This method is called when your extension is deactivated
