@@ -1,4 +1,4 @@
-const names = [
+const originalNames = [
     'Ryu', 'Zangief', 'Guile', 'Morrigan', 'Anakaris', 'Strider Hiryu', 'Cyclops', 'Wolverine', 'Psylocke', 'Iceman', 'Rogue', 'CaptainAmerica', 'Spider-Man', 'Hulk', 'Venom', 'Doctor Doom', 'Tron Bonne', 'Jill', 'Hayato', 'Ruby Heart', 'Sonson', 'Amingo', 'Marrow', 'Cable', 'Abyss-A', 'Abyss-B', 'Abyss-C', 'Chun-Li', 'Megaman', 'Roll', 'Akuma', 'B.B. Hood', 'Felicia', 'Charlie', 'Sakura', 'Dan', 'Cammy', 'Dhalsim', 'M.Bison', 'Ken', 'Gambit', 'Juggernaut', 'Storm', 'Sabretooth', 'Magneto', 'Shuma-Gorath', 'War Machine', 'Silver Samurai', 'Omega Red', 'Spiral', 'Colossus', 'Iron Man', 'Sentinel', 'Blackheart', 'Thanos', 'Jin', 'Captain Commando', 'Wolverine-B', 'Servbot'
 ];
 const aNames = [
@@ -22,68 +22,69 @@ const cAddresses = [
 ];
 
 // Make 0x addresses🌟
-// const assistA = [];
-// const assistB = [];
-// const assistC = [];
+const assistA = [];
+const assistB = [];
+const assistC = [];
 
 // for each runs on all the items in an array
 
-// addressesA.forEach((address) => {
-//     let base = parseInt(address, 16)
-//     let aA = '';
-//     let aB = '';
-//     let aC = '';
-//     aA = (base + 0).toString(16);
-//     aB = (base + 64).toString(16);
-//     aC = (base + 128).toString(16);
-//     assistA.push('0x' + aA)
-//     assistB.push('0x' + aB)
-//     assistC.push('0x' + aC)
-// });
-// console.log(assistA);
-// console.log(assistB);
-// console.log(assistC);
+aAddresses.forEach((address) => {
+    let base = parseInt(address, 16)
+    let aA = '';
+    let aB = '';
+    let aC = '';
+    aA = (base + 0).toString(16);
+    aB = (base + 64).toString(16);
+    aC = (base + 128).toString(16);
+    assistA.push('0x' + aA)
+    assistB.push('0x' + aB)
+    assistC.push('0x' + aC)
+});
+console.log('A-Addresses: ' + assistA);
+console.log('B-Addresses: ' + assistB);
+console.log('C-Addresses: ' + assistC);
 
 // Make names arrays 🌟
-// const namesA = []
-// const namesB = []
-// const namesC = []
-// names.forEach((name) => {
-//     namesA.push('A.' + name);
-//     namesB.push('B.' + name);
-//     namesC.push('C.' + name);
-// });
-// console.log(namesA);
-// console.log(namesB);
-// console.log(namesC);
+const namesA = []
+const namesB = []
+const namesC = []
+originalNames.forEach((name) => {
+    namesA.push('A.' + name);
+    namesB.push('B.' + name);
+    namesC.push('C.' + name);
+});
+console.log('A-Names: ' + namesA);
+console.log('B-Names: ' + namesB);
+console.log('C-Names: ' + namesC);
 
 // Make Final Snippets🌟
-// let resultA = '';
-// let resultB = '';
-// let resultC = '';
+let resultA = '';
+let resultB = '';
+let resultC = '';
 
 // a regular for-loop works since we have the same number of items in each array
 // the `` is the template literal syntax for a string. note the indentation
 // ${} is the syntax for injecting a variable into a template literal string
 
-// for (let i = 0; i < names.length; i++) {
-//     resultA +=
-//         `
-// "${aNames[i]}": {\r
-//     "prefix": "${aNames[i]}",\r
-//     "body": "${aAddresses[i]}"\r
-// },\r`
-//     resultB += `
-// "${bNames[i]}": {\r
-//     "prefix": "${bNames[i]}",\r
-//     "body": "${bAddresses[i]}"\r
-// },\r`
-//     resultC += `
-// "${cNames[i]}": {\r
-//     "prefix": "${cNames[i]}",\r
-//     "body": "${cAddresses[i]}"\r
-// },\r`
-// }
-// console.log(resultA);
-// console.log(resultB);
-// console.log(resultC);
+for (let i = 0; i < originalNames.length; i++) {
+    resultA +=
+        `
+"${aNames[i]}": {\r
+    "prefix": "${aNames[i]}",\r
+    "body": "${aAddresses[i]}"\r
+},\r`
+    resultB += `
+"${bNames[i]}": {\r
+    "prefix": "${bNames[i]}",\r
+    "body": "${bAddresses[i]}"\r
+},\r`
+    resultC += `
+"${cNames[i]}": {\r
+    "prefix": "${cNames[i]}",\r
+    "body": "${cAddresses[i]}"\r
+},\r`
+}
+console.log('Final Snippets:\n')
+console.log(resultA);
+console.log(resultB);
+console.log(resultC);
