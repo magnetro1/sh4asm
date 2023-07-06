@@ -7,30 +7,17 @@ const staticData = require('./sh4asm_staticData.js');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	// console.log('Congratulations, your extension "sh4asm" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('sh4asm.helloWorld', function () {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from sh4asm!');
 	});
 
-
 	/* 	
-
-	Making a new Command here. The command will wrap the selected text
+	The command will wrap the selected text
 	in a box using the '-' character multiple times.
 	this command is registered inside of the package.json file
 	under the "commands" array.
 	To use it, select some text, then press F1 or Ctrl+Shift+P
 	and type "Box Selection" and press enter. 
-	
 	*/
 
 	let box = vscode.commands.registerCommand('sh4asm.box', function () {
@@ -52,6 +39,32 @@ function activate(context) {
 			});
 		}
 	});
+
+	// // Auto-Complete variables (not working right)
+
+	// const MVC2GEN = staticData.MVC2GEN_CONSTANTS
+	// const MVC2GEN_ARRAY = [];
+	// for (let i = 0; i < MVC2GEN.length; i++) {
+	// 	MVC2GEN_ARRAY.push(MVC2GEN[i]);
+	// }
+	// const LANGUAGES = ['typescriptreact', 'typescript', 'javascript', 'javascriptreact', 'sh4asm', 'asm'];
+	// const suggestionsList = [];
+	// const triggers = [" "];
+
+	// const completionProvider = vscode.languages.registerCompletionItemProvider(LANGUAGES, {
+	// 	provideCompletionItems(document, position, token, context) {
+	// 		for (let genIDX = 0; genIDX < MVC2GEN_ARRAY.length; genIDX++) {
+	// 			const item = new vscode.CompletionItem(MVC2GEN_ARRAY[genIDX], vscode.CompletionItemKind.Constant,);
+	// 			// console.log(MVC2GEN_ARRAY[genIDX])
+	// 			suggestionsList.push(item);
+	// 		}
+	// 		// Put suggestionList into a set to remove duplicates
+	// 		let results = [...new Set(suggestionsList)];
+	// 		return results;
+	// 	}
+	// });
+
+	// context.subscriptions.push(completionProvider);
 
 	// Register the commands
 	context.subscriptions.push(box);
@@ -119,30 +132,7 @@ function activate(context) {
 		}
 	});
 
-	// Auto-Complete variables (not working right)
-	// const MVC2GEN = staticData.MVC2GEN_CONSTANTS
-	// const MVC2GEN_ARRAY = [];
-	// for (let i = 0; i < MVC2GEN.length; i++) {
-	// 	MVC2GEN_ARRAY.push(MVC2GEN[i]);
-	// }
-	// const LANGUAGES = ['typescriptreact', 'typescript', 'javascript', 'javascriptreact', 'sh4asm', 'asm'];
-	// const suggestionsList = [];
-	// const triggers = [" "];
 
-	// const completionProvider = vscode.languages.registerCompletionItemProvider(LANGUAGES, {
-	// 	provideCompletionItems(document, position, token, context) {
-	// 		for (let genIDX = 0; genIDX < MVC2GEN_ARRAY.length; genIDX++) {
-	// 			const item = new vscode.CompletionItem(MVC2GEN_ARRAY[genIDX], vscode.CompletionItemKind.Constant,);
-	// 			// console.log(MVC2GEN_ARRAY[genIDX])
-	// 			suggestionsList.push(item);
-	// 		}
-	// 		// Put suggestionList into a set to remove duplicates
-	// 		let results = [...new Set(suggestionsList)];
-	// 		return results;
-	// 	}
-	// });
-
-	// context.subscriptions.push(completionProvider);
 
 } // final place to add stuff
 

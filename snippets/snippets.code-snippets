@@ -15,16 +15,16 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"snipEncodeAssist":{
+	"snipEncodeAssist": {
 		"prefix": "snipEncodeAssist",
-		"body":[
-				"\"$1.$2\": {",
-					"\"prefix\": \"${1}.${2}\"",
-					"\"body\": \"0x$3\"",
-				"},",
+		"body": [
+			"\"$1.$2\": {",
+			"\"prefix\": \"${1}.${2}\"",
+			"\"body\": \"0x$3\"",
+			"},",
 		]
 	},
-	"teamEncodedListTable":{
+	"teamEncodedListTable": {
 		"prefix": "teamListBasic",
 		"body": [
 			";============================================================",
@@ -57,9 +57,8 @@
 			"    #data ${3}_${2}_TeamStart ; Start Team : ${4}",
 			"    #data ${3}_${2}_TeamA1    ;    A1 Team : ${5}",
 			"    #data ${3}_${2}_TeamA2    ;    A2 Team : ${6}",
-		  ],
+		],
 	},
-	
 	"teamPointerTable": {
 		"prefix": "teamPtr",
 		"body": [
@@ -107,6 +106,7 @@
 			"${1/(.)/\tcase \"$\":\n\t\t# code\n\t\tbreak;\n/g}}"
 		]
 	},
+	// A.Character List
 	"a.Ryu": {
 		"prefix": "a.Ryu",
 		"body": "0x00 ; Ryu α"
@@ -343,7 +343,7 @@
 		"prefix": "a.Servbot",
 		"body": "0x3a ; Servbot α"
 	},
-	
+	// End A.Character List
 	"b.Ryu": {
 		"prefix": "b.Ryu",
 		"body": "0x40 ; Ryu β"
@@ -580,7 +580,6 @@
 		"prefix": "b.Servbot",
 		"body": "0x7a ; Servbot β"
 	},
-	
 	"y.Ryu": {
 		"prefix": "y.Ryu",
 		"body": "0x80 ; Ryu γ"
