@@ -817,4 +817,49 @@
 		"prefix": "y.Servbot",
 		"body": "0xba ; Servbot γ"
 	},
+	"pLMem_s00_p1a_start": {
+		"prefix": "pLMem_s00_p1a_start",
+		"body": "0x8C268340  ; pLMem_s00_p1a_start"
+	},
+	"pLMem_s01_p2a_start": {
+		"prefix": "pLMem_s01_p2a_start",
+		"body": "0x8c2688e4  ; pLMem_s01_p2a_start"
+	},
+	"pLMem_s02_p1b_start": {
+		"prefix": "pLMem_s02_p1b_start",
+		"body": "0x8c268e88  ; pLMem_s02_p1b_start"
+	},
+	"pLMem_s03_p2b_start": {
+		"prefix": "pLMem_s03_p2b_start",
+		"body": "0x8c26942c  ; pLMem_s03_p2b_start"
+	},
+	"pLMem_s04_p1c_start": {
+		"prefix": "pLMem_s04_p1c_start",
+		"body": "0x8c2699d0  ; pLMem_s04_p1c_start"
+	},
+	"pLMem_s05_p2c_start": {
+		"prefix": "pLMem_s05_p2c_start",
+		"body": "0x8c269f74  ; pLMem_s05_p2c_start"
+	},
+	"plMem_controllerID_wordOffset_0x0524": {
+		"prefix": "plMem_controllerID_wordOffset_0x0524",
+		"body": "0x0524  ; plMem_controllerID_wordOffset_0x0524"
+	},
+	"plMem_charID_wordOffset_0x052c": {
+		"prefix": "plMem_charID_wordOffset_0x052c",
+		"body": "0x052c  ; plMem_charID_wordOffset_0x052c"
+	},
+	"plMem_paletteID_wordOffset_0x052d": {
+		"prefix": "plMem_charID_wordOffset_0x052d",
+		"body": "0x052d  ; plMem_charID_wordOffset_0x052d"
+	},
+	"plMem_blkSize": {
+		"prefix": "plMem_blkSize",
+		"body": "0x05a4  ; plMem_blkSize"
+	},
+	"plMem_paletteID_iOffset_0x25": {
+		"prefix": "plMem_paletteID_iOffset_0x25",
+		"body": "0x25,r$1  ; r${1} (plMem_paletteID_iOffset_0x25)"
+	}
+	
 }
