@@ -60,10 +60,11 @@ function activate(context) {
 
 	// const charThumbnailsPath = './supportMedia/characterThumbnails/';
 
-	// Hover over a word to get a popup
+	// Hover over 0xXX to get character name
 	vscode.languages.registerHoverProvider('sh4asm', {
 		provideHover(document, position) {
-			const range = document.getWordRangeAtPosition(position, /0x\d+\w+(?=.*char)|0x\d+\d+(?=.*char)/);
+			const range = document.getWordRangeAtPosition(position,
+				/0x\d+\w+(?=.*char)|0x\d+\d+(?=.*char)/);
 			const word = document.getText(range).toLocaleLowerCase();
 			if (Object.keys(staticData.charHex2Names[word])) {
 				let hexPrefix = '0x';
@@ -102,6 +103,7 @@ function activate(context) {
 
 	});
 
+	// Hover MOV.L definition
 	vscode.languages.registerHoverProvider('sh4asm', {
 		provideHover(document, position, token) {
 			let asmValue1 = "mov.l";
@@ -116,7 +118,33 @@ function activate(context) {
 			}
 		}
 	});
-}
+
+	// Auto-Complete variables (not working right)
+	// const MVC2GEN = staticData.MVC2GEN_CONSTANTS
+	// const MVC2GEN_ARRAY = [];
+	// for (let i = 0; i < MVC2GEN.length; i++) {
+	// 	MVC2GEN_ARRAY.push(MVC2GEN[i]);
+	// }
+	// const LANGUAGES = ['typescriptreact', 'typescript', 'javascript', 'javascriptreact', 'sh4asm', 'asm'];
+	// const suggestionsList = [];
+	// const triggers = [" "];
+
+	// const completionProvider = vscode.languages.registerCompletionItemProvider(LANGUAGES, {
+	// 	provideCompletionItems(document, position, token, context) {
+	// 		for (let genIDX = 0; genIDX < MVC2GEN_ARRAY.length; genIDX++) {
+	// 			const item = new vscode.CompletionItem(MVC2GEN_ARRAY[genIDX], vscode.CompletionItemKind.Constant,);
+	// 			// console.log(MVC2GEN_ARRAY[genIDX])
+	// 			suggestionsList.push(item);
+	// 		}
+	// 		// Put suggestionList into a set to remove duplicates
+	// 		let results = [...new Set(suggestionsList)];
+	// 		return results;
+	// 	}
+	// });
+
+	// context.subscriptions.push(completionProvider);
+
+} // final place to add stuff
 
 // This method is called when your extension is deactivated
 function deactivate() { }
