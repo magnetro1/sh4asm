@@ -1,0 +1,94 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.deactivate = exports.activate = void 0;
+const vscode = require("vscode");
+function activate(context) {
+    console.log('sh4asm-ts extension is now active!');
+    let disposable = vscode.commands.registerCommand('sh4asm-ts.helloWorld', () => {
+        vscode.window.showInformationMessage('Hello World from sh4asm-ts!');
+    });
+    let box = vscode.commands.registerCommand('sh4asm.box', function () {
+        // Get the active text editor
+        let editor = vscode.window.activeTextEditor;
+        if (editor) {
+            // Get the document, then the selection, then the text
+            let doc = editor.document;
+            let selection = editor.selection;
+            let txt = doc.getText(selection);
+            // Surround the selected text with box characters
+            let surroundChar = ';*************************************\n';
+            let boxText = txt.split('\n').map(str => {
+                return surroundChar + str + '\n' + surroundChar;
+            }).join('');
+            // Replace the selection with box text
+            editor.edit(editBuilder => {
+                editBuilder.replace(selection, boxText);
+            });
+        }
+    });
+    context.subscriptions.push(disposable);
+    context.subscriptions.push(box);
+    // for (let i = 0; i < staticData.characters_Hex_2_Names.length; i++) {
+    //   console.log(Object.keys(staticData.characters_Hex_2_Names[0]));
+    // }
+    // Hover over 0xXX to get character name
+    // vscode.languages.registerHoverProvider('sh4asm', {
+    //   provideHover(document, position) {
+    //     const range = document.getWordRangeAtPosition(position,
+    //       /0x\d+\w+(?=.*char)|0x\d+\d+(?=.*char)/);
+    //     const word = document.getText(range).toLocaleLowerCase();
+    //     if (Object.keys(staticData.characters_Hex_2_Names[word])) {
+    // let hexPrefix = '0x';
+    // let baseVal = parseInt(word, 16);
+    // let assistA: number | string = 0;
+    // let assistB: number | string = 0;
+    // let assistC: number | string = 0;
+    // assistA = baseVal.toString(16);
+    // // assistA = assistA.toString(16);
+    // assistB = baseVal + 64;
+    // assistB = assistB.toString(16);
+    // assistC = baseVal + 128;
+    // assistC = assistC.toString(16);
+    //       // let image = `${charThumbnailsPath}charID_${word}.jpg`
+    //       // console.log(image);
+    //       // // Add image to hover popup
+    //       // const content = new vscode.MarkdownString(`<img src="${image}"/>`);
+    //       // content.supportHtml = true;
+    //       // content.isTrusted = true;
+    //       // content.supportThemeIcons = true;  // to supports codicons
+    //       // content.baseUri = vscode.Uri.file(path.join(context.extensionPath, charThumbnailsPath, path.sep));
+    //       // return new vscode.Hover(content, new vscode.Range(position, position));
+    //     return new vscode.Hover(
+    //       {
+    //         language: "sh4asm",
+    //         value: `Name: ${staticData.characters_Hex_2_Names[word]} `
+    //           + `\nHex: ${word} `
+    //           + `\nDecimal: ${parseInt(word, 16)} `
+    //         // + `\nAssist - α: ${hexPrefix + assistA} `
+    //         // + `\nAssist - β: ${hexPrefix + assistB} `
+    //         // + `\nAssist - γ: ${hexPrefix + assistC} `
+    //         // + `\n\n${content}`
+    //       },
+    //     );
+    //   }
+    // }
+    // });
+    // // Hover MOV.L definition
+    // vscode.languages.registerHoverProvider('sh4asm', {
+    //   provideHover(document, position, token) {
+    //     let asmValue1 = "mov.l";
+    //     const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
+    //     const word = document.getText(range);
+    //     if (word == asmValue1) {
+    //       return new vscode.Hover({
+    //         language: "sh4asm",
+    //         value: "This moves a long (which is 4 bytes)"
+    //       });
+    //     }
+    //   }
+    // });
+}
+exports.activate = activate;
+function deactivate() { }
+exports.deactivate = deactivate;
+//# sourceMappingURL=extension.js.map
