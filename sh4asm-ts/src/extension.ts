@@ -90,11 +90,31 @@ export function activate(context: vscode.ExtensionContext) {
     async provideHover(document, position, token) {
       const range = document.getWordRangeAtPosition(position);
       const word = document.getText(range);
+      let hexPrefix = '0x';
+      let baseVal = parseInt(word, 16);
+      let assistA: number | string = 0;
+      let assistB: number | string = 0;
+      let assistC: number | string = 0;
+      assistA = baseVal.toString(16);
+      // assistA = assistA.toString(16);
+      assistB = baseVal + 64;
+      assistB = assistB.toString(16);
+      assistC = baseVal + 128;
+      assistC = assistC.toString(16);
 
-      if (word == "Ryu") {
+      // if (Object.keys(staticData.characters_Hex_2_Names[word])) {
+      // Check if the word matches a key from the characters_Hex_2_Names object
+      if (Object.keys(staticData.characters_Hex_2_Names).includes(word)) {
+        // if (word == "Ryu") {
         return new vscode.Hover({
           language: "sh4asm",
-          value: "This is the main character of the Street Fighter series"
+          value: `Name: ${staticData.characters_Hex_2_Names[word]} `
+            + `\nHex: ${word} `
+            + `\nDecimal: ${parseInt(word, 16)} `
+            + `\nAssist - α: ${word} `
+            + `\nAssist - β: ${hexPrefix + assistB} `
+            + `\nAssist - γ: ${hexPrefix + assistC} `
+          // + `\n\n${content}`
         });
       }
     }

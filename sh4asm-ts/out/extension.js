@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deactivate = exports.activate = void 0;
 const vscode = require("vscode");
+const staticData = require("./sh4asm_staticData");
 function activate(context) {
     let disposable = vscode.commands.registerCommand('sh4asm.helloWorld', () => {
         vscode.window.showInformationMessage('Hello World from sh4asm-ts! This is hard');
@@ -82,10 +83,30 @@ function activate(context) {
         async provideHover(document, position, token) {
             const range = document.getWordRangeAtPosition(position);
             const word = document.getText(range);
-            if (word == "Ryu") {
+            let hexPrefix = '0x';
+            let baseVal = parseInt(word, 16);
+            let assistA = 0;
+            let assistB = 0;
+            let assistC = 0;
+            assistA = baseVal.toString(16);
+            // assistA = assistA.toString(16);
+            assistB = baseVal + 64;
+            assistB = assistB.toString(16);
+            assistC = baseVal + 128;
+            assistC = assistC.toString(16);
+            // if (Object.keys(staticData.characters_Hex_2_Names[word])) {
+            // Check if the word matches a key from the characters_Hex_2_Names object
+            if (Object.keys(staticData.characters_Hex_2_Names).includes(word)) {
+                // if (word == "Ryu") {
                 return new vscode.Hover({
                     language: "sh4asm",
-                    value: "This is the main character of the Street Fighter series"
+                    value: `Name: ${staticData.characters_Hex_2_Names[word]} `
+                        + `\nHex: ${word} `
+                        + `\nDecimal: ${parseInt(word, 16)} `
+                        + `\nAssist - α: ${word} `
+                        + `\nAssist - β: ${hexPrefix + assistB} `
+                        + `\nAssist - γ: ${hexPrefix + assistC} `
+                    // + `\n\n${content}`
                 });
             }
         }
