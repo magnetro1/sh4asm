@@ -51,17 +51,19 @@ export function activate(context: vscode.ExtensionContext) {
       assistB = assistB.toString(16);
       assistC = baseVal + 128;
       assistC = assistC.toString(16);
-      let md = new vscode.MarkdownString();
-      md.baseUri = vscode.Uri.file(path.join(context.extensionPath, localPath, path.sep));
-      const imageHover = md.appendMarkdown(`![char](${md.baseUri}/charID_${word}.jpg)`);
-      const dataHover =
-        `\n\nName: ${staticData.characters_Hex_2_Names[word]} `
-        + `\n\nHex: ${word} `
-        + `\n\nDecimal: ${parseInt(word, 16)} `
-        + `\n\nAssist - α: ${word} `
-        + `\n\nAssist - β: ${hexPrefix + assistB} `
-        + `\n\nAssist - γ: ${hexPrefix + assistC} `;
-
+      let imageMD = new vscode.MarkdownString();
+      let dataMD = new vscode.MarkdownString();
+      imageMD.baseUri = vscode.Uri.file(path.join(context.extensionPath, localPath, path.sep));
+      const imageHover = imageMD.appendMarkdown(`![char](${imageMD.baseUri}/charID_${word}.jpg)`);
+      dataMD.appendMarkdown(
+        `\n\n\*Name:\* ${staticData.characters_Hex_2_Names[word]}`
+        + `\n\n\*Hex:\* ${word}`
+        + `\n\n\*Decimal:\* ${parseInt(word, 16)}`
+        + `\n\n\*Assist - α:\* ${word} `
+        + `\n\n\*Assist - β:\* ${hexPrefix + assistB}`
+        + `\n\n\*Assist - γ:\* ${hexPrefix + assistC}`
+      );
+      const dataHover = dataMD;
       if (Object.keys(staticData.characters_Hex_2_Names).includes(word)) {
         return new vscode.Hover(
           [imageHover, dataHover]

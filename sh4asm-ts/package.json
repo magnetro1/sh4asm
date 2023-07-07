@@ -2,7 +2,7 @@
   "name": "sh4asm-ts",
   "displayName": "sh4asm-ts",
   "description": "sh4 helper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Magnetro & TVIndustries",
   "license": "None",
   "repository": {
