@@ -1,5 +1,8 @@
 import * as vscode from 'vscode';
 import * as staticData from './sh4asm_staticData';
+import * as path from 'path';
+
+const localPath = 'supportMedia/characterThumbnails'
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -26,69 +29,16 @@ export function activate(context: vscode.ExtensionContext) {
       });
     }
   });
-  // // Hover over 0xXX to get character name
-  // vscode.languages.registerHoverProvider('sh4asm', {
-  //   provideHover(document, position) {
-  //     const range = document.getWordRangeAtPosition(position,
-  //       /0x\d+\w+(?=.*char)|0x\d+\d+(?=.*char)/);
-  //     const word = document.getText(range).toLocaleLowerCase();
-  //     console.log(word);
-  //     console.log(staticData.characters_Hex_2_Names[word]);
 
-  //     if (Object.keys(staticData.characters_Hex_2_Names[word])) {
-  //       console.log('found');
 
-  //       let hexPrefix = '0x';
-  //       let baseVal = parseInt(word, 16);
-  //       let assistA: number | string = 0;
-  //       let assistB: number | string = 0;
-  //       let assistC: number | string = 0;
-  //       assistA = baseVal.toString(16);
-  //       // assistA = assistA.toString(16);
-  //       assistB = baseVal + 64;
-  //       assistB = assistB.toString(16);
-  //       assistC = baseVal + 128;
-  //       assistC = assistC.toString(16);
-
-  //       // let image = `${charThumbnailsPath}charID_${word}.jpg`
-  //       // console.log(image);
-
-  //       // // Add image to hover popup
-  //       // const content = new vscode.MarkdownString(`<img src="${image}"/>`);
-  //       // content.supportHtml = true;
-  //       // content.isTrusted = true;
-  //       // content.supportThemeIcons = true;  // to supports codicons
-  //       // content.baseUri = vscode.Uri.file(path.join(context.extensionPath, charThumbnailsPath, path.sep));
-  //       // return new vscode.Hover(content, new vscode.Range(position, position));
-  //       return new vscode.Hover(
-  //         {
-  //           language: "sh4asm",
-  //           value: `Name: ${staticData.characters_Hex_2_Names[word]} `
-  //             + `\nHex: ${word} `
-  //             + `\nDecimal: ${parseInt(word, 16)} `
-  //           // + `\nAssist - α: ${hexPrefix + assistA} `
-  //           // + `\nAssist - β: ${hexPrefix + assistB} `
-  //           // + `\nAssist - γ: ${hexPrefix + assistC} `
-  //           // + `\n\n${content}`
-  //         },
-  //       );
-  //     }
-  //     else {
-  //       console.log('not found');
-
-  //     }
-  //   }
-  // });
   context.subscriptions.push(disposable);
   context.subscriptions.push(box);
 
-  // for (const [key, value] of Object.entries(staticData.characters_Hex_2_Names)) {
-  //   console.log(`${key}: ${value}`);
-  // }
 
   vscode.languages.registerHoverProvider('sh4asm', {
-    async provideHover(document, position, token) {
-      const range = document.getWordRangeAtPosition(position);
+    provideHover(document, position, token) {
+      const range = document.getWordRangeAtPosition(position,
+        /0x\d+\w+(?=.*char)|0x\d+\d+(?=.*char)/);
       const word = document.getText(range);
       let hexPrefix = '0x';
       let baseVal = parseInt(word, 16);
@@ -101,41 +51,31 @@ export function activate(context: vscode.ExtensionContext) {
       assistB = assistB.toString(16);
       assistC = baseVal + 128;
       assistC = assistC.toString(16);
+      let md = new vscode.MarkdownString();
+      md.baseUri = vscode.Uri.file(path.join(context.extensionPath, localPath, path.sep));
+      const imageHover = md.appendMarkdown(`![char](${md.baseUri}/charID_${word}.jpg)`);
+      const dataHover =
+        `\n\nName: ${staticData.characters_Hex_2_Names[word]} `
+        + `\n\nHex: ${word} `
+        + `\n\nDecimal: ${parseInt(word, 16)} `
+        + `\n\nAssist - α: ${word} `
+        + `\n\nAssist - β: ${hexPrefix + assistB} `
+        + `\n\nAssist - γ: ${hexPrefix + assistC} `;
 
-      // if (Object.keys(staticData.characters_Hex_2_Names[word])) {
-      // Check if the word matches a key from the characters_Hex_2_Names object
       if (Object.keys(staticData.characters_Hex_2_Names).includes(word)) {
-        // if (word == "Ryu") {
-        return new vscode.Hover({
-          language: "sh4asm",
-          value: `Name: ${staticData.characters_Hex_2_Names[word]} `
-            + `\nHex: ${word} `
-            + `\nDecimal: ${parseInt(word, 16)} `
-            + `\nAssist - α: ${word} `
-            + `\nAssist - β: ${hexPrefix + assistB} `
-            + `\nAssist - γ: ${hexPrefix + assistC} `
-          // + `\n\n${content}`
-        });
+        return new vscode.Hover(
+          [imageHover, dataHover]
+        );
       }
     }
   });
-  vscode.languages.registerHoverProvider(
-    [
-      'sh4asm',
-      "javascript",  // only this works
-      "typescript",
-      "javascriptreact",
-      "typescriptreact",
-      "json",
-      "jsonc",
-    ],
-    {
-      provideHover() {
-        const markdownString = new vscode.MarkdownString();
-        markdownString.appendText("Hello: https://github.com/microsoft/vscode/issues/142494")
-        return new vscode.Hover(markdownString);
-      }
-    })
+  // {
+  //   provideHover() {
+  //     const markdownString = new vscode.MarkdownString();
+  // markdownString.appendText("Hello: https://github.com/microsoft/vscode/issues/142494")
+  //     return new vscode.Hover(markdownString);
+  //   }
+  // })
 
   // Hover MOV.L definition
   // vscode.languages.registerHoverProvider('sh4asm', {
