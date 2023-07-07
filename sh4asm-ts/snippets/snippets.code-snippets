@@ -15,7 +15,6 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	
 	"headerBox": {
 		"prefix": "headerBox",
 		"body": [

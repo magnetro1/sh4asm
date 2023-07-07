@@ -2,7 +2,7 @@
   "name": "sh4asm-ts",
   "displayName": "sh4asm-ts",
   "description": "sh4 helper",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "Magnetro & TVIndustries",
   "license": "None",
   "repository": {
@@ -10,7 +10,7 @@
     "url": "https://github.com/magnetro1/sh4asm.git"
   },
   "engines": {
-    "vscode": "^1.79.0"
+    "vscode": "^1.22.0"
   },
   "categories": [
     "Other"
@@ -100,7 +100,7 @@
     "@types/glob": "^8.1.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "20.2.5",
-    "@types/vscode": "^1.79.0",
+    "@types/vscode": "^1.22.0",
     "@vscode/test-electron": "^2.3.2",
     "eslint": "^8.44.0",
     "glob": "^8.1.0",

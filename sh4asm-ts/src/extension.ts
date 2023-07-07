@@ -46,8 +46,6 @@ export function activate(context: vscode.ExtensionContext) {
       // let assistA: number | string = 0; // doesn't need to be calculated
       let assistB: number | string = 0;
       let assistC: number | string = 0;
-      // assistA = baseVal.toString(16);
-      // assistA = assistA.toString(16);
       assistB = baseVal + 64;
       assistB = assistB.toString(16);
       assistC = baseVal + 128;
@@ -55,17 +53,10 @@ export function activate(context: vscode.ExtensionContext) {
       // Create hover for character image
       let imageMD = new vscode.MarkdownString();
       imageMD.baseUri = vscode.Uri.file(path.join(context.extensionPath, thumbsPath, path.sep));
+      // let imageHover = imageMD.appendMarkdown(`<img src="${imageMD.baseUri}/charID_${word}.jpg" width="25">`);
+      // imageHover.supportHtml = true;
       let imageHover = imageMD.appendMarkdown(`![char](${imageMD.baseUri}/charID_${word}.jpg)`);
 
-      // let dataMD = new vscode.MarkdownString();
-      // dataMD.appendMarkdown(
-      //   `\n\n\*Name:\* ${staticData.characters_Hex_2_Names[word]}`
-      //   + `\n\n\*Hex:\* ${word}`
-      //   + `\n\n\*Decimal:\* ${parseInt(word, 16)}`
-      //   + `\n\n\*Assist - α:\* ${word}` // doesn't need to be calculated
-      //   + `\n\n\*Assist - β:\* ${hexPrefix + assistB}`
-      //   + `\n\n\*Assist - γ:\* ${hexPrefix + assistC}`
-      // );
       let dataMD = new vscode.MarkdownString();
       // Format the "Name" in bold
       dataMD.appendMarkdown(`\n\nName: ${staticData.characters_Hex_2_Names[word]}\n\n`);
@@ -87,20 +78,20 @@ export function activate(context: vscode.ExtensionContext) {
   });
 
   // Hover MOV.L definition
-  // vscode.languages.registerHoverProvider('sh4asm', {
-  //   provideHover(document, position, token) {
-  //     let asmValue1 = "mov.l";
-  //     const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
-  //     const word = document.getText(range);
+  vscode.languages.registerHoverProvider('sh4asm', {
+    provideHover(document, position, token) {
+      let asmValue1 = "mov.l";
+      const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
+      const word = document.getText(range);
 
-  //     if (word == asmValue1) {
-  //       return new vscode.Hover({
-  //         language: "sh4asm",
-  //         value: "This moves a long (which is 4 bytes)"
-  //       });
-  //     }
-  //   }
-  // });
+      if (word == asmValue1) {
+        return new vscode.Hover({
+          language: "sh4asm",
+          value: "This moves a long (which is 4 bytes)"
+        });
+      }
+    }
+  });
 
 }
 export function deactivate() { }
