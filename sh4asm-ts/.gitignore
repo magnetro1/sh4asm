@@ -1,3 +1,5 @@
-node_modules
 .vscode
-../sh4asm-js
+.vscode-test/**/*
+node_modules
+node_modules/**/*
+out/**

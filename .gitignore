@@ -1,1 +1,3 @@
-/sh4asm-js
+sh4asm-js
+/sh4asm-ts/src/test
+/sh4asm-ts/out
