@@ -35,6 +35,14 @@
       {
         "language": "sh4asm",
         "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "sh4asm",
+        "path": "./snippets/mvc2_plMemOffsets.code-snippets"
+      },
+      {
+        "language": "sh4asm",
+        "path": "./snippets/mvc2_encodedCharIDs.code-snippets"
       }
     ],
     "languages": [
