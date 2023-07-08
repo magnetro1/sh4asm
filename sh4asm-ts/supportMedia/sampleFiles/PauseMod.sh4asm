@@ -576,7 +576,7 @@ rematchMenu_p1_inputRead:
 	0x00 ; Ryu γ
     0x01
     Test~!
-    0xA0
+    0x0b ; char
     0x00 ; char
     0x01 ; char
     0x02 ; char

@@ -235,7 +235,6 @@
         "prefix": "a.Servbot",
         "body": "0x3a ; Servbot α"
     },
-
     "b.Ryu": {
         "prefix": "b.Ryu",
         "body": "0x40 ; Ryu β"
@@ -472,7 +471,6 @@
         "prefix": "b.Servbot",
         "body": "0x7a ; Servbot β"
     },
-
     "y.Ryu": {
         "prefix": "y.Ryu",
         "body": "0x80 ; Ryu γ"
@@ -709,58 +707,64 @@
         "prefix": "y.Servbot",
         "body": "0xba ; Servbot γ"
     },
-    "snipEncodeAssist":{
-		"prefix": "snipEncodeAssist",
-		"body":[
-				"\"$1.$2\": {",
-					"\"prefix\": \"${1}.${2}\"",
-					"\"body\": \"0x$3\"",
-				"},",
-		]
-	},
-	"teamEncodedListTable":{
-		"prefix": "teamListBasic",
-		"body": [
-			";============================================================",
-			"; $1 Team List",
-			";   name.ID:        $2, ",
-			";  name.Tag:      '$3',",
-			"; teamNames: [   '$4', '$5', '$6']",
-			";~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-			"${3}_${2}_TeamStart:",
-			";------------------------------------------------------------",
-			"; Start Team : ${4}",
-			"; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
-			"    ",
-			"    #data 0xFF 0xFF 0xFF ; Colors",
-			"${3}_${2}_TeamA1:",
-			";------------------------------------------------------------",
-			"; A1 Team : ${5}",
-			"; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
-			"    ",
-			"    #data 0xFF 0xFF 0xFF ; Colors",
-			"",
-			"${3}_${2}_TeamA2:",
-			";------------------------------------------------------------",
-			"; A2 Team : ${6}",
-			"; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
-			"    ",
-			"    #data 0xFF 0xFF 0xFF ; Colors",
-			";============================================================",
-			"${3}_${2}_TeamList:",
-			"    #data ${3}_${2}_TeamStart ; Start Team : ${4}",
-			"    #data ${3}_${2}_TeamA1    ;    A1 Team : ${5}",
-			"    #data ${3}_${2}_TeamA2    ;    A2 Team : ${6}",
-		  ],
-	},
-	
-	"teamPointerTable": {
-		"prefix": "teamPtr",
-		"body": [
-			"NameID_$1_TeamList:",
-			"\t#data 0x00000000 ; nameID_${1}_TeamStart",
-			"\t#data 0x00000000 ; nameID_${1}_TeamA1",
-			"\t#data 0x00000000 ; nameID_${1}_TeamA2\n\n",
-		]
-	}
+    "snipEncodeAssist": {
+        "prefix": "snipEncodeAssist",
+        "body": [
+            "\"$1.$2\": {",
+            "\"prefix\": \"${1}.${2}\"",
+            "\"body\": \"0x$3\"",
+            "},",
+        ]
+    },
+    "teamEncodedListTable": {
+        "prefix": "teamListBasic",
+        "body": [
+            ";============================================================",
+            "; $1 Team List",
+            ";   name.ID:        $2, ",
+            ";  name.Tag:      '$3',",
+            "; teamNames: [   '$4', '$5', '$6']",
+            ";~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+            "${3}_${2}_TeamStart:",
+            ";------------------------------------------------------------",
+            "; Start Team : ${4}",
+            "; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
+            "    ",
+            "    #data 0xFF 0xFF 0xFF ; Colors",
+            "${3}_${2}_TeamA1:",
+            ";------------------------------------------------------------",
+            "; A1 Team : ${5}",
+            "; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
+            "    ",
+            "    #data 0xFF 0xFF 0xFF ; Colors",
+            "",
+            "${3}_${2}_TeamA2:",
+            ";------------------------------------------------------------",
+            "; A2 Team : ${6}",
+            "; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
+            "    ",
+            "    #data 0xFF 0xFF 0xFF ; Colors",
+            ";============================================================",
+            "${3}_${2}_TeamList:",
+            "    #data ${3}_${2}_TeamStart ; Start Team : ${4}",
+            "    #data ${3}_${2}_TeamA1    ;    A1 Team : ${5}",
+            "    #data ${3}_${2}_TeamA2    ;    A2 Team : ${6}",
+        ],
+    },
+    "teamPointerTable": {
+        "prefix": "teamPtr",
+        "body": [
+            "NameID_$1_TeamList:",
+            "\t#data 0x00000000 ; nameID_${1}_TeamStart",
+            "\t#data 0x00000000 ; nameID_${1}_TeamA1",
+            "\t#data 0x00000000 ; nameID_${1}_TeamA2\n\n",
+        ]
+    },
+    // Print Index.
+    "Print": {
+        "prefix": "Print ",
+        "body": [
+            "Print ${CURSOR_INDEX}"
+        ]
+    },
 }
