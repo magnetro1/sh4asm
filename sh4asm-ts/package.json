@@ -64,6 +64,29 @@
           ".sh4"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "JavaScript",
+        "aliases": [
+          "javascript",
+          "JavaScript",
+          "javascriptreact",
+          "JavaScriptReact"
+        ],
+        "extensions": [
+          ".js",
+          ".es6",
+          ".jsx",
+          ".mjs",
+          ".cjs"
+        ],
+        "fileTypes": [
+          ".js",
+          ".es6",
+          ".jsx",
+          ".mjs",
+          ".cjs"
+        ]
       }
     ],
     "grammars": [
