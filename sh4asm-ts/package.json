@@ -76,7 +76,7 @@
     "themes": [
       {
         "id": "Dark+",
-        "label": "ASM_DARK+",
+        "label": "SH4-ASM DARK+",
         "fileTypes": [
           ".asm",
           ".sh4asm",
@@ -85,20 +85,7 @@
         "extension": ".asm",
         "language": "sh4asm",
         "uiTheme": "vs-dark",
-        "path": "./themes/sh4asm_darkPlus-themeExt-darkVS.json"
-      },
-      {
-        "id": "SH4ASM vsDark",
-        "label": "SH4 vsDark",
-        "fileTypes": [
-          ".asm",
-          ".sh4asm",
-          ".sh4"
-        ],
-        "extension": ".asm",
-        "language": "sh4asm",
-        "uiTheme": "vs-dark",
-        "path": "./themes/sh4asm_darkVs-themeBase.json"
+        "path": "./themes/sh4asm_darkPlus-themeBase.json"
       }
     ]
   },
