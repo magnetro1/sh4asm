@@ -4,7 +4,7 @@ import * as path from 'path';
 import { MVC2GEN_CONSTANTS } from './sh4asm_staticData';
 
 const thumbsPath = 'supportMedia/characterThumbnails'
-const fileTypes = ['sh4asm', 'json', 'txt', 'md', 'js'];
+const FILETYPES = ['json', 'txt', 'md', 'js', 'Javascript'];
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -96,7 +96,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   // Auto suggest completion using the MVC2GEN_CONSTANTS
 
-  vscode.languages.registerCompletionItemProvider('sh4asm', {
+  vscode.languages.registerCompletionItemProvider(FILETYPES, {
     provideCompletionItems(document, position, token, context) {
       let completionItems: vscode.CompletionItem[] = [];
       for (let key in MVC2GEN_CONSTANTS) {
