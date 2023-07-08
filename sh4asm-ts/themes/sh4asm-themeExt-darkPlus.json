@@ -1,6 +1,6 @@
 {
-	"name": "SH4-ASM DarkVs Extension",
-	"include":"./sh4asm_darkVs-themeBase.json",
+	"name": "SH4-ASM DarkPlus Extension",
+	"include":"./sh4asm_darkPlus-themeExt-darkVS.json",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#263238",
