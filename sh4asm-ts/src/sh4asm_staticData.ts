@@ -1,6 +1,6 @@
 // Make an object with string type for key and value
 // interface StringMap {[key: string]: string;}
-export const characters_Hex_2_Names: {[key: string]: string;} = {
+export const characters_Hex_2_Names: { [key: string]: string; } = {
   '0x00': 'Ryu',
   '0x01': 'Zangief',
   '0x02': 'Guile',
@@ -61,7 +61,7 @@ export const characters_Hex_2_Names: {[key: string]: string;} = {
   '0x39': 'Wolverine-B',
   '0x3a': 'Servbot'
 };
-export const MVC2GEN_CONSTANTS = [
+export const MVC2GEN_CONSTANTS: string[] = [
   // Names
   'Ryu',
   'Zangief',

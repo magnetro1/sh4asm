@@ -2,6 +2,15 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "SuperH-4 ASM",
 	"scopeName": "source.sh4asm",
+	"fileTypes": [
+		".sh4asm",
+		".asm"
+	],
+	"extensions": [
+		".sh4asm",
+		".asm"
+	],
+	"language": "sh4asm",
 	"patterns": [
 		{
 			"include": "#comments"
@@ -121,7 +130,6 @@
 					"match": "(;).*$\\n?",
 					"name": "comment.line.semicolon.sh4asm"
 				}
-				
 			]
 		},
 		"keywords": {

@@ -4,7 +4,9 @@ exports.deactivate = exports.activate = void 0;
 const vscode = require("vscode");
 const staticData = require("./sh4asm_staticData");
 const path = require("path");
+const sh4asm_staticData_1 = require("./sh4asm_staticData");
 const thumbsPath = 'supportMedia/characterThumbnails';
+const fileTypes = ['sh4asm', 'json', 'txt', 'md', 'js'];
 function activate(context) {
     let disposable = vscode.commands.registerCommand('sh4asm.helloWorld', () => {
         vscode.window.showInformationMessage('Hello World from sh4asm-ts!');
@@ -80,6 +82,20 @@ function activate(context) {
             }
         }
     });
+    // Auto suggest completion using the MVC2GEN_CONSTANTS
+    vscode.languages.registerCompletionItemProvider('Javascript', {
+        provideCompletionItems(document, position, token, context) {
+            let completionItems = [];
+            for (let key in sh4asm_staticData_1.MVC2GEN_CONSTANTS) {
+                let completionItem = new vscode.CompletionItem(sh4asm_staticData_1.MVC2GEN_CONSTANTS[key]);
+                completionItem.insertText = sh4asm_staticData_1.MVC2GEN_CONSTANTS[key];
+                completionItem.kind = vscode.CompletionItemKind.Text;
+                completionItems.push(completionItem);
+            }
+            return completionItems;
+        }
+        // invoke completionProvider
+    }, '.');
 }
 exports.activate = activate;
 function deactivate() { }

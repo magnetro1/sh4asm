@@ -576,6 +576,7 @@ rematchMenu_p1_inputRead:
 	0x00 ; Ryu γ
     0x01
     Test~!
+    
     0x0b ; char
     0x00 ; char
     0x01 ; char
@@ -1211,10 +1212,7 @@ APC02_AP_On:
 ; if p1
     mov.l @(APC_p1_paletteIDPicksLoc,PC),r9
     test
-0x00
-0x01
-'0x00'
-'0x01'
+
 writeSavedPaletteID:
     add r0,r9     ; offset by chrSlot
     mov.b @r9,r9  ; load saved paletteID
@@ -1499,8 +1497,6 @@ APC0A_exitJmp:
 0x36 ; char
 0x37 ; char
 0x38 ; char
-039
-'0x3a
 
 APC_ButtonMaskXYAB:
     #data 0x0360

@@ -416,50 +416,68 @@
         // COMMENTS
         // Team Comments
         {
-            "name":"comment.teams_name.sh4asm",
-            "scope":"comment.teams.name.sh4asm",
-            "settings":{ "foreground":"#569cd6" }
+            "name": "comment.teams_name.sh4asm",
+            "scope": "comment.teams.name.sh4asm",
+            "settings": {
+                "foreground": "#569cd6"
+            }
         },
         {
-            "name":"comment.teams_start_team.sh4asm",
-            "scope":"comment.teams.start_team.sh4asm",
-            "settings":{ "foreground":"#ff00d4" }
+            "name": "comment.teams_start_team.sh4asm",
+            "scope": "comment.teams.start_team.sh4asm",
+            "settings": {
+                "foreground": "#ff00d4"
+            }
         },
         {
-            "name":"comment.teams_a1_team.sh4asm",
-            "scope":"comment.teams.a1_team.sh4asm",
-            "settings":{ "foreground":"#ff8000" }
+            "name": "comment.teams_a1_team.sh4asm",
+            "scope": "comment.teams.a1_team.sh4asm",
+            "settings": {
+                "foreground": "#ff8000"
+            }
         },
         {
-            "name":"comment.teams_a2_team.sh4asm",
-            "scope":"comment.teams.a2_team.sh4asm",
-            "settings":{ "foreground":"#ffee00" }
+            "name": "comment.teams_a2_team.sh4asm",
+            "scope": "comment.teams.a2_team.sh4asm",
+            "settings": {
+                "foreground": "#ffee00"
+            }
         },
         // Assists Comments
         {
-            "name":"comment.teams.list_header.sh4asm",
-            "scope":"comment.teams.listHeader.sh4asm",
-            "settings":{ "foreground":"#00f2ff" }
+            "name": "comment.teams.list_header.sh4asm",
+            "scope": "comment.teams.listHeader.sh4asm",
+            "settings": {
+                "foreground": "#00f2ff"
+            }
         },
         {
-            "name":"comment.assist_beta.sh4asm",
-            "scope":"comment.assist.beta.sh4asm",
-            "settings":{ "foreground":"#00ff00" }
+            "name": "comment.assist_beta.sh4asm",
+            "scope": "comment.assist.beta.sh4asm",
+            "settings": {
+                "foreground": "#00ff00"
+            }
         },
         {
-            "name":"comment.assist_gamma.sh4asm",
-            "scope":"comment.assist.gamma.sh4asm",
-            "settings":{ "foreground":"#0066ff" }
+            "name": "comment.assist_gamma.sh4asm",
+            "scope": "comment.assist.gamma.sh4asm",
+            "settings": {
+                "foreground": "#d2dded"
+            }
         },
         {
-            "name":"comment.assist_alpha.sh4asm",
-            "scope":"comment.assist.alpha.sh4asm",
-            "settings":{ "foreground":"#ff00b3" }
+            "name": "comment.assist_alpha.sh4asm",
+            "scope": "comment.assist.alpha.sh4asm",
+            "settings": {
+                "foreground": "#ff00b3"
+            }
         },
         {
-            "name":"comment.character_name.sh4asm",
-            "scope":"comment.character.name.sh4asm",
-            "settings":{ "foreground":"#c97dff" }
+            "name": "comment.character_name.sh4asm",
+            "scope": "comment.character.name.sh4asm",
+            "settings": {
+                "foreground": "#c97dff"
+            }
         },
         // Keywords
         {

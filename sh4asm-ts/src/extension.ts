@@ -1,8 +1,10 @@
 import * as vscode from 'vscode';
 import * as staticData from './sh4asm_staticData';
 import * as path from 'path';
+import { MVC2GEN_CONSTANTS } from './sh4asm_staticData';
 
 const thumbsPath = 'supportMedia/characterThumbnails'
+const fileTypes = ['sh4asm', 'json', 'txt', 'md', 'js'];
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -91,6 +93,23 @@ export function activate(context: vscode.ExtensionContext) {
       }
     }
   });
+
+  // Auto suggest completion using the MVC2GEN_CONSTANTS
+
+  vscode.languages.registerCompletionItemProvider('Javascript', {
+    provideCompletionItems(document, position, token, context) {
+      let completionItems: vscode.CompletionItem[] = [];
+      for (let key in MVC2GEN_CONSTANTS) {
+        let completionItem = new vscode.CompletionItem(MVC2GEN_CONSTANTS[key]);
+        completionItem.insertText = MVC2GEN_CONSTANTS[key];
+        completionItem.kind = vscode.CompletionItemKind.Text;
+        completionItems.push(completionItem);
+      }
+      return completionItems;
+    }
+    // invoke completionProvider
+  }, '.');
+
 
 }
 export function deactivate() { }
