@@ -18,9 +18,6 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
-    "capbilities": {
-      "hovesrProvider": true
-    },
     "commands": [
       {
         "command": "sh4asm.helloWorld",

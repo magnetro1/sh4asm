@@ -96,7 +96,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   // Auto suggest completion using the MVC2GEN_CONSTANTS
 
-  vscode.languages.registerCompletionItemProvider(FILETYPES, {
+  vscode.languages.registerCompletionItemProvider({ scheme: 'file', language: 'javascript' }, {
     provideCompletionItems(document, position, token, context) {
       let completionItems: vscode.CompletionItem[] = [];
       for (let key in MVC2GEN_CONSTANTS) {
