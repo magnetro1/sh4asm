@@ -96,7 +96,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   // Auto suggest completion using the MVC2GEN_CONSTANTS
 
-  vscode.languages.registerCompletionItemProvider('Javascript', {
+  vscode.languages.registerCompletionItemProvider('sh4asm', {
     provideCompletionItems(document, position, token, context) {
       let completionItems: vscode.CompletionItem[] = [];
       for (let key in MVC2GEN_CONSTANTS) {

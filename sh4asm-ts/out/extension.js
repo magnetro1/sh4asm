@@ -83,7 +83,7 @@ function activate(context) {
         }
     });
     // Auto suggest completion using the MVC2GEN_CONSTANTS
-    vscode.languages.registerCompletionItemProvider('Javascript', {
+    vscode.languages.registerCompletionItemProvider('sh4asm', {
         provideCompletionItems(document, position, token, context) {
             let completionItems = [];
             for (let key in sh4asm_staticData_1.MVC2GEN_CONSTANTS) {
