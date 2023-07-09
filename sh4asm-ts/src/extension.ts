@@ -4,9 +4,11 @@ import * as path from "path";
 
 import { MVC2GEN_CONSTANTS } from "./sh4asm_staticData";
 import { ASM_DEF } from "./sh4asm_staticData";
+import { GlobalNames } from "./globalNames";
+
+
 
 const thumbsPath = "supportMedia/characterThumbnails";
-const FILETYPES = ["json", "txt", "md", "js", "Javascript"];
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand("sh4asm.helloWorld", () => {
@@ -115,20 +117,10 @@ export function activate(context: vscode.ExtensionContext) {
     },
   });
 
-  // // Display hover text using the contents from the ASM_DEF object
-  // vscode.languages.registerHoverProvider('sh4asm', {
-  //   provideHover(document, position, token) {
-  //     const range = document.getWordRangeAtPosition(position, /([a-zA-Z]+[a-zA-Z_\\_0-9]+)+:/);
-  //     const range2 = document.getWordRangeAtPosition(position, /#align\w+/);
-  //     const word = document.getText(range);
-  //     if (range) {
-  //       return new vscode.Hover('Custom label definition');
-  //     }
-  //     if (range2) {
-  //       return new vscode.Hover('ALIGN');
-  //     }
-  //   }
-  // });
+
+  const stringSuggestions = [];
+  const allGlobalNames = new GlobalNames().getGlobalNames();
+
   // Auto suggest completion using the MVC2GEN_CONSTANTS; for JS files
   vscode.languages.registerCompletionItemProvider({
       scheme: "file",

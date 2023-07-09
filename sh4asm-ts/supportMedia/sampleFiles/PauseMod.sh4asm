@@ -554,7 +554,6 @@ ptr_rematchMenu_p1_headerText:
 ;	#data pauseEditing_bank13.loc_8c136994   ; "%1d %s"
 rematch_p1Text_justString:
   #data pauseEditing_bank13.loc_8c13ecc8  ; "%s"
-y
 ;==============================================
 rematchMenu_p1_inputRead:
   sts.l pr,@-r15 ; prep
@@ -1921,7 +1920,9 @@ rematch_P2_Flags:
 
 ; 0x18
 
-
+P1_A_Action_Flags
+'P1_A_Health_Big'
+P1_A_Health_Big
 #align16
 rematchMenu_textItems:
   #data "YES (AUTOPICK)"

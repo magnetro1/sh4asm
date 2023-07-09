@@ -29,6 +29,17 @@
   },
   "tokenColors": [
     {
+      "name": "GlobalVariable",
+      "scope":
+      [
+        "GlobalVariable"
+      ],
+      "settings": {
+        "foreground": "#ff4747",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "Function declarations",
       "scope": [
         "entity.name.function",
