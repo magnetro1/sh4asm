@@ -1,7 +1,9 @@
 import * as vscode from 'vscode';
 import * as staticData from './sh4asm_staticData';
 import * as path from 'path';
+
 import { MVC2GEN_CONSTANTS } from './sh4asm_staticData';
+import { ASM_DEF } from './sh4asm_staticData';
 
 const thumbsPath = 'supportMedia/characterThumbnails'
 const FILETYPES = ['json', 'txt', 'md', 'js', 'Javascript'];
@@ -77,39 +79,63 @@ export function activate(context: vscode.ExtensionContext) {
       }
     }
   });
-
-  // Hover MOV.L definition
+  // Display hover text using the contents from the ASM_DEF object
+  // let labelHover = new RegExp(/[a-zA-Z]+[a-zA-Z_\\_0-9]+:/gi);
+  let labelHover = new RegExp(/#align\w+/g);
   vscode.languages.registerHoverProvider('sh4asm', {
     provideHover(document, position, token) {
-      let asmValue1 = "mov.l";
-      const range = document.getWordRangeAtPosition(position, /mov\.\w/); // a word can have a dot and a letter after it
+      const range = document.getWordRangeAtPosition(position);
+      const range2 = document.getWordRangeAtPosition(position, /([a-zA-Z]+[a-zA-Z_\\_0-9]+)+:/);
+      const range3 = document.getWordRangeAtPosition(position, /#align\w+/);
+      const range4 = document.getWordRangeAtPosition(position, /@\w+|@.*/);
       const word = document.getText(range);
-
-      if (word == asmValue1) {
-        return new vscode.Hover({
-          language: "sh4asm",
-          value: "This moves a long (which is 4 bytes)"
-        });
+      if (Object.keys(ASM_DEF).includes(word)) {
+        return new vscode.Hover(ASM_DEF[word]);
+      }
+      if (range2) {
+        return new vscode.Hover(ASM_DEF['label']);
+      }
+      if (range3) {
+        return new vscode.Hover(ASM_DEF['#align']);
+      }
+      if (range4) {
+        return new vscode.Hover(ASM_DEF['@']);
       }
     }
   });
 
-  // Auto suggest completion using the MVC2GEN_CONSTANTS
-
-  vscode.languages.registerCompletionItemProvider({ scheme: 'file', language: 'javascript' }, {
-    provideCompletionItems(document, position, token, context) {
-      let completionItems: vscode.CompletionItem[] = [];
-      for (let key in MVC2GEN_CONSTANTS) {
-        let completionItem = new vscode.CompletionItem(MVC2GEN_CONSTANTS[key]);
-        completionItem.insertText = MVC2GEN_CONSTANTS[key];
-        completionItem.kind = vscode.CompletionItemKind.Text;
-        completionItems.push(completionItem);
+  // // Display hover text using the contents from the ASM_DEF object
+  // vscode.languages.registerHoverProvider('sh4asm', {
+  //   provideHover(document, position, token) {
+  //     const range = document.getWordRangeAtPosition(position, /([a-zA-Z]+[a-zA-Z_\\_0-9]+)+:/);
+  //     const range2 = document.getWordRangeAtPosition(position, /#align\w+/);
+  //     const word = document.getText(range);
+  //     if (range) {
+  //       return new vscode.Hover('Custom label definition');
+  //     }
+  //     if (range2) {
+  //       return new vscode.Hover('ALIGN');
+  //     }
+  //   }
+  // });
+  // Auto suggest completion using the MVC2GEN_CONSTANTS; for JS files
+  vscode.languages.registerCompletionItemProvider(
+    {
+      scheme: 'file',
+      language: 'javascript'
+    },
+    {
+      provideCompletionItems(document, position, token, context) {
+        let completionItems: vscode.CompletionItem[] = [];
+        for (let key in MVC2GEN_CONSTANTS) {
+          let completionItem = new vscode.CompletionItem(MVC2GEN_CONSTANTS[key]);
+          completionItem.insertText = MVC2GEN_CONSTANTS[key];
+          completionItem.kind = vscode.CompletionItemKind.Text;
+          completionItems.push(completionItem);
+        }
+        return completionItems;
       }
-      return completionItems;
-    }
-    // invoke completionProvider
-  }, '.');
-
-
+    },
+    '.'); // triggered whenever any key is typed
 }
 export function deactivate() { }

@@ -4,7 +4,7 @@
   "description": "sh4 helper",
   "version": "0.0.5",
   "publisher": "Magnetro & TVIndustries",
-  "license": "None",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/magnetro1/sh4asm.git"

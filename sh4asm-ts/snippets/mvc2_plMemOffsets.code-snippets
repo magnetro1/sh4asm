@@ -1,46 +1,46 @@
 {
-    "pLMem_s00_p1a_start": {
-        "prefix": "pLMem_s00_p1a_start",
-        "body": "0x8C268340  ; pLMem_s00_p1a_start"
-    },
-    "pLMem_s01_p2a_start": {
-        "prefix": "pLMem_s01_p2a_start",
-        "body": "0x8c2688e4  ; pLMem_s01_p2a_start"
-    },
-    "pLMem_s02_p1b_start": {
-        "prefix": "pLMem_s02_p1b_start",
-        "body": "0x8c268e88  ; pLMem_s02_p1b_start"
-    },
-    "pLMem_s03_p2b_start": {
-        "prefix": "pLMem_s03_p2b_start",
-        "body": "0x8c26942c  ; pLMem_s03_p2b_start"
-    },
-    "pLMem_s04_p1c_start": {
-        "prefix": "pLMem_s04_p1c_start",
-        "body": "0x8c2699d0  ; pLMem_s04_p1c_start"
-    },
-    "pLMem_s05_p2c_start": {
-        "prefix": "pLMem_s05_p2c_start",
-        "body": "0x8c269f74  ; pLMem_s05_p2c_start"
-    },
-    "plMem_wordOffset_0x0524_controllerID": {
-        "prefix": "plMem_wordOffset_0x0524_controllerID",
-        "body": "0x0524  ; plMem_wordOffset_0x0524_controllerID"
-    },
-    "plMem_wordOffset_0x052c_charID": {
-        "prefix": "plMem_wordOffset_0x052c_charID",
-        "body": "0x052c  ; plMem_wordOffset_0x052c_charID"
-    },
-    "plMem_wordOffset_0x052d_paletteID": {
-        "prefix": "plMem_wordOffset_0x052d_paletteID",
-        "body": "0x052d  ; plMem_wordOffset_0x052d_paletteID"
-    },
-    "plMem_blkSize": {
-        "prefix": "plMem_blkSize",
-        "body": "0x05a4  ; plMem_blkSize"
-    },
-    "plMem_iOffset_0x25_paletteID": {
-        "prefix": "plMem_iOffset_0x25_paletteID",
-        "body": "0x25,r$1  ; r${1} (plMem_iOffset_0x25_paletteID)"
-    }
+  "pLMem_s00_p1a_start": {
+    "prefix": "pLMem_s00_p1a_start",
+    "body": "0x8C268340  ; pLMem_s00_p1a_start"
+  },
+  "pLMem_s01_p2a_start": {
+    "prefix": "pLMem_s01_p2a_start",
+    "body": "0x8c2688e4  ; pLMem_s01_p2a_start"
+  },
+  "pLMem_s02_p1b_start": {
+    "prefix": "pLMem_s02_p1b_start",
+    "body": "0x8c268e88  ; pLMem_s02_p1b_start"
+  },
+  "pLMem_s03_p2b_start": {
+    "prefix": "pLMem_s03_p2b_start",
+    "body": "0x8c26942c  ; pLMem_s03_p2b_start"
+  },
+  "pLMem_s04_p1c_start": {
+    "prefix": "pLMem_s04_p1c_start",
+    "body": "0x8c2699d0  ; pLMem_s04_p1c_start"
+  },
+  "pLMem_s05_p2c_start": {
+    "prefix": "pLMem_s05_p2c_start",
+    "body": "0x8c269f74  ; pLMem_s05_p2c_start"
+  },
+  "plMem_wordOffset_0x0524_controllerID": {
+    "prefix": "plMem_wordOffset_0x0524_controllerID",
+    "body": "0x0524  ; plMem_wordOffset_0x0524_controllerID"
+  },
+  "plMem_wordOffset_0x052c_charID": {
+    "prefix": "plMem_wordOffset_0x052c_charID",
+    "body": "0x052c  ; plMem_wordOffset_0x052c_charID"
+  },
+  "plMem_wordOffset_0x052d_paletteID": {
+    "prefix": "plMem_wordOffset_0x052d_paletteID",
+    "body": "0x052d  ; plMem_wordOffset_0x052d_paletteID"
+  },
+  "plMem_blkSize": {
+    "prefix": "plMem_blkSize",
+    "body": "0x05a4  ; plMem_blkSize"
+  },
+  "plMem_iOffset_0x25_paletteID": {
+    "prefix": "plMem_iOffset_0x25_paletteID",
+    "body": "0x25,r$1  ; r${1} (plMem_iOffset_0x25_paletteID)"
+  }
 }
