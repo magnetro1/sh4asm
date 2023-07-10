@@ -6,19 +6,19 @@ Syntax coloring and more for SH4-ASM language with specific features for Marvel 
 
 ### ASM Syntax highlighting using the SH4-ASM DARK+ theme
 
-![Syntax highlight](supportMedia\changeLog\Code_gwNu9xN6xy.png)
+![Syntax highlight](https://raw.githubusercontent.com/magnetro1/sh4asm/main/sh4asm-ts/supportMedia/changeLog/Code_gwNu9xN6xy.png)
 
 ### Various Snippets:
 
 #### Character addresses with assist offsets
-![assists](supportMedia\changeLog\Code_8Yd4wnmHS7.gif)
+![assists](https://raw.githubusercontent.com/magnetro1/sh4asm/main/sh4asm-ts/supportMedia/changeLog/Code_8Yd4wnmHS7.gif)
 #### Stage addresses by names
-![stages](supportMedia\changeLog\Code_QLfsRUibss.gif)
+![stages](https://raw.githubusercontent.com/magnetro1/sh4asm/main/sh4asm-ts/supportMedia/changeLog/Code_QLfsRUibss.gif)
 #### Get MvC2 addresses by name
-![addresses](supportMedia\changeLog\Code_d7I1QHctKq.gif)
+![addresses](https://raw.githubusercontent.com/magnetro1/sh4asm/main/sh4asm-ts/supportMedia/changeLog/Code_d7I1QHctKq.gif)
 ### Hover information for the characters and stages
 
 #### Uses `; char` at the end of a line to parse the character address value
-![char](supportMedia\changeLog\Code_DhUxJh8AJC.gif)
+![char](https://raw.githubusercontent.com/magnetro1/sh4asm/main/sh4asm-ts/supportMedia/changeLog/Code_DhUxJh8AJC.gif)
 #### Uses `; stage` at the end of a line to parse the character address value
-![stage](supportMedia\changeLog\Code_H41o3DiZHe.gif)
+![stage](https://raw.githubusercontent.com/magnetro1/sh4asm/main/sh4asm-ts/supportMedia/changeLog/Code_H41o3DiZHe.gif)
