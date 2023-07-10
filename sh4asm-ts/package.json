@@ -2,7 +2,7 @@
   "name": "sh4asm-ts",
   "displayName": "sh4asm-ts",
   "description": "sh4 helper",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "Magnetro & TVIndustries",
   "license": "MIT",
   "repository": {
@@ -44,6 +44,10 @@
       {
         "language": "sh4asm",
         "path": "./snippets/mvc2_RAMValues.code-snippets"
+      },
+      {
+        "language": "sh4asm",
+        "path": "./snippets/mvc2_Stages.code-snippets"
       }
     ],
     "languages": [

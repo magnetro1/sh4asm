@@ -624,4 +624,4 @@ for (let key in fullObj) {
   "body": "${fullObj[key]}"
 },\n`
 }
-console.log(snippetStr);
+console.log(snippetStr); // Copy this into a new snippet file.

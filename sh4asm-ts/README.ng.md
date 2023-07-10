@@ -6,19 +6,23 @@ Syntax coloring and more for SH4-ASM language with specific features for Marvel 
 
 ### ASM Syntax highlighting using the SH4-ASM DARK+ theme
 
-![Syntax highlight](supportMedia\changeLog\Code_gwNu9xN6xy.png)
+<img src="supportMedia\changeLog\Code_gwNu9xN6xy.png" alt="drawing" width="100">
 
 ### Various Snippets:
 
 #### Character addresses with assist offsets
-![assists](supportMedia\changeLog\Code_8Yd4wnmHS7.gif)
+<img src="supportMedia\changeLog\Code_8Yd4wnmHS7.gif" alt="drawing" width="275">
+
 #### Stage addresses by names
-![stages](supportMedia\changeLog\Code_QLfsRUibss.gif)
+<img src="supportMedia\changeLog\Code_QLfsRUibss.gif" alt="drawing" width="275">
+
 #### Get MvC2 addresses by name
-![addresses](supportMedia\changeLog\Code_d7I1QHctKq.gif)
+<img src="supportMedia\changeLog\Code_d7I1QHctKq.gif" alt="drawing" width="300">
+
 ### Hover information for the characters and stages
 
 #### Uses `; char` at the end of a line to parse the character address value
-![char](supportMedia\changeLog\Code_DhUxJh8AJC.gif)
+<img src="supportMedia\changeLog\Code_DhUxJh8AJC.gif" alt="drawing" width="200">
+
 #### Uses `; stage` at the end of a line to parse the character address value
-![stage](supportMedia\changeLog\Code_H41o3DiZHe.gif)
+<img src="supportMedia\changeLog\Code_H41o3DiZHe.gif" alt="drawing" width="250">

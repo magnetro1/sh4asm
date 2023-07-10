@@ -315,8 +315,29 @@ rematch_p1Text_someFunc:
 	jsr @r3
 	nop
     add 0x04,r15
+0x8C268E8E
+0x8C269602
+0x8C268575
+0x00 ; stage
+0x01 ; stage
+0x02 ; stage
+0x03 ; stage
+0x04 ; stage
+0x05 ; stage
+0x06 ; stage
+0x07 ; stage
+0x08 ; stage
+0x09 ; stage
+0x0A ; stage
+0x0B ; stage
+0x0C ; stage
+0x0d ; stage
+0x0E ; stage
+0x0F ; stage
+0x10 ; stage
 
 ; Row Start
+
 ;-------------------------------------------------    
 rematchMenu_p1_rowTextStart:
 	mov r13,r9   ; 
@@ -332,7 +353,6 @@ rematchMenu_p1_rowTextStart:
 	
     mov 0x00,r14
     ; r14 (loopColumn) = 0x00
-
 ; Column Start
 ;-------------------------------------------------    
 rematchMenu_p1_columnTextStart:

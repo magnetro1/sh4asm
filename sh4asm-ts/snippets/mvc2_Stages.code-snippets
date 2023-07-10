@@ -1,0 +1,70 @@
+{
+  "Boat2/Airship - Fog/Day": {
+    "prefix": "stage.Boat2/Airship - Fog/Day",
+    "body": "0x00 ; stage Boat2/Airship - Fog/Day"
+  },
+  "Desert1/Desert - Sunset": {
+    "prefix": "stage.Desert1/Desert - Sunset",
+    "body": "0x01 ; stage Desert1/Desert - Sunset"
+  },
+  "Factory/Dock": {
+    "prefix": "stage.Factory/Dock",
+    "body": "0x02 ; stage Factory/Dock"
+  },
+  "Carnival1/Carnival - Day": {
+    "prefix": "stage.Carnival1/Carnival - Day",
+    "body": "0x03 ; stage Carnival1/Carnival - Day"
+  },
+  "Bridge1/Swamp - Gray": {
+    "prefix": "stage.Bridge1/Swamp - Gray",
+    "body": "0x04 ; stage Bridge1/Swamp - Gray"
+  },
+  "Cave2/Cave - Water": {
+    "prefix": "stage.Cave2/Cave - Water",
+    "body": "0x05 ; stage Cave2/Cave - Water"
+  },
+  "Clock1/Clock - Winter": {
+    "prefix": "stage.Clock1/Clock - Winter",
+    "body": "0x06 ; stage Clock1/Clock - Winter"
+  },
+  "Raft2/Raft - Ice": {
+    "prefix": "stage.Raft2/Raft - Ice",
+    "body": "0x07 ; stage Raft2/Raft - Ice"
+  },
+  "Abyss/Form 1": {
+    "prefix": "stage.Abyss/Form 1",
+    "body": "0x08 ; stage Abyss/Form 1"
+  },
+  "Boat1/Airship - Night": {
+    "prefix": "stage.Boat1/Airship - Night",
+    "body": "0x09 ; stage Boat1/Airship - Night"
+  },
+  "Desert2/Desert - Day": {
+    "prefix": "stage.Desert2/Desert - Day",
+    "body": "0x0a ; stage Desert2/Desert - Day"
+  },
+  "Training": {
+    "prefix": "stage.Training",
+    "body": "0x0b ; stage Training"
+  },
+  "Carnival2/Carnival - Night": {
+    "prefix": "stage.Carnival2/Carnival - Night",
+    "body": "0x0c ; stage Carnival2/Carnival - Night"
+  },
+  "Bridge2/Swamp - Pink": {
+    "prefix": "stage.Bridge2/Swamp - Pink",
+    "body": "0x0d ; stage Bridge2/Swamp - Pink"
+  },
+  "Cave1/Cave - Lava": {
+    "prefix": "stage.Cave1/Cave - Lava",
+    "body": "0x0e ; stage Cave1/Cave - Lava"
+  },
+  "Clock2/Clock - Spring": {
+    "prefix": "stage.Clock2/Clock - Spring",
+    "body": "0x0f ; stage Clock2/Clock - Spring"
+  },
+  "Raft1/Raft - Water": {
+    "prefix": "stage.Raft1/Raft - Water",
+    "body": "0x10 ; stage Raft1/Raft - Water"
+  },
+}

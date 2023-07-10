@@ -3,11 +3,13 @@ import * as staticData from "./sh4asm_staticData";
 import * as path from "path";
 
 import { MVC2GEN_CONSTANTS } from "./sh4asm_staticData";
+import { stages_Hex_2_Names } from "./sh4asm_staticData";
 import { ASM_DEF } from "./sh4asm_staticData";
 
 
 
 const thumbsPath = "supportMedia/characterThumbnails";
+const stagesPath = "supportMedia/stagesThumbnails";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand("sh4asm.helloWorld", () => {
@@ -39,7 +41,30 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(disposable);
   context.subscriptions.push(box);
+  // Hover stage definition
+  vscode.languages.registerHoverProvider("sh4asm", {
+    provideHover(document, position, token) {
+      const range = document.getWordRangeAtPosition(position, /0x0[a-zA-Z](?=.*stage)|0x\d+\w+(?=.*stage)|0x\d+\d+(?=.*stage)/);
+      const word = document.getText(range).toLocaleLowerCase();
+      // Create hover for stage image
+      const imageMD = new vscode.MarkdownString();
+      imageMD.baseUri = vscode.Uri.file(
+        path.join(context.extensionPath, stagesPath, path.sep)
+      );
+      let imageHover = imageMD.appendMarkdown(`![stage](${imageMD.baseUri}/${word}_thumb.png)`
+      );
+      let dataMD = new vscode.MarkdownString();
+      dataMD.appendMarkdown(`\n\nName: ${stages_Hex_2_Names[word]}\n\n`);
+      dataMD.appendCodeblock(`Hex: ${word}`, "sh4asm");
+      dataMD.appendCodeblock(`Decimal: ${parseInt(word, 16)}`, "sh4asm");
+      const dataHover = dataMD;
 
+      // Return hover if stage is found
+      if (Object.keys(staticData.characters_Hex_2_Names).includes(word)) {
+        return new vscode.Hover([imageHover, dataHover]);
+      }
+    }
+  });
   // Hover character definition
   vscode.languages.registerHoverProvider("sh4asm", {
     provideHover(document, position, token) {
@@ -70,7 +95,6 @@ export function activate(context: vscode.ExtensionContext) {
       );
 
       let dataMD = new vscode.MarkdownString();
-      // Format the "Name" in bold
       dataMD.appendMarkdown(
         `\n\nName: ${staticData.characters_Hex_2_Names[word]}\n\n`
       );
