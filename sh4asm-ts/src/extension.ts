@@ -4,7 +4,6 @@ import * as path from "path";
 
 import { MVC2GEN_CONSTANTS } from "./sh4asm_staticData";
 import { ASM_DEF } from "./sh4asm_staticData";
-import { GlobalNames } from "./globalNames";
 
 
 
@@ -81,7 +80,7 @@ export function activate(context: vscode.ExtensionContext) {
       dataMD.appendCodeblock(`Assist - α: ${word}`, "sh4asm");
       dataMD.appendCodeblock(`Assist - β: ${hexPrefix + assistB}`, "sh4asm");
       dataMD.appendCodeblock(`Assist - γ: ${hexPrefix + assistC}`, "sh4asm");
- 
+
       // dataMD.appendMarkdown(`\n\n\*Name:\* ${staticData.characters_Hex_2_Names[word]}`);
       const dataHover = dataMD;
       if (Object.keys(staticData.characters_Hex_2_Names).includes(word)) {
@@ -91,7 +90,6 @@ export function activate(context: vscode.ExtensionContext) {
   });
   // Display hover text using the contents from the ASM_DEF object
   // let labelHover = new RegExp(/[a-zA-Z]+[a-zA-Z_\\_0-9]+:/gi);
-  let labelHover = new RegExp(/#align\w+/g);
   vscode.languages.registerHoverProvider("sh4asm", {
     provideHover(document, position, token) {
       const range = document.getWordRangeAtPosition(position);
@@ -117,15 +115,11 @@ export function activate(context: vscode.ExtensionContext) {
     },
   });
 
-
-  const stringSuggestions = [];
-  const allGlobalNames = new GlobalNames().getGlobalNames();
-
   // Auto suggest completion using the MVC2GEN_CONSTANTS; for JS files
   vscode.languages.registerCompletionItemProvider({
-      scheme: "file",
-      language: "javascript",
-    },
+    scheme: "file",
+    language: "javascript",
+  },
     {
       provideCompletionItems(document, position, token, context) {
         let completionItems: vscode.CompletionItem[] = [];
@@ -143,4 +137,4 @@ export function activate(context: vscode.ExtensionContext) {
     "."
   );
 }
-export function deactivate() {}
+export function deactivate() { }
