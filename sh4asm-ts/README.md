@@ -4,8 +4,9 @@ Syntax coloring and more for SH4-ASM language with specific features for Marvel 
 
 ## Installation
 
-Drag and drop the VSIX file into VSCode or use the Extensions menu to install it.
-![directions](https://raw.githubusercontent.com/magnetro1/sh4asm/main/sh4asm-ts/supportMedia/Code_ts0vyHyJo7.gif). 
+### Drag and drop the VSIX file into VSCode or use the Extensions menu to install it.
+
+![directions](https://raw.githubusercontent.com/magnetro1/sh4asm/main/sh4asm-ts/supportMedia//changeLog/Code_ts0vyHyJo7.gif). 
 
 ## Features
 
