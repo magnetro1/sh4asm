@@ -40,6 +40,10 @@
       {
         "language": "sh4asm",
         "path": "./snippets/mvc2_encodedCharIDs.code-snippets"
+      },
+      {
+        "language": "sh4asm",
+        "path": "./snippets/mvc2_RAMValues.code-snippets"
       }
     ],
     "languages": [
@@ -106,6 +110,7 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
+    "clipboardy": "^3.0.0",
     "vsce": "^2.15.0"
   }
 }

@@ -1,5 +1,5 @@
 const csvString =
-  `Description	Address	Type	Base	Offset
+  `
 Bison_214kk_Timer
 P1_A_Bison_214kk_Timer	0x8C2685EE	2 Byte	0x8C268340	0x2AE
 P1_B_Bison_214kk_Timer	0x8C269136	2 Byte	0x8C268E88	0x2AE
@@ -594,4 +594,34 @@ P1_B_Walking	0x8C26905B	Byte	0x8C268E88	0x1D3
 P1_C_Walking	0x8C269BA3	Byte	0x8C2699D0	0x1D3
 P2_A_Walking	0x8C268AB7	Byte	0x8C2688E4	0x1D3
 P2_B_Walking	0x8C2695FF	Byte	0x8C26948C	0x1D3
-P2_C_Walking	0x8C26A147	Byte	0x8C269F74	0x1D3`
+P2_C_Walking	0x8C26A147	Byte	0x8C269F74	0x1D3
+`
+
+let mainRegex = new RegExp(/(^\w+)\t(0x\w+)/gm);
+let descriptionsArr = [];
+let addressesArr = [];
+let matchTemp;
+
+while (matchTemp = mainRegex.exec(csvString)) {
+  descriptionsArr.push(matchTemp[1]);
+  addressesArr.push(matchTemp[2]);
+}
+// console.log(descripti onsArr + '\n' + addressesArr);
+
+// Make an object named after each description and assign it the address.
+let fullObj = {};
+descriptionsArr.forEach((description, index) => {
+  fullObj[description] = addressesArr[index];
+});
+// console.log(fullObj);
+
+let snippetStr = '';
+
+// Make a snippet for each key and value in the fullObj
+for (let key in fullObj) {
+  snippetStr += `"${key}": {
+  "prefix": "${key}",
+  "body": "${fullObj[key]}"
+},\n`
+}
+console.log(snippetStr);

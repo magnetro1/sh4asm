@@ -1,0 +1,2042 @@
+{
+  "P1_A_Bison_214kk_Timer": {
+    "prefix": "P1_A_Bison_214kk_Timer",
+    "body": "0x8C2685EE"
+  },
+  "P1_B_Bison_214kk_Timer": {
+    "prefix": "P1_B_Bison_214kk_Timer",
+    "body": "0x8C269136"
+  },
+  "P1_C_Bison_214kk_Timer": {
+    "prefix": "P1_C_Bison_214kk_Timer",
+    "body": "0x8C269C7E"
+  },
+  "P2_A_Bison_214kk_Timer": {
+    "prefix": "P2_A_Bison_214kk_Timer",
+    "body": "0x8C268B92"
+  },
+  "P2_B_Bison_214kk_Timer": {
+    "prefix": "P2_B_Bison_214kk_Timer",
+    "body": "0x8C2696DA"
+  },
+  "P2_C_Bison_214kk_Timer": {
+    "prefix": "P2_C_Bison_214kk_Timer",
+    "body": "0x8C26A222"
+  },
+  "P1_A_Dhalsim_214kk_Timer": {
+    "prefix": "P1_A_Dhalsim_214kk_Timer",
+    "body": "0x8C2685EC"
+  },
+  "P1_B_Dhalsim_214kk_Timer": {
+    "prefix": "P1_B_Dhalsim_214kk_Timer",
+    "body": "0x8C269134"
+  },
+  "P1_C_Dhalsim_214kk_Timer": {
+    "prefix": "P1_C_Dhalsim_214kk_Timer",
+    "body": "0x8C269C7C"
+  },
+  "P2_A_Dhalsim_214kk_Timer": {
+    "prefix": "P2_A_Dhalsim_214kk_Timer",
+    "body": "0x8C268B90"
+  },
+  "P2_B_Dhalsim_214kk_Timer": {
+    "prefix": "P2_B_Dhalsim_214kk_Timer",
+    "body": "0x8C2696D8"
+  },
+  "P2_C_Dhalsim_214kk_Timer": {
+    "prefix": "P2_C_Dhalsim_214kk_Timer",
+    "body": "0x8C26A220"
+  },
+  "P1_A_Doom_214kk_Timer": {
+    "prefix": "P1_A_Doom_214kk_Timer",
+    "body": "0x8C2685EE"
+  },
+  "P1_B_Doom_214kk_Timer": {
+    "prefix": "P1_B_Doom_214kk_Timer",
+    "body": "0x8C269136"
+  },
+  "P1_C_Doom_214kk_Timer": {
+    "prefix": "P1_C_Doom_214kk_Timer",
+    "body": "0x8C269C7E"
+  },
+  "P2_A_Doom_214kk_Timer": {
+    "prefix": "P2_A_Doom_214kk_Timer",
+    "body": "0x8C268B92"
+  },
+  "P2_B_Doom_214kk_Timer": {
+    "prefix": "P2_B_Doom_214kk_Timer",
+    "body": "0x8C2696DA"
+  },
+  "P2_C_Doom_214kk_Timer": {
+    "prefix": "P2_C_Doom_214kk_Timer",
+    "body": "0x8C26A222"
+  },
+  "P1_A_Iron_Man_214kk_Timer": {
+    "prefix": "P1_A_Iron_Man_214kk_Timer",
+    "body": "0x8C2685E8"
+  },
+  "P1_B_Iron_Man_214kk_Timer": {
+    "prefix": "P1_B_Iron_Man_214kk_Timer",
+    "body": "0x8C269130"
+  },
+  "P1_C_Iron_Man_214kk_Timer": {
+    "prefix": "P1_C_Iron_Man_214kk_Timer",
+    "body": "0x8C269C78"
+  },
+  "P2_A_Iron_Man_214kk_Timer": {
+    "prefix": "P2_A_Iron_Man_214kk_Timer",
+    "body": "0x8C268B8C"
+  },
+  "P2_B_Iron_Man_214kk_Timer": {
+    "prefix": "P2_B_Iron_Man_214kk_Timer",
+    "body": "0x8C2696D4"
+  },
+  "P2_C_Iron_Man_214kk_Timer": {
+    "prefix": "P2_C_Iron_Man_214kk_Timer",
+    "body": "0x8C26A21C"
+  },
+  "P1_A_Magneto_214kk_Timer": {
+    "prefix": "P1_A_Magneto_214kk_Timer",
+    "body": "0x8C2685EA"
+  },
+  "P1_B_Magneto_214kk_Timer": {
+    "prefix": "P1_B_Magneto_214kk_Timer",
+    "body": "0x8C269132"
+  },
+  "P1_C_Magneto_214kk_Timer": {
+    "prefix": "P1_C_Magneto_214kk_Timer",
+    "body": "0x8C269C7A"
+  },
+  "P2_A_Magneto_214kk_Timer": {
+    "prefix": "P2_A_Magneto_214kk_Timer",
+    "body": "0x8C268B8E"
+  },
+  "P2_B_Magneto_214kk_Timer": {
+    "prefix": "P2_B_Magneto_214kk_Timer",
+    "body": "0x8C2696D6"
+  },
+  "P2_C_Magneto_214kk_Timer": {
+    "prefix": "P2_C_Magneto_214kk_Timer",
+    "body": "0x8C26A21E"
+  },
+  "P1_A_Sentinel_214kk_Timer": {
+    "prefix": "P1_A_Sentinel_214kk_Timer",
+    "body": "0x8C2685E4"
+  },
+  "P1_B_Sentinel_214kk_Timer": {
+    "prefix": "P1_B_Sentinel_214kk_Timer",
+    "body": "0x8C26918C"
+  },
+  "P1_C_Sentinel_214kk_Timer": {
+    "prefix": "P1_C_Sentinel_214kk_Timer",
+    "body": "0x8C269C74"
+  },
+  "P2_A_Sentinel_214kk_Timer": {
+    "prefix": "P2_A_Sentinel_214kk_Timer",
+    "body": "0x8C268B88"
+  },
+  "P2_B_Sentinel_214kk_Timer": {
+    "prefix": "P2_B_Sentinel_214kk_Timer",
+    "body": "0x8C2696D0"
+  },
+  "P2_C_Sentinel_214kk_Timer": {
+    "prefix": "P2_C_Sentinel_214kk_Timer",
+    "body": "0x8C26A218"
+  },
+  "P1_A_Storm_214kk_Timer": {
+    "prefix": "P1_A_Storm_214kk_Timer",
+    "body": "0x8C2685F4"
+  },
+  "P1_B_Storm_214kk_Timer": {
+    "prefix": "P1_B_Storm_214kk_Timer",
+    "body": "0x8C26913C"
+  },
+  "P1_C_Storm_214kk_Timer": {
+    "prefix": "P1_C_Storm_214kk_Timer",
+    "body": "0x8C269C84"
+  },
+  "P2_A_Storm_214kk_Timer": {
+    "prefix": "P2_A_Storm_214kk_Timer",
+    "body": "0x8C268B98"
+  },
+  "P2_B_Storm_214kk_Timer": {
+    "prefix": "P2_B_Storm_214kk_Timer",
+    "body": "0x8C2696E0"
+  },
+  "P2_C_Storm_214kk_Timer": {
+    "prefix": "P2_C_Storm_214kk_Timer",
+    "body": "0x8C26A228"
+  },
+  "P1_A_War_Machine_214kk_Timer": {
+    "prefix": "P1_A_War_Machine_214kk_Timer",
+    "body": "0x8C2685E8"
+  },
+  "P1_B_War_Machine_214kk_Timer": {
+    "prefix": "P1_B_War_Machine_214kk_Timer",
+    "body": "0x8C269130"
+  },
+  "P1_C_War_Machine_214kk_Timer": {
+    "prefix": "P1_C_War_Machine_214kk_Timer",
+    "body": "0x8C269C78"
+  },
+  "P2_A_War_Machine_214kk_Timer": {
+    "prefix": "P2_A_War_Machine_214kk_Timer",
+    "body": "0x8C268B8C"
+  },
+  "P2_B_War_Machine_214kk_Timer": {
+    "prefix": "P2_B_War_Machine_214kk_Timer",
+    "body": "0x8C2696D4"
+  },
+  "P2_C_War_Machine_214kk_Timer": {
+    "prefix": "P2_C_War_Machine_214kk_Timer",
+    "body": "0x8C26A21C"
+  },
+  "P1_A_X_Gravity": {
+    "prefix": "P1_A_X_Gravity",
+    "body": "0x8C2683A8"
+  },
+  "P1_B_X_Gravity": {
+    "prefix": "P1_B_X_Gravity",
+    "body": "0x8C268EF0"
+  },
+  "P1_C_X_Gravity": {
+    "prefix": "P1_C_X_Gravity",
+    "body": "0x8C269A38"
+  },
+  "P2_A_X_Gravity": {
+    "prefix": "P2_A_X_Gravity",
+    "body": "0x8C26894C"
+  },
+  "P2_B_X_Gravity": {
+    "prefix": "P2_B_X_Gravity",
+    "body": "0x8C269494"
+  },
+  "P2_C_X_Gravity": {
+    "prefix": "P2_C_X_Gravity",
+    "body": "0x8C269FDC"
+  },
+  "P1_A_Y_Gravity": {
+    "prefix": "P1_A_Y_Gravity",
+    "body": "0x8C2683AC"
+  },
+  "P1_B_Y_Gravity": {
+    "prefix": "P1_B_Y_Gravity",
+    "body": "0x8C268EF4"
+  },
+  "P1_C_Y_Gravity": {
+    "prefix": "P1_C_Y_Gravity",
+    "body": "0x8C269A3C"
+  },
+  "P2_A_Y_Gravity": {
+    "prefix": "P2_A_Y_Gravity",
+    "body": "0x8C268950"
+  },
+  "P2_B_Y_Gravity": {
+    "prefix": "P2_B_Y_Gravity",
+    "body": "0x8C269498"
+  },
+  "P2_C_Y_Gravity": {
+    "prefix": "P2_C_Y_Gravity",
+    "body": "0x8C269FE0"
+  },
+  "P1_A_X_Position_From_Enemy": {
+    "prefix": "P1_A_X_Position_From_Enemy",
+    "body": "0x8C2685D8"
+  },
+  "P1_B_X_Position_From_Enemy": {
+    "prefix": "P1_B_X_Position_From_Enemy",
+    "body": "0x8C269120"
+  },
+  "P1_C_X_Position_From_Enemy": {
+    "prefix": "P1_C_X_Position_From_Enemy",
+    "body": "0x8C269C68"
+  },
+  "P2_A_X_Position_From_Enemy": {
+    "prefix": "P2_A_X_Position_From_Enemy",
+    "body": "0x8C268B7C"
+  },
+  "P2_B_X_Position_From_Enemy": {
+    "prefix": "P2_B_X_Position_From_Enemy",
+    "body": "0x8C2696C4"
+  },
+  "P2_C_X_Position_From_Enemy": {
+    "prefix": "P2_C_X_Position_From_Enemy",
+    "body": "0x8C26A20C"
+  },
+  "P1_A_Y_Position_From_Enemy": {
+    "prefix": "P1_A_Y_Position_From_Enemy",
+    "body": "0x8C2687CC"
+  },
+  "P1_B_Y_Position_From_Enemy": {
+    "prefix": "P1_B_Y_Position_From_Enemy",
+    "body": "0x8C269314"
+  },
+  "P1_C_Y_Position_From_Enemy": {
+    "prefix": "P1_C_Y_Position_From_Enemy",
+    "body": "0x8C269E5C"
+  },
+  "P2_A_Y_Position_From_Enemy": {
+    "prefix": "P2_A_Y_Position_From_Enemy",
+    "body": "0x8C268D70"
+  },
+  "P2_B_Y_Position_From_Enemy": {
+    "prefix": "P2_B_Y_Position_From_Enemy",
+    "body": "0x8C2698B8"
+  },
+  "P2_C_Y_Position_From_Enemy": {
+    "prefix": "P2_C_Y_Position_From_Enemy",
+    "body": "0x8C26A400"
+  },
+  "P1_A_X_Position_Arena": {
+    "prefix": "P1_A_X_Position_Arena",
+    "body": "0x8C268374"
+  },
+  "P1_B_X_Position_Arena": {
+    "prefix": "P1_B_X_Position_Arena",
+    "body": "0x8C268EBC"
+  },
+  "P1_C_X_Position_Arena": {
+    "prefix": "P1_C_X_Position_Arena",
+    "body": "0x8C269A04"
+  },
+  "P2_A_X_Position_Arena": {
+    "prefix": "P2_A_X_Position_Arena",
+    "body": "0x8C268918"
+  },
+  "P2_B_X_Position_Arena": {
+    "prefix": "P2_B_X_Position_Arena",
+    "body": "0x8C269460"
+  },
+  "P2_C_X_Position_Arena": {
+    "prefix": "P2_C_X_Position_Arena",
+    "body": "0x8C269FA8"
+  },
+  "P1_A_Y_Position_Arena": {
+    "prefix": "P1_A_Y_Position_Arena",
+    "body": "0x8C268378"
+  },
+  "P1_B_Y_Position_Arena": {
+    "prefix": "P1_B_Y_Position_Arena",
+    "body": "0x8C268EC0"
+  },
+  "P1_C_Y_Position_Arena": {
+    "prefix": "P1_C_Y_Position_Arena",
+    "body": "0x8C269A08"
+  },
+  "P2_A_Y_Position_Arena": {
+    "prefix": "P2_A_Y_Position_Arena",
+    "body": "0x8C26891C"
+  },
+  "P2_B_Y_Position_Arena": {
+    "prefix": "P2_B_Y_Position_Arena",
+    "body": "0x8C269464"
+  },
+  "P2_C_Y_Position_Arena": {
+    "prefix": "P2_C_Y_Position_Arena",
+    "body": "0x8C269FAC"
+  },
+  "P1_A_X_Position_Screen": {
+    "prefix": "P1_A_X_Position_Screen",
+    "body": "0x8C268420"
+  },
+  "P1_B_X_Position_Screen": {
+    "prefix": "P1_B_X_Position_Screen",
+    "body": "0x8C268F68"
+  },
+  "P1_C_X_Position_Screen": {
+    "prefix": "P1_C_X_Position_Screen",
+    "body": "0x8C269AB0"
+  },
+  "P2_A_X_Position_Screen": {
+    "prefix": "P2_A_X_Position_Screen",
+    "body": "0x8C2689C4"
+  },
+  "P2_B_X_Position_Screen": {
+    "prefix": "P2_B_X_Position_Screen",
+    "body": "0x8C26950C"
+  },
+  "P2_C_X_Position_Screen": {
+    "prefix": "P2_C_X_Position_Screen",
+    "body": "0x8C26A054"
+  },
+  "P1_A_Y_Position_Screen": {
+    "prefix": "P1_A_Y_Position_Screen",
+    "body": "0x8C268424"
+  },
+  "P1_B_Y_Position_Screen": {
+    "prefix": "P1_B_Y_Position_Screen",
+    "body": "0x8C268F6C"
+  },
+  "P1_C_Y_Position_Screen": {
+    "prefix": "P1_C_Y_Position_Screen",
+    "body": "0x8C269AB4"
+  },
+  "P2_A_Y_Position_Screen": {
+    "prefix": "P2_A_Y_Position_Screen",
+    "body": "0x8C2689C8"
+  },
+  "P2_B_Y_Position_Screen": {
+    "prefix": "P2_B_Y_Position_Screen",
+    "body": "0x8C269510"
+  },
+  "P2_C_Y_Position_Screen": {
+    "prefix": "P2_C_Y_Position_Screen",
+    "body": "0x8C26A058"
+  },
+  "P1_A_X_Velocity": {
+    "prefix": "P1_A_X_Velocity",
+    "body": "0x8C26839C"
+  },
+  "P1_B_X_Velocity": {
+    "prefix": "P1_B_X_Velocity",
+    "body": "0x8C268EE4"
+  },
+  "P1_C_X_Velocity": {
+    "prefix": "P1_C_X_Velocity",
+    "body": "0x8C269A8C"
+  },
+  "P2_A_X_Velocity": {
+    "prefix": "P2_A_X_Velocity",
+    "body": "0x8C268940"
+  },
+  "P2_B_X_Velocity": {
+    "prefix": "P2_B_X_Velocity",
+    "body": "0x8C269488"
+  },
+  "P2_C_X_Velocity": {
+    "prefix": "P2_C_X_Velocity",
+    "body": "0x8C269FD0"
+  },
+  "P1_A_Y_Velocity": {
+    "prefix": "P1_A_Y_Velocity",
+    "body": "0x8C2683A0"
+  },
+  "P1_B_Y_Velocity": {
+    "prefix": "P1_B_Y_Velocity",
+    "body": "0x8C268EE8"
+  },
+  "P1_C_Y_Velocity": {
+    "prefix": "P1_C_Y_Velocity",
+    "body": "0x8C269A30"
+  },
+  "P2_A_Y_Velocity": {
+    "prefix": "P2_A_Y_Velocity",
+    "body": "0x8C268944"
+  },
+  "P2_B_Y_Velocity": {
+    "prefix": "P2_B_Y_Velocity",
+    "body": "0x8C26948C"
+  },
+  "P2_C_Y_Velocity": {
+    "prefix": "P2_C_Y_Velocity",
+    "body": "0x8C269FD4"
+  },
+  "P1_A_Hitbox_Scale_X": {
+    "prefix": "P1_A_Hitbox_Scale_X",
+    "body": "0x8C26848C"
+  },
+  "P1_B_Hitbox_Scale_X": {
+    "prefix": "P1_B_Hitbox_Scale_X",
+    "body": "0x8C268F74"
+  },
+  "P1_C_Hitbox_Scale_X": {
+    "prefix": "P1_C_Hitbox_Scale_X",
+    "body": "0x8C269ABC"
+  },
+  "P2_A_Hitbox_Scale_X": {
+    "prefix": "P2_A_Hitbox_Scale_X",
+    "body": "0x8C2689D0"
+  },
+  "P2_B_Hitbox_Scale_X": {
+    "prefix": "P2_B_Hitbox_Scale_X",
+    "body": "0x8C269518"
+  },
+  "P2_C_Hitbox_Scale_X": {
+    "prefix": "P2_C_Hitbox_Scale_X",
+    "body": "0x8C26A060"
+  },
+  "P1_A_Hitbox_Scale_Y": {
+    "prefix": "P1_A_Hitbox_Scale_Y",
+    "body": "0x8C268430"
+  },
+  "P1_B_Hitbox_Scale_Y": {
+    "prefix": "P1_B_Hitbox_Scale_Y",
+    "body": "0x8C268F78"
+  },
+  "P1_C_Hitbox_Scale_Y": {
+    "prefix": "P1_C_Hitbox_Scale_Y",
+    "body": "0x8C269AC0"
+  },
+  "P2_A_Hitbox_Scale_Y": {
+    "prefix": "P2_A_Hitbox_Scale_Y",
+    "body": "0x8C2689D4"
+  },
+  "P2_B_Hitbox_Scale_Y": {
+    "prefix": "P2_B_Hitbox_Scale_Y",
+    "body": "0x8C26951C"
+  },
+  "P2_C_Hitbox_Scale_Y": {
+    "prefix": "P2_C_Hitbox_Scale_Y",
+    "body": "0x8C26A064"
+  },
+  "P1_A_Sprite_Scale_X": {
+    "prefix": "P1_A_Sprite_Scale_X",
+    "body": "0x8C268390"
+  },
+  "P1_B_Sprite_Scale_X": {
+    "prefix": "P1_B_Sprite_Scale_X",
+    "body": "0x8C268ED8"
+  },
+  "P1_C_Sprite_Scale_X": {
+    "prefix": "P1_C_Sprite_Scale_X",
+    "body": "0x8C269A20"
+  },
+  "P2_A_Sprite_Scale_X": {
+    "prefix": "P2_A_Sprite_Scale_X",
+    "body": "0x8C268934"
+  },
+  "P2_B_Sprite_Scale_X": {
+    "prefix": "P2_B_Sprite_Scale_X",
+    "body": "0x8C26947C"
+  },
+  "P2_C_Sprite_Scale_X": {
+    "prefix": "P2_C_Sprite_Scale_X",
+    "body": "0x8C269FC4"
+  },
+  "P1_A_Sprite_Scale_Y": {
+    "prefix": "P1_A_Sprite_Scale_Y",
+    "body": "0x8C268394"
+  },
+  "P1_B_Sprite_Scale_Y": {
+    "prefix": "P1_B_Sprite_Scale_Y",
+    "body": "0x8C268EDC"
+  },
+  "P1_C_Sprite_Scale_Y": {
+    "prefix": "P1_C_Sprite_Scale_Y",
+    "body": "0x8C269A24"
+  },
+  "P2_A_Sprite_Scale_Y": {
+    "prefix": "P2_A_Sprite_Scale_Y",
+    "body": "0x8C268938"
+  },
+  "P2_B_Sprite_Scale_Y": {
+    "prefix": "P2_B_Sprite_Scale_Y",
+    "body": "0x8C269480"
+  },
+  "P2_C_Sprite_Scale_Y": {
+    "prefix": "P2_C_Sprite_Scale_Y",
+    "body": "0x8C269FC8"
+  },
+  "P1_A_Sprite_Scale_Z": {
+    "prefix": "P1_A_Sprite_Scale_Z",
+    "body": "0x8C268398"
+  },
+  "P1_B_Sprite_Scale_Z": {
+    "prefix": "P1_B_Sprite_Scale_Z",
+    "body": "0x8C268EE0"
+  },
+  "P1_C_Sprite_Scale_Z": {
+    "prefix": "P1_C_Sprite_Scale_Z",
+    "body": "0x8C269A28"
+  },
+  "P2_A_Sprite_Scale_Z": {
+    "prefix": "P2_A_Sprite_Scale_Z",
+    "body": "0x8C26893C"
+  },
+  "P2_B_Sprite_Scale_Z": {
+    "prefix": "P2_B_Sprite_Scale_Z",
+    "body": "0x8C269484"
+  },
+  "P2_C_Sprite_Scale_Z": {
+    "prefix": "P2_C_Sprite_Scale_Z",
+    "body": "0x8C269FCC"
+  },
+  "P1_A_Action_Flags": {
+    "prefix": "P1_A_Action_Flags",
+    "body": "0x8C268346"
+  },
+  "P1_B_Action_Flags": {
+    "prefix": "P1_B_Action_Flags",
+    "body": "0x8C268E8E"
+  },
+  "P1_C_Action_Flags": {
+    "prefix": "P1_C_Action_Flags",
+    "body": "0x8C2699D6"
+  },
+  "P2_A_Action_Flags": {
+    "prefix": "P2_A_Action_Flags",
+    "body": "0x8C2688EA"
+  },
+  "P2_B_Action_Flags": {
+    "prefix": "P2_B_Action_Flags",
+    "body": "0x8C269432"
+  },
+  "P2_C_Action_Flags": {
+    "prefix": "P2_C_Action_Flags",
+    "body": "0x8C269F7A"
+  },
+  "P1_A_Air_Dash_Count": {
+    "prefix": "P1_A_Air_Dash_Count",
+    "body": "0x8C268515"
+  },
+  "P1_B_Air_Dash_Count": {
+    "prefix": "P1_B_Air_Dash_Count",
+    "body": "0x8C26905D"
+  },
+  "P1_C_Air_Dash_Count": {
+    "prefix": "P1_C_Air_Dash_Count",
+    "body": "0x8C269BA5"
+  },
+  "P2_A_Air_Dash_Count": {
+    "prefix": "P2_A_Air_Dash_Count",
+    "body": "0x8C268AB9"
+  },
+  "P2_B_Air_Dash_Count": {
+    "prefix": "P2_B_Air_Dash_Count",
+    "body": "0x8C269601"
+  },
+  "P2_C_Air_Dash_Count": {
+    "prefix": "P2_C_Air_Dash_Count",
+    "body": "0x8C26A149"
+  },
+  "P1_A_Air_Recovery_Timer": {
+    "prefix": "P1_A_Air_Recovery_Timer",
+    "body": "0x8C268579"
+  },
+  "P1_B_Air_Recovery_Timer": {
+    "prefix": "P1_B_Air_Recovery_Timer",
+    "body": "0x8C2690C1"
+  },
+  "P1_C_Air_Recovery_Timer": {
+    "prefix": "P1_C_Air_Recovery_Timer",
+    "body": "0x8C269C09"
+  },
+  "P2_A_Air_Recovery_Timer": {
+    "prefix": "P2_A_Air_Recovery_Timer",
+    "body": "0x8C268B1D"
+  },
+  "P2_B_Air_Recovery_Timer": {
+    "prefix": "P2_B_Air_Recovery_Timer",
+    "body": "0x8C269665"
+  },
+  "P2_C_Air_Recovery_Timer": {
+    "prefix": "P2_C_Air_Recovery_Timer",
+    "body": "0x8C26A1AD"
+  },
+  "P1_A_Airborne": {
+    "prefix": "P1_A_Airborne",
+    "body": "0x8C268539"
+  },
+  "P1_B_Airborne": {
+    "prefix": "P1_B_Airborne",
+    "body": "0x8C269081"
+  },
+  "P1_C_Airborne": {
+    "prefix": "P1_C_Airborne",
+    "body": "0x8C269BC9"
+  },
+  "P2_A_Airborne": {
+    "prefix": "P2_A_Airborne",
+    "body": "0x8C268ADD"
+  },
+  "P2_B_Airborne": {
+    "prefix": "P2_B_Airborne",
+    "body": "0x8C269625"
+  },
+  "P2_C_Airborne": {
+    "prefix": "P2_C_Airborne",
+    "body": "0x8C26A16D"
+  },
+  "P1_A_Animation_Lock": {
+    "prefix": "P1_A_Animation_Lock",
+    "body": "0x8C268344"
+  },
+  "P1_B_Animation_Lock": {
+    "prefix": "P1_B_Animation_Lock",
+    "body": "0x8C268E8C"
+  },
+  "P1_C_Animation_Lock": {
+    "prefix": "P1_C_Animation_Lock",
+    "body": "0x8C2699D4"
+  },
+  "P2_A_Animation_Lock": {
+    "prefix": "P2_A_Animation_Lock",
+    "body": "0x8C2688E8"
+  },
+  "P2_B_Animation_Lock": {
+    "prefix": "P2_B_Animation_Lock",
+    "body": "0x8C269430"
+  },
+  "P2_C_Animation_Lock": {
+    "prefix": "P2_C_Animation_Lock",
+    "body": "0x8C269F78"
+  },
+  "P1_A_Animation_Timer_Main": {
+    "prefix": "P1_A_Animation_Timer_Main",
+    "body": "0x8C26835C"
+  },
+  "P1_B_Animation_Timer_Main": {
+    "prefix": "P1_B_Animation_Timer_Main",
+    "body": "0x8C268EA4"
+  },
+  "P1_C_Animation_Timer_Main": {
+    "prefix": "P1_C_Animation_Timer_Main",
+    "body": "0x8C2699EC"
+  },
+  "P2_A_Animation_Timer_Main": {
+    "prefix": "P2_A_Animation_Timer_Main",
+    "body": "0x8C268900"
+  },
+  "P2_B_Animation_Timer_Main": {
+    "prefix": "P2_B_Animation_Timer_Main",
+    "body": "0x8C269448"
+  },
+  "P2_C_Animation_Timer_Main": {
+    "prefix": "P2_C_Animation_Timer_Main",
+    "body": "0x8C269F90"
+  },
+  "P1_A_Animation_Value": {
+    "prefix": "P1_A_Animation_Value",
+    "body": "0x8C268484"
+  },
+  "P1_B_Animation_Value": {
+    "prefix": "P1_B_Animation_Value",
+    "body": "0x8C268FCC"
+  },
+  "P1_C_Animation_Value": {
+    "prefix": "P1_C_Animation_Value",
+    "body": "0x8C269B14"
+  },
+  "P2_A_Animation_Value": {
+    "prefix": "P2_A_Animation_Value",
+    "body": "0x8C268A28"
+  },
+  "P2_B_Animation_Value": {
+    "prefix": "P2_B_Animation_Value",
+    "body": "0x8C269570"
+  },
+  "P2_C_Animation_Value": {
+    "prefix": "P2_C_Animation_Value",
+    "body": "0x8C26A0B8"
+  },
+  "P1_A_Assist_Counter": {
+    "prefix": "P1_A_Assist_Counter",
+    "body": "0x8C2684E3"
+  },
+  "P1_B_Assist_Counter": {
+    "prefix": "P1_B_Assist_Counter",
+    "body": "0x8C26902B"
+  },
+  "P1_C_Assist_Counter": {
+    "prefix": "P1_C_Assist_Counter",
+    "body": "0x8C269B73"
+  },
+  "P2_A_Assist_Counter": {
+    "prefix": "P2_A_Assist_Counter",
+    "body": "0x8C268A87"
+  },
+  "P2_B_Assist_Counter": {
+    "prefix": "P2_B_Assist_Counter",
+    "body": "0x8C2695CF"
+  },
+  "P2_C_Assist_Counter": {
+    "prefix": "P2_C_Assist_Counter",
+    "body": "0x8C26A117"
+  },
+  "P1_A_Assist_Onscreen": {
+    "prefix": "P1_A_Assist_Onscreen",
+    "body": "0x8C268534"
+  },
+  "P1_B_Assist_Onscreen": {
+    "prefix": "P1_B_Assist_Onscreen",
+    "body": "0x8C26907C"
+  },
+  "P1_C_Assist_Onscreen": {
+    "prefix": "P1_C_Assist_Onscreen",
+    "body": "0x8C269BC4"
+  },
+  "P2_A_Assist_Onscreen": {
+    "prefix": "P2_A_Assist_Onscreen",
+    "body": "0x8C268AD8"
+  },
+  "P2_B_Assist_Onscreen": {
+    "prefix": "P2_B_Assist_Onscreen",
+    "body": "0x8C269620"
+  },
+  "P2_C_Assist_Onscreen": {
+    "prefix": "P2_C_Assist_Onscreen",
+    "body": "0x8C26A168"
+  },
+  "P1_A_Assist_Value": {
+    "prefix": "P1_A_Assist_Value",
+    "body": "0x8C268809"
+  },
+  "P1_B_Assist_Value": {
+    "prefix": "P1_B_Assist_Value",
+    "body": "0x8C269351"
+  },
+  "P1_C_Assist_Value": {
+    "prefix": "P1_C_Assist_Value",
+    "body": "0x8C269E99"
+  },
+  "P2_A_Assist_Value": {
+    "prefix": "P2_A_Assist_Value",
+    "body": "0x8C268DAD"
+  },
+  "P2_B_Assist_Value": {
+    "prefix": "P2_B_Assist_Value",
+    "body": "0x8C2698F5"
+  },
+  "P2_C_Assist_Value": {
+    "prefix": "P2_C_Assist_Value",
+    "body": "0x8C26A43D"
+  },
+  "P1_A_Attack_Immune": {
+    "prefix": "P1_A_Attack_Immune",
+    "body": "0x8C26852D"
+  },
+  "P1_B_Attack_Immune": {
+    "prefix": "P1_B_Attack_Immune",
+    "body": "0x8C269075"
+  },
+  "P1_C_Attack_Immune": {
+    "prefix": "P1_C_Attack_Immune",
+    "body": "0x8C269BBD"
+  },
+  "P2_A_Attack_Immune": {
+    "prefix": "P2_A_Attack_Immune",
+    "body": "0x8C268AD1"
+  },
+  "P2_B_Attack_Immune": {
+    "prefix": "P2_B_Attack_Immune",
+    "body": "0x8C269619"
+  },
+  "P2_C_Attack_Immune": {
+    "prefix": "P2_C_Attack_Immune",
+    "body": "0x8C26A161"
+  },
+  "P1_A_Attack_Number": {
+    "prefix": "P1_A_Attack_Number",
+    "body": "0x8C2684E1"
+  },
+  "P1_B_Attack_Number": {
+    "prefix": "P1_B_Attack_Number",
+    "body": "0x8C269029"
+  },
+  "P1_C_Attack_Number": {
+    "prefix": "P1_C_Attack_Number",
+    "body": "0x8C269B71"
+  },
+  "P2_A_Attack_Number": {
+    "prefix": "P2_A_Attack_Number",
+    "body": "0x8C268A85"
+  },
+  "P2_B_Attack_Number": {
+    "prefix": "P2_B_Attack_Number",
+    "body": "0x8C2695CD"
+  },
+  "P2_C_Attack_Number": {
+    "prefix": "P2_C_Attack_Number",
+    "body": "0x8C26A115"
+  },
+  "P1_A_Block_Meter": {
+    "prefix": "P1_A_Block_Meter",
+    "body": "0x8C268551"
+  },
+  "P1_B_Block_Meter": {
+    "prefix": "P1_B_Block_Meter",
+    "body": "0x8C269099"
+  },
+  "P1_C_Block_Meter": {
+    "prefix": "P1_C_Block_Meter",
+    "body": "0x8C269BE1"
+  },
+  "P2_A_Block_Meter": {
+    "prefix": "P2_A_Block_Meter",
+    "body": "0x8C268AF5"
+  },
+  "P2_B_Block_Meter": {
+    "prefix": "P2_B_Block_Meter",
+    "body": "0x8C26963D"
+  },
+  "P2_C_Block_Meter": {
+    "prefix": "P2_C_Block_Meter",
+    "body": "0x8C26A185"
+  },
+  "P1_A_Block_Stun": {
+    "prefix": "P1_A_Block_Stun",
+    "body": "0x8C26851E"
+  },
+  "P1_B_Block_Stun": {
+    "prefix": "P1_B_Block_Stun",
+    "body": "0x8C269066"
+  },
+  "P1_C_Block_Stun": {
+    "prefix": "P1_C_Block_Stun",
+    "body": "0x8C269BAE"
+  },
+  "P2_A_Block_Stun": {
+    "prefix": "P2_A_Block_Stun",
+    "body": "0x8C268AC2"
+  },
+  "P2_B_Block_Stun": {
+    "prefix": "P2_B_Block_Stun",
+    "body": "0x8C26960A"
+  },
+  "P2_C_Block_Stun": {
+    "prefix": "P2_C_Block_Stun",
+    "body": "0x8C26A152"
+  },
+  "P1_A_Color": {
+    "prefix": "P1_A_Color",
+    "body": "0x8C268365"
+  },
+  "P1_B_Color": {
+    "prefix": "P1_B_Color",
+    "body": "0x8C268EAD"
+  },
+  "P1_C_Color": {
+    "prefix": "P1_C_Color",
+    "body": "0x8C2699F5"
+  },
+  "P2_A_Color": {
+    "prefix": "P2_A_Color",
+    "body": "0x8C268909"
+  },
+  "P2_B_Color": {
+    "prefix": "P2_B_Color",
+    "body": "0x8C269451"
+  },
+  "P2_C_Color": {
+    "prefix": "P2_C_Color",
+    "body": "0x8C269F99"
+  },
+  "P1_A_CornerJump": {
+    "prefix": "P1_A_CornerJump",
+    "body": "0x8C268515"
+  },
+  "P1_B_CornerJump": {
+    "prefix": "P1_B_CornerJump",
+    "body": "0x8C26905D"
+  },
+  "P1_C_CornerJump": {
+    "prefix": "P1_C_CornerJump",
+    "body": "0x8C269BA5"
+  },
+  "P2_A_CornerJump": {
+    "prefix": "P2_A_CornerJump",
+    "body": "0x8C268AB9"
+  },
+  "P2_B_CornerJump": {
+    "prefix": "P2_B_CornerJump",
+    "body": "0x8C269601"
+  },
+  "P2_C_CornerJump": {
+    "prefix": "P2_C_CornerJump",
+    "body": "0x8C26A149"
+  },
+  "P1_A_Corner_Touch": {
+    "prefix": "P1_A_Corner_Touch",
+    "body": "0x8C26853D"
+  },
+  "P1_B_Corner_Touch": {
+    "prefix": "P1_B_Corner_Touch",
+    "body": "0x8C269085"
+  },
+  "P1_C_Corner_Touch": {
+    "prefix": "P1_C_Corner_Touch",
+    "body": "0x8C269BCD"
+  },
+  "P2_A_Corner_Touch": {
+    "prefix": "P2_A_Corner_Touch",
+    "body": "0x8C268AE1"
+  },
+  "P2_B_Corner_Touch": {
+    "prefix": "P2_B_Corner_Touch",
+    "body": "0x8C269629"
+  },
+  "P2_C_Corner_Touch": {
+    "prefix": "P2_C_Corner_Touch",
+    "body": "0x8C26A171"
+  },
+  "P1_A_Damage": {
+    "prefix": "P1_A_Damage",
+    "body": "0x8C26866E"
+  },
+  "P1_B_Damage": {
+    "prefix": "P1_B_Damage",
+    "body": "0x8C2691B6"
+  },
+  "P1_C_Damage": {
+    "prefix": "P1_C_Damage",
+    "body": "0x8C269CFE"
+  },
+  "P2_A_Damage": {
+    "prefix": "P2_A_Damage",
+    "body": "0x8C268C12"
+  },
+  "P2_B_Damage": {
+    "prefix": "P2_B_Damage",
+    "body": "0x8C26975A"
+  },
+  "P2_C_Damage": {
+    "prefix": "P2_C_Damage",
+    "body": "0x8C26A2A2"
+  },
+  "P1_A_Damage_Modifier": {
+    "prefix": "P1_A_Damage_Modifier",
+    "body": "0x8C268545"
+  },
+  "P1_B_Damage_Modifier": {
+    "prefix": "P1_B_Damage_Modifier",
+    "body": "0x8C26908D"
+  },
+  "P1_C_Damage_Modifier": {
+    "prefix": "P1_C_Damage_Modifier",
+    "body": "0x8C269BD5"
+  },
+  "P2_A_Damage_Modifier": {
+    "prefix": "P2_A_Damage_Modifier",
+    "body": "0x8C268AE9"
+  },
+  "P2_B_Damage_Modifier": {
+    "prefix": "P2_B_Damage_Modifier",
+    "body": "0x8C269631"
+  },
+  "P2_C_Damage_Modifier": {
+    "prefix": "P2_C_Damage_Modifier",
+    "body": "0x8C26A179"
+  },
+  "P1_A_Defense_Modifier": {
+    "prefix": "P1_A_Defense_Modifier",
+    "body": "0x8C268546"
+  },
+  "P1_B_Defense_Modifier": {
+    "prefix": "P1_B_Defense_Modifier",
+    "body": "0x8C26908E"
+  },
+  "P1_C_Defense_Modifier": {
+    "prefix": "P1_C_Defense_Modifier",
+    "body": "0x8C269BD6"
+  },
+  "P2_A_Defense_Modifier": {
+    "prefix": "P2_A_Defense_Modifier",
+    "body": "0x8C268AEA"
+  },
+  "P2_B_Defense_Modifier": {
+    "prefix": "P2_B_Defense_Modifier",
+    "body": "0x8C269632"
+  },
+  "P2_C_Defense_Modifier": {
+    "prefix": "P2_C_Defense_Modifier",
+    "body": "0x8C26A17A"
+  },
+  "P1_A_Dizzy_Reset_Timer": {
+    "prefix": "P1_A_Dizzy_Reset_Timer",
+    "body": "0x8C268522"
+  },
+  "P1_B_Dizzy_Reset_Timer": {
+    "prefix": "P1_B_Dizzy_Reset_Timer",
+    "body": "0x8C26906A"
+  },
+  "P1_C_Dizzy_Reset_Timer": {
+    "prefix": "P1_C_Dizzy_Reset_Timer",
+    "body": "0x8C269BB2"
+  },
+  "P2_A_Dizzy_Reset_Timer": {
+    "prefix": "P2_A_Dizzy_Reset_Timer",
+    "body": "0x8C268AC6"
+  },
+  "P2_B_Dizzy_Reset_Timer": {
+    "prefix": "P2_B_Dizzy_Reset_Timer",
+    "body": "0x8C26960E"
+  },
+  "P2_C_Dizzy_Reset_Timer": {
+    "prefix": "P2_C_Dizzy_Reset_Timer",
+    "body": "0x8C26A156"
+  },
+  "P1_A_Dizzy": {
+    "prefix": "P1_A_Dizzy",
+    "body": "0x8C268521"
+  },
+  "P1_B_Dizzy": {
+    "prefix": "P1_B_Dizzy",
+    "body": "0x8C269069"
+  },
+  "P1_C_Dizzy": {
+    "prefix": "P1_C_Dizzy",
+    "body": "0x8C269BB1"
+  },
+  "P2_A_Dizzy": {
+    "prefix": "P2_A_Dizzy",
+    "body": "0x8C268AC5"
+  },
+  "P2_B_Dizzy": {
+    "prefix": "P2_B_Dizzy",
+    "body": "0x8C26960D"
+  },
+  "P2_C_Dizzy": {
+    "prefix": "P2_C_Dizzy",
+    "body": "0x8C26A155"
+  },
+  "P1_A_Facing_Right": {
+    "prefix": "P1_A_Facing_Right",
+    "body": "0x8C268450"
+  },
+  "P1_B_Facing_Right": {
+    "prefix": "P1_B_Facing_Right",
+    "body": "0x8C268F98"
+  },
+  "P1_C_Facing_Right": {
+    "prefix": "P1_C_Facing_Right",
+    "body": "0x8C269AE0"
+  },
+  "P2_A_Facing_Right": {
+    "prefix": "P2_A_Facing_Right",
+    "body": "0x8C2689F4"
+  },
+  "P2_B_Facing_Right": {
+    "prefix": "P2_B_Facing_Right",
+    "body": "0x8C26953C"
+  },
+  "P2_C_Facing_Right": {
+    "prefix": "P2_C_Facing_Right",
+    "body": "0x8C26A084"
+  },
+  "P1_A_Flight_Flag": {
+    "prefix": "P1_A_Flight_Flag",
+    "body": "0x8C268541"
+  },
+  "P1_B_Flight_Flag": {
+    "prefix": "P1_B_Flight_Flag",
+    "body": "0x8C269089"
+  },
+  "P1_C_Flight_Flag": {
+    "prefix": "P1_C_Flight_Flag",
+    "body": "0x8C269BD1"
+  },
+  "P2_A_Flight_Flag": {
+    "prefix": "P2_A_Flight_Flag",
+    "body": "0x8C268AE5"
+  },
+  "P2_B_Flight_Flag": {
+    "prefix": "P2_B_Flight_Flag",
+    "body": "0x8C26962D"
+  },
+  "P2_C_Flight_Flag": {
+    "prefix": "P2_C_Flight_Flag",
+    "body": "0x8C26A175"
+  },
+  "P1_A_FlyingScreen": {
+    "prefix": "P1_A_FlyingScreen",
+    "body": "0x8C268575"
+  },
+  "P1_B_FlyingScreen": {
+    "prefix": "P1_B_FlyingScreen",
+    "body": "0x8C2690BD"
+  },
+  "P1_C_FlyingScreen": {
+    "prefix": "P1_C_FlyingScreen",
+    "body": "0x8C269C05"
+  },
+  "P2_A_FlyingScreen": {
+    "prefix": "P2_A_FlyingScreen",
+    "body": "0x8C268B19"
+  },
+  "P2_B_FlyingScreen": {
+    "prefix": "P2_B_FlyingScreen",
+    "body": "0x8C269661"
+  },
+  "P2_C_FlyingScreen": {
+    "prefix": "P2_C_FlyingScreen",
+    "body": "0x8C26A1A9"
+  },
+  "P1_A_FSI_Combo": {
+    "prefix": "P1_A_FSI_Combo",
+    "body": "0x8C2685A0"
+  },
+  "P1_B_FSI_Combo": {
+    "prefix": "P1_B_FSI_Combo",
+    "body": "0x8C2690E8"
+  },
+  "P1_C_FSI_Combo": {
+    "prefix": "P1_C_FSI_Combo",
+    "body": "0x8C269C30"
+  },
+  "P2_A_FSI_Combo": {
+    "prefix": "P2_A_FSI_Combo",
+    "body": "0x8C268B44"
+  },
+  "P2_B_FSI_Combo": {
+    "prefix": "P2_B_FSI_Combo",
+    "body": "0x8C26968C"
+  },
+  "P2_C_FSI_Combo": {
+    "prefix": "P2_C_FSI_Combo",
+    "body": "0x8C26A1D4"
+  },
+  "P1_A_FSI_Points": {
+    "prefix": "P1_A_FSI_Points",
+    "body": "0x8C2685B3"
+  },
+  "P1_B_FSI_Points": {
+    "prefix": "P1_B_FSI_Points",
+    "body": "0x8C2690FB"
+  },
+  "P1_C_FSI_Points": {
+    "prefix": "P1_C_FSI_Points",
+    "body": "0x8C269C43"
+  },
+  "P2_A_FSI_Points": {
+    "prefix": "P2_A_FSI_Points",
+    "body": "0x8C268B57"
+  },
+  "P2_B_FSI_Points": {
+    "prefix": "P2_B_FSI_Points",
+    "body": "0x8C26969F"
+  },
+  "P2_C_FSI_Points": {
+    "prefix": "P2_C_FSI_Points",
+    "body": "0x8C26A1E7"
+  },
+  "P1_A_FSI_Projectile": {
+    "prefix": "P1_A_FSI_Projectile",
+    "body": "0x8C2685B6"
+  },
+  "P1_B_FSI_Projectile": {
+    "prefix": "P1_B_FSI_Projectile",
+    "body": "0x8C2690FE"
+  },
+  "P1_C_FSI_Projectile": {
+    "prefix": "P1_C_FSI_Projectile",
+    "body": "0x8C269C46"
+  },
+  "P2_A_FSI_Projectile": {
+    "prefix": "P2_A_FSI_Projectile",
+    "body": "0x8C268B5A"
+  },
+  "P2_B_FSI_Projectile": {
+    "prefix": "P2_B_FSI_Projectile",
+    "body": "0x8C2696A2"
+  },
+  "P2_C_FSI_Projectile": {
+    "prefix": "P2_C_FSI_Projectile",
+    "body": "0x8C26A1EA"
+  },
+  "P1_A_Guardbreak_Flag": {
+    "prefix": "P1_A_Guardbreak_Flag",
+    "body": "0x8C268550"
+  },
+  "P1_B_Guardbreak_Flag": {
+    "prefix": "P1_B_Guardbreak_Flag",
+    "body": "0x8C269098"
+  },
+  "P1_C_Guardbreak_Flag": {
+    "prefix": "P1_C_Guardbreak_Flag",
+    "body": "0x8C269BE0"
+  },
+  "P2_A_Guardbreak_Flag": {
+    "prefix": "P2_A_Guardbreak_Flag",
+    "body": "0x8C268AF4"
+  },
+  "P2_B_Guardbreak_Flag": {
+    "prefix": "P2_B_Guardbreak_Flag",
+    "body": "0x8C26963C"
+  },
+  "P2_C_Guardbreak_Flag": {
+    "prefix": "P2_C_Guardbreak_Flag",
+    "body": "0x8C26A184"
+  },
+  "P1_A_Health_Big": {
+    "prefix": "P1_A_Health_Big",
+    "body": "0x8C268760"
+  },
+  "P1_B_Health_Big": {
+    "prefix": "P1_B_Health_Big",
+    "body": "0x8C2692A8"
+  },
+  "P1_C_Health_Big": {
+    "prefix": "P1_C_Health_Big",
+    "body": "0x8C269DF0"
+  },
+  "P2_A_Health_Big": {
+    "prefix": "P2_A_Health_Big",
+    "body": "0x8C268D04"
+  },
+  "P2_B_Health_Big": {
+    "prefix": "P2_B_Health_Big",
+    "body": "0x8C26984C"
+  },
+  "P2_C_Health_Big": {
+    "prefix": "P2_C_Health_Big",
+    "body": "0x8C26A394"
+  },
+  "P1_A_Health_Small": {
+    "prefix": "P1_A_Health_Small",
+    "body": "0x8C268764"
+  },
+  "P1_B_Health_Small": {
+    "prefix": "P1_B_Health_Small",
+    "body": "0x8C2692AC"
+  },
+  "P1_C_Health_Small": {
+    "prefix": "P1_C_Health_Small",
+    "body": "0x8C269DF4"
+  },
+  "P2_A_Health_Small": {
+    "prefix": "P2_A_Health_Small",
+    "body": "0x8C268D08"
+  },
+  "P2_B_Health_Small": {
+    "prefix": "P2_B_Health_Small",
+    "body": "0x8C269850"
+  },
+  "P2_C_Health_Small": {
+    "prefix": "P2_C_Health_Small",
+    "body": "0x8C26A398"
+  },
+  "P1_A_Hitstop2": {
+    "prefix": "P1_A_Hitstop2",
+    "body": "0x8C2684E0"
+  },
+  "P1_B_Hitstop2": {
+    "prefix": "P1_B_Hitstop2",
+    "body": "0x8C269028"
+  },
+  "P1_C_Hitstop2": {
+    "prefix": "P1_C_Hitstop2",
+    "body": "0x8C269B70"
+  },
+  "P2_A_Hitstop2": {
+    "prefix": "P2_A_Hitstop2",
+    "body": "0x8C268A84"
+  },
+  "P2_B_Hitstop2": {
+    "prefix": "P2_B_Hitstop2",
+    "body": "0x8C2695CC"
+  },
+  "P2_C_Hitstop2": {
+    "prefix": "P2_C_Hitstop2",
+    "body": "0x8C26A114"
+  },
+  "P1_A_Hyper_Armor": {
+    "prefix": "P1_A_Hyper_Armor",
+    "body": "0x8C268542"
+  },
+  "P1_B_Hyper_Armor": {
+    "prefix": "P1_B_Hyper_Armor",
+    "body": "0x8C26908A"
+  },
+  "P1_C_Hyper_Armor": {
+    "prefix": "P1_C_Hyper_Armor",
+    "body": "0x8C269BD2"
+  },
+  "P2_A_Hyper_Armor": {
+    "prefix": "P2_A_Hyper_Armor",
+    "body": "0x8C268AE6"
+  },
+  "P2_B_Hyper_Armor": {
+    "prefix": "P2_B_Hyper_Armor",
+    "body": "0x8C26962E"
+  },
+  "P2_C_Hyper_Armor": {
+    "prefix": "P2_C_Hyper_Armor",
+    "body": "0x8C26A176"
+  },
+  "P1_A_ID_2": {
+    "prefix": "P1_A_ID_2",
+    "body": "0x8C268341"
+  },
+  "P1_B_ID_2": {
+    "prefix": "P1_B_ID_2",
+    "body": "0x8C268E89"
+  },
+  "P1_C_ID_2": {
+    "prefix": "P1_C_ID_2",
+    "body": "0x8C2699D1"
+  },
+  "P2_A_ID_2": {
+    "prefix": "P2_A_ID_2",
+    "body": "0x8C2688E5"
+  },
+  "P2_B_ID_2": {
+    "prefix": "P2_B_ID_2",
+    "body": "0x8C26942D"
+  },
+  "P2_C_ID_2": {
+    "prefix": "P2_C_ID_2",
+    "body": "0x8C269F75"
+  },
+  "P1_A_Idle_Hover": {
+    "prefix": "P1_A_Idle_Hover",
+    "body": "0x8C268543"
+  },
+  "P1_B_Idle_Hover": {
+    "prefix": "P1_B_Idle_Hover",
+    "body": "0x8C26908B"
+  },
+  "P1_C_Idle_Hover": {
+    "prefix": "P1_C_Idle_Hover",
+    "body": "0x8C269BD3"
+  },
+  "P2_A_Idle_Hover": {
+    "prefix": "P2_A_Idle_Hover",
+    "body": "0x8C268AE7"
+  },
+  "P2_B_Idle_Hover": {
+    "prefix": "P2_B_Idle_Hover",
+    "body": "0x8C26962F"
+  },
+  "P2_C_Idle_Hover": {
+    "prefix": "P2_C_Idle_Hover",
+    "body": "0x8C26A177"
+  },
+  "P1_A_Is_Active": {
+    "prefix": "P1_A_Is_Active",
+    "body": "0x8C268340"
+  },
+  "P1_B_Is_Active": {
+    "prefix": "P1_B_Is_Active",
+    "body": "0x8C268E88"
+  },
+  "P1_C_Is_Active": {
+    "prefix": "P1_C_Is_Active",
+    "body": "0x8C2699D0"
+  },
+  "P2_A_Is_Active": {
+    "prefix": "P2_A_Is_Active",
+    "body": "0x8C2688E4"
+  },
+  "P2_B_Is_Active": {
+    "prefix": "P2_B_Is_Active",
+    "body": "0x8C26948C"
+  },
+  "P2_C_Is_Active": {
+    "prefix": "P2_C_Is_Active",
+    "body": "0x8C269F74"
+  },
+  "P1_A_Is_Point": {
+    "prefix": "P1_A_Is_Point",
+    "body": "0x8C268751"
+  },
+  "P1_B_Is_Point": {
+    "prefix": "P1_B_Is_Point",
+    "body": "0x8C269299"
+  },
+  "P1_C_Is_Point": {
+    "prefix": "P1_C_Is_Point",
+    "body": "0x8C269DE1"
+  },
+  "P2_A_Is_Point": {
+    "prefix": "P2_A_Is_Point",
+    "body": "0x8C268CF5"
+  },
+  "P2_B_Is_Point": {
+    "prefix": "P2_B_Is_Point",
+    "body": "0x8C26983D"
+  },
+  "P2_C_Is_Point": {
+    "prefix": "P2_C_Is_Point",
+    "body": "0x8C26A385"
+  },
+  "P1_A_Is_Prox_Block": {
+    "prefix": "P1_A_Is_Prox_Block",
+    "body": "0x8C268499"
+  },
+  "P1_B_Is_Prox_Block": {
+    "prefix": "P1_B_Is_Prox_Block",
+    "body": "0x8C268FE1"
+  },
+  "P1_C_Is_Prox_Block": {
+    "prefix": "P1_C_Is_Prox_Block",
+    "body": "0x8C269B29"
+  },
+  "P2_A_Is_Prox_Block": {
+    "prefix": "P2_A_Is_Prox_Block",
+    "body": "0x8C268A3D"
+  },
+  "P2_B_Is_Prox_Block": {
+    "prefix": "P2_B_Is_Prox_Block",
+    "body": "0x8C269585"
+  },
+  "P2_C_Is_Prox_Block": {
+    "prefix": "P2_C_Is_Prox_Block",
+    "body": "0x8C26A0CD"
+  },
+  "P1_A_Jumping_Special_Counter": {
+    "prefix": "P1_A_Jumping_Special_Counter",
+    "body": "0x8C268514"
+  },
+  "P1_B_Jumping_Special_Counter": {
+    "prefix": "P1_B_Jumping_Special_Counter",
+    "body": "0x8C26905C"
+  },
+  "P1_C_Jumping_Special_Counter": {
+    "prefix": "P1_C_Jumping_Special_Counter",
+    "body": "0x8C269BA4"
+  },
+  "P2_A_Jumping_Special_Counter": {
+    "prefix": "P2_A_Jumping_Special_Counter",
+    "body": "0x8C268AB8"
+  },
+  "P2_B_Jumping_Special_Counter": {
+    "prefix": "P2_B_Jumping_Special_Counter",
+    "body": "0x8C269600"
+  },
+  "P2_C_Jumping_Special_Counter": {
+    "prefix": "P2_C_Jumping_Special_Counter",
+    "body": "0x8C26A148"
+  },
+  "P1_A_Jumps": {
+    "prefix": "P1_A_Jumps",
+    "body": "0x8C268519"
+  },
+  "P1_B_Jumps": {
+    "prefix": "P1_B_Jumps",
+    "body": "0x8C269061"
+  },
+  "P1_C_Jumps": {
+    "prefix": "P1_C_Jumps",
+    "body": "0x8C269BA9"
+  },
+  "P2_A_Jumps": {
+    "prefix": "P2_A_Jumps",
+    "body": "0x8C268ABD"
+  },
+  "P2_B_Jumps": {
+    "prefix": "P2_B_Jumps",
+    "body": "0x8C269605"
+  },
+  "P2_C_Jumps": {
+    "prefix": "P2_C_Jumps",
+    "body": "0x8C26A14D"
+  },
+  "P1_A_Knockdown_State": {
+    "prefix": "P1_A_Knockdown_State",
+    "body": "0x8C268510"
+  },
+  "P1_B_Knockdown_State": {
+    "prefix": "P1_B_Knockdown_State",
+    "body": "0x8C269058"
+  },
+  "P1_C_Knockdown_State": {
+    "prefix": "P1_C_Knockdown_State",
+    "body": "0x8C269BA0"
+  },
+  "P2_A_Knockdown_State": {
+    "prefix": "P2_A_Knockdown_State",
+    "body": "0x8C268AB4"
+  },
+  "P2_B_Knockdown_State": {
+    "prefix": "P2_B_Knockdown_State",
+    "body": "0x8C2695FC"
+  },
+  "P2_C_Knockdown_State": {
+    "prefix": "P2_C_Knockdown_State",
+    "body": "0x8C26A144"
+  },
+  "P1_A_Landing_Shake": {
+    "prefix": "P1_A_Landing_Shake",
+    "body": "0x8C268547"
+  },
+  "P1_B_Landing_Shake": {
+    "prefix": "P1_B_Landing_Shake",
+    "body": "0x8C26908F"
+  },
+  "P1_C_Landing_Shake": {
+    "prefix": "P1_C_Landing_Shake",
+    "body": "0x8C269BD7"
+  },
+  "P2_A_Landing_Shake": {
+    "prefix": "P2_A_Landing_Shake",
+    "body": "0x8C268AEB"
+  },
+  "P2_B_Landing_Shake": {
+    "prefix": "P2_B_Landing_Shake",
+    "body": "0x8C269633"
+  },
+  "P2_C_Landing_Shake": {
+    "prefix": "P2_C_Landing_Shake",
+    "body": "0x8C26A17B"
+  },
+  "P1_A_Magneto_Throw_Toggle": {
+    "prefix": "P1_A_Magneto_Throw_Toggle",
+    "body": "0x8C268576"
+  },
+  "P1_B_Magneto_Throw_Toggle": {
+    "prefix": "P1_B_Magneto_Throw_Toggle",
+    "body": "0x8C2690BE"
+  },
+  "P1_C_Magneto_Throw_Toggle": {
+    "prefix": "P1_C_Magneto_Throw_Toggle",
+    "body": "0x8C269C06"
+  },
+  "P2_A_Magneto_Throw_Toggle": {
+    "prefix": "P2_A_Magneto_Throw_Toggle",
+    "body": "0x8C268B1A"
+  },
+  "P2_B_Magneto_Throw_Toggle": {
+    "prefix": "P2_B_Magneto_Throw_Toggle",
+    "body": "0x8C269662"
+  },
+  "P2_C_Magneto_Throw_Toggle": {
+    "prefix": "P2_C_Magneto_Throw_Toggle",
+    "body": "0x8C26A1AA"
+  },
+  "P1_A_Normal_Held_Direction": {
+    "prefix": "P1_A_Normal_Held_Direction",
+    "body": "0x8C268362"
+  },
+  "P1_B_Normal_Held_Direction": {
+    "prefix": "P1_B_Normal_Held_Direction",
+    "body": "0x8C268EAA"
+  },
+  "P1_C_Normal_Held_Direction": {
+    "prefix": "P1_C_Normal_Held_Direction",
+    "body": "0x8C2699F2"
+  },
+  "P2_A_Normal_Held_Direction": {
+    "prefix": "P2_A_Normal_Held_Direction",
+    "body": "0x8C268906"
+  },
+  "P2_B_Normal_Held_Direction": {
+    "prefix": "P2_B_Normal_Held_Direction",
+    "body": "0x8C26944E"
+  },
+  "P2_C_Normal_Held_Direction": {
+    "prefix": "P2_C_Normal_Held_Direction",
+    "body": "0x8C269F96"
+  },
+  "P1_A_Normal_Strength": {
+    "prefix": "P1_A_Normal_Strength",
+    "body": "0x8C2684E7"
+  },
+  "P1_B_Normal_Strength": {
+    "prefix": "P1_B_Normal_Strength",
+    "body": "0x8C26902F"
+  },
+  "P1_C_Normal_Strength": {
+    "prefix": "P1_C_Normal_Strength",
+    "body": "0x8C269B77"
+  },
+  "P2_A_Normal_Strength": {
+    "prefix": "P2_A_Normal_Strength",
+    "body": "0x8C268A8B"
+  },
+  "P2_B_Normal_Strength": {
+    "prefix": "P2_B_Normal_Strength",
+    "body": "0x8C2695D3"
+  },
+  "P2_C_Normal_Strength": {
+    "prefix": "P2_C_Normal_Strength",
+    "body": "0x8C26A11B"
+  },
+  "P1_A_Powerup_Modifier": {
+    "prefix": "P1_A_Powerup_Modifier",
+    "body": "0x8C26872E"
+  },
+  "P1_B_Powerup_Modifier": {
+    "prefix": "P1_B_Powerup_Modifier",
+    "body": "0x8C269276"
+  },
+  "P1_C_Powerup_Modifier": {
+    "prefix": "P1_C_Powerup_Modifier",
+    "body": "0x8C269DBE"
+  },
+  "P2_A_Powerup_Modifier": {
+    "prefix": "P2_A_Powerup_Modifier",
+    "body": "0x8C268CD2"
+  },
+  "P2_B_Powerup_Modifier": {
+    "prefix": "P2_B_Powerup_Modifier",
+    "body": "0x8C26981A"
+  },
+  "P2_C_Powerup_Modifier": {
+    "prefix": "P2_C_Powerup_Modifier",
+    "body": "0x8C26A362"
+  },
+  "P1_A_Powerup_Timer": {
+    "prefix": "P1_A_Powerup_Timer",
+    "body": "0x8C268726"
+  },
+  "P1_B_Powerup_Timer": {
+    "prefix": "P1_B_Powerup_Timer",
+    "body": "0x8C26926E"
+  },
+  "P1_C_Powerup_Timer": {
+    "prefix": "P1_C_Powerup_Timer",
+    "body": "0x8C269DB6"
+  },
+  "P2_A_Powerup_Timer": {
+    "prefix": "P2_A_Powerup_Timer",
+    "body": "0x8C268CCA"
+  },
+  "P2_B_Powerup_Timer": {
+    "prefix": "P2_B_Powerup_Timer",
+    "body": "0x8C269812"
+  },
+  "P2_C_Powerup_Timer": {
+    "prefix": "P2_C_Powerup_Timer",
+    "body": "0x8C26A35A"
+  },
+  "P1_A_Proxblock": {
+    "prefix": "P1_A_Proxblock",
+    "body": "0x8C26848A"
+  },
+  "P1_B_Proxblock": {
+    "prefix": "P1_B_Proxblock",
+    "body": "0x8C268FD2"
+  },
+  "P1_C_Proxblock": {
+    "prefix": "P1_C_Proxblock",
+    "body": "0x8C269B1A"
+  },
+  "P2_A_Proxblock": {
+    "prefix": "P2_A_Proxblock",
+    "body": "0x8C268A2E"
+  },
+  "P2_B_Proxblock": {
+    "prefix": "P2_B_Proxblock",
+    "body": "0x8C269576"
+  },
+  "P2_C_Proxblock": {
+    "prefix": "P2_C_Proxblock",
+    "body": "0x8C26A0BE"
+  },
+  "P1_A_PunchKick": {
+    "prefix": "P1_A_PunchKick",
+    "body": "0x8C26853E"
+  },
+  "P1_B_PunchKick": {
+    "prefix": "P1_B_PunchKick",
+    "body": "0x8C269086"
+  },
+  "P1_C_PunchKick": {
+    "prefix": "P1_C_PunchKick",
+    "body": "0x8C269BCE"
+  },
+  "P2_A_PunchKick": {
+    "prefix": "P2_A_PunchKick",
+    "body": "0x8C268AE2"
+  },
+  "P2_B_PunchKick": {
+    "prefix": "P2_B_PunchKick",
+    "body": "0x8C26962A"
+  },
+  "P2_C_PunchKick": {
+    "prefix": "P2_C_PunchKick",
+    "body": "0x8C26A172"
+  },
+  "P1_A_SJ_Counter": {
+    "prefix": "P1_A_SJ_Counter",
+    "body": "0x8C26853C"
+  },
+  "P1_B_SJ_Counter": {
+    "prefix": "P1_B_SJ_Counter",
+    "body": "0x8C269084"
+  },
+  "P1_C_SJ_Counter": {
+    "prefix": "P1_C_SJ_Counter",
+    "body": "0x8C269BCC"
+  },
+  "P2_A_SJ_Counter": {
+    "prefix": "P2_A_SJ_Counter",
+    "body": "0x8C268AE0"
+  },
+  "P2_B_SJ_Counter": {
+    "prefix": "P2_B_SJ_Counter",
+    "body": "0x8C269628"
+  },
+  "P2_C_SJ_Counter": {
+    "prefix": "P2_C_SJ_Counter",
+    "body": "0x8C26A170"
+  },
+  "P1_A_Snapback_Timer": {
+    "prefix": "P1_A_Snapback_Timer",
+    "body": "0x8C2685E0"
+  },
+  "P1_B_Snapback_Timer": {
+    "prefix": "P1_B_Snapback_Timer",
+    "body": "0x8C269128"
+  },
+  "P1_C_Snapback_Timer": {
+    "prefix": "P1_C_Snapback_Timer",
+    "body": "0x8C269C70"
+  },
+  "P2_A_Snapback_Timer": {
+    "prefix": "P2_A_Snapback_Timer",
+    "body": "0x8C268B84"
+  },
+  "P2_B_Snapback_Timer": {
+    "prefix": "P2_B_Snapback_Timer",
+    "body": "0x8C2696CC"
+  },
+  "P2_C_Snapback_Timer": {
+    "prefix": "P2_C_Snapback_Timer",
+    "body": "0x8C26A214"
+  },
+  "P1_A_Special_Attack_ID": {
+    "prefix": "P1_A_Special_Attack_ID",
+    "body": "0x8C268529"
+  },
+  "P1_B_Special_Attack_ID": {
+    "prefix": "P1_B_Special_Attack_ID",
+    "body": "0x8C269071"
+  },
+  "P1_C_Special_Attack_ID": {
+    "prefix": "P1_C_Special_Attack_ID",
+    "body": "0x8C269BB9"
+  },
+  "P2_A_Special_Attack_ID": {
+    "prefix": "P2_A_Special_Attack_ID",
+    "body": "0x8C268ACD"
+  },
+  "P2_B_Special_Attack_ID": {
+    "prefix": "P2_B_Special_Attack_ID",
+    "body": "0x8C269615"
+  },
+  "P2_C_Special_Attack_ID": {
+    "prefix": "P2_C_Special_Attack_ID",
+    "body": "0x8C26A15D"
+  },
+  "P1_A_Speedup": {
+    "prefix": "P1_A_Speedup",
+    "body": "0x8C268540"
+  },
+  "P1_B_Speedup": {
+    "prefix": "P1_B_Speedup",
+    "body": "0x8C269088"
+  },
+  "P1_C_Speedup": {
+    "prefix": "P1_C_Speedup",
+    "body": "0x8C269BD0"
+  },
+  "P2_A_Speedup": {
+    "prefix": "P2_A_Speedup",
+    "body": "0x8C268AE4"
+  },
+  "P2_B_Speedup": {
+    "prefix": "P2_B_Speedup",
+    "body": "0x8C26968C"
+  },
+  "P2_C_Speedup": {
+    "prefix": "P2_C_Speedup",
+    "body": "0x8C26A174"
+  },
+  "P1_A_Stun_Check": {
+    "prefix": "P1_A_Stun_Check",
+    "body": "0x8C268345"
+  },
+  "P1_B_Stun_Check": {
+    "prefix": "P1_B_Stun_Check",
+    "body": "0x8C268E8D"
+  },
+  "P1_C_Stun_Check": {
+    "prefix": "P1_C_Stun_Check",
+    "body": "0x8C2699D5"
+  },
+  "P2_A_Stun_Check": {
+    "prefix": "P2_A_Stun_Check",
+    "body": "0x8C2688E9"
+  },
+  "P2_B_Stun_Check": {
+    "prefix": "P2_B_Stun_Check",
+    "body": "0x8C269431"
+  },
+  "P2_C_Stun_Check": {
+    "prefix": "P2_C_Stun_Check",
+    "body": "0x8C269F79"
+  },
+  "P1_A_Super_Armor": {
+    "prefix": "P1_A_Super_Armor",
+    "body": "0x8C268732"
+  },
+  "P1_B_Super_Armor": {
+    "prefix": "P1_B_Super_Armor",
+    "body": "0x8C26927A"
+  },
+  "P1_C_Super_Armor": {
+    "prefix": "P1_C_Super_Armor",
+    "body": "0x8C269DC2"
+  },
+  "P2_A_Super_Armor": {
+    "prefix": "P2_A_Super_Armor",
+    "body": "0x8C268CD6"
+  },
+  "P2_B_Super_Armor": {
+    "prefix": "P2_B_Super_Armor",
+    "body": "0x8C26981E"
+  },
+  "P2_C_Super_Armor": {
+    "prefix": "P2_C_Super_Armor",
+    "body": "0x8C26A366"
+  },
+  "P1_A_Throw_Counter_Mash": {
+    "prefix": "P1_A_Throw_Counter_Mash",
+    "body": "0x8C26859C"
+  },
+  "P1_B_Throw_Counter_Mash": {
+    "prefix": "P1_B_Throw_Counter_Mash",
+    "body": "0x8C2690E4"
+  },
+  "P1_C_Throw_Counter_Mash": {
+    "prefix": "P1_C_Throw_Counter_Mash",
+    "body": "0x8C269C8C"
+  },
+  "P2_A_Throw_Counter_Mash": {
+    "prefix": "P2_A_Throw_Counter_Mash",
+    "body": "0x8C268B40"
+  },
+  "P2_B_Throw_Counter_Mash": {
+    "prefix": "P2_B_Throw_Counter_Mash",
+    "body": "0x8C269688"
+  },
+  "P2_C_Throw_Counter_Mash": {
+    "prefix": "P2_C_Throw_Counter_Mash",
+    "body": "0x8C26A1D0"
+  },
+  "P1_A_Throw_Immune": {
+    "prefix": "P1_A_Throw_Immune",
+    "body": "0x8C26852B"
+  },
+  "P1_B_Throw_Immune": {
+    "prefix": "P1_B_Throw_Immune",
+    "body": "0x8C269073"
+  },
+  "P1_C_Throw_Immune": {
+    "prefix": "P1_C_Throw_Immune",
+    "body": "0x8C269BBB"
+  },
+  "P2_A_Throw_Immune": {
+    "prefix": "P2_A_Throw_Immune",
+    "body": "0x8C268ACF"
+  },
+  "P2_B_Throw_Immune": {
+    "prefix": "P2_B_Throw_Immune",
+    "body": "0x8C269617"
+  },
+  "P2_C_Throw_Immune": {
+    "prefix": "P2_C_Throw_Immune",
+    "body": "0x8C26A15F"
+  },
+  "P1_A_Throw_Limiter": {
+    "prefix": "P1_A_Throw_Limiter",
+    "body": "0x8C26857A"
+  },
+  "P1_B_Throw_Limiter": {
+    "prefix": "P1_B_Throw_Limiter",
+    "body": "0x8C2690C2"
+  },
+  "P1_C_Throw_Limiter": {
+    "prefix": "P1_C_Throw_Limiter",
+    "body": "0x8C269C0A"
+  },
+  "P2_A_Throw_Limiter": {
+    "prefix": "P2_A_Throw_Limiter",
+    "body": "0x8C268B1E"
+  },
+  "P2_B_Throw_Limiter": {
+    "prefix": "P2_B_Throw_Limiter",
+    "body": "0x8C269666"
+  },
+  "P2_C_Throw_Limiter": {
+    "prefix": "P2_C_Throw_Limiter",
+    "body": "0x8C26A1AE"
+  },
+  "P1_A_Throw_RNG": {
+    "prefix": "P1_A_Throw_RNG",
+    "body": "0x8C26859E"
+  },
+  "P1_B_Throw_RNG": {
+    "prefix": "P1_B_Throw_RNG",
+    "body": "0x8C2690E6"
+  },
+  "P1_C_Throw_RNG": {
+    "prefix": "P1_C_Throw_RNG",
+    "body": "0x8C269C2E"
+  },
+  "P2_A_Throw_RNG": {
+    "prefix": "P2_A_Throw_RNG",
+    "body": "0x8C268B42"
+  },
+  "P2_B_Throw_RNG": {
+    "prefix": "P2_B_Throw_RNG",
+    "body": "0x8C26968A"
+  },
+  "P2_C_Throw_RNG": {
+    "prefix": "P2_C_Throw_RNG",
+    "body": "0x8C26A1D2"
+  },
+  "P1_A_Trip_Checker": {
+    "prefix": "P1_A_Trip_Checker",
+    "body": "0x8C2683AC"
+  },
+  "P1_B_Trip_Checker": {
+    "prefix": "P1_B_Trip_Checker",
+    "body": "0x8C268EF4"
+  },
+  "P1_C_Trip_Checker": {
+    "prefix": "P1_C_Trip_Checker",
+    "body": "0x8C269A3C"
+  },
+  "P2_A_Trip_Checker": {
+    "prefix": "P2_A_Trip_Checker",
+    "body": "0x8C268950"
+  },
+  "P2_B_Trip_Checker": {
+    "prefix": "P2_B_Trip_Checker",
+    "body": "0x8C269498"
+  },
+  "P2_C_Trip_Checker": {
+    "prefix": "P2_C_Trip_Checker",
+    "body": "0x8C269FE0"
+  },
+  "P1_A_Unfly": {
+    "prefix": "P1_A_Unfly",
+    "body": "0x8C268516"
+  },
+  "P1_B_Unfly": {
+    "prefix": "P1_B_Unfly",
+    "body": "0x8C26905E"
+  },
+  "P1_C_Unfly": {
+    "prefix": "P1_C_Unfly",
+    "body": "0x8C269BA6"
+  },
+  "P2_A_Unfly": {
+    "prefix": "P2_A_Unfly",
+    "body": "0x8C268ABA"
+  },
+  "P2_B_Unfly": {
+    "prefix": "P2_B_Unfly",
+    "body": "0x8C269602"
+  },
+  "P2_C_Unfly": {
+    "prefix": "P2_C_Unfly",
+    "body": "0x8C26A14A"
+  },
+  "P1_A_Walking": {
+    "prefix": "P1_A_Walking",
+    "body": "0x8C268513"
+  },
+  "P1_B_Walking": {
+    "prefix": "P1_B_Walking",
+    "body": "0x8C26905B"
+  },
+  "P1_C_Walking": {
+    "prefix": "P1_C_Walking",
+    "body": "0x8C269BA3"
+  },
+  "P2_A_Walking": {
+    "prefix": "P2_A_Walking",
+    "body": "0x8C268AB7"
+  },
+  "P2_B_Walking": {
+    "prefix": "P2_B_Walking",
+    "body": "0x8C2695FF"
+  },
+  "P2_C_Walking": {
+    "prefix": "P2_C_Walking",
+    "body": "0x8C26A147"
+  },
+}
