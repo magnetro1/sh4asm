@@ -6,7 +6,7 @@ Syntax coloring and more for SH4-ASM language with specific features for Marvel 
 
 ### ASM Syntax highlighting using the SH4-ASM DARK+ theme
 
-<img src="supportMedia\changeLog\Code_gwNu9xN6xy.png" alt="drawing" width="100">
+<img src="supportMedia\changeLog\Code_gwNu9xN6xy.png" alt="drawing" width="500">
 
 ### Various Snippets:
 

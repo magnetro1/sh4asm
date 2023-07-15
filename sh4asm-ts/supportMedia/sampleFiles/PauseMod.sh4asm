@@ -27,8 +27,8 @@ Jed_Unlocks_Data02:
 #data "REMATCH START"
 #data 0x00
 #align16
-
-;      R0  00000074      R1  00000004      R2  8C2895F0      R3  8C0469C8
+0x01 ; char
+0x01 ;      R0  00000074      R1  00000004      R2  8C2895F0      R3  8C0469C8 char
 ;      R4  8C2895F0      R5  8C287DDD      R6  8C287DDE      R7  00000001
 ;      R8  8C2681DC      R9  8C11D420     R10  8C0274B0     R11  8C2895F0
 ;     R12  8C0395AC     R13  8C26823C     R14  8C2896B0     R15  8C00F3D0
@@ -576,7 +576,9 @@ rematchMenu_p1_inputRead:
   0x01
   Test~!
   
-  0x0b ; char
+
+  0x00 ; if already picked, stop polling input 0x00 char 0x01 stage
+  0x0b ; char 0x0B stage
   0x00 ; char
   0x01 ; char
   0x02 ; char

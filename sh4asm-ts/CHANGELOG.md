@@ -9,3 +9,7 @@
 * Added stage hover information.
 * Added snippets for stage addresses.
 * Added snippets for RAM descriptions to addresses.
+
+## [0.0.7]
+* Fixed missing snippets.
+* Expanded regex for stage and char hover information.

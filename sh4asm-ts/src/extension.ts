@@ -41,10 +41,11 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(disposable);
   context.subscriptions.push(box);
+
   // Hover stage definition
   vscode.languages.registerHoverProvider("sh4asm", {
     provideHover(document, position, token) {
-      const range = document.getWordRangeAtPosition(position, /0x0[a-zA-Z](?=.*stage)|0x\d+\w+(?=.*stage)|0x\d+\d+(?=.*stage)/);
+      const range = document.getWordRangeAtPosition(position, /0x0[a-zA-Z](?=.*stage)|0x\d+\w+(?=.*stage)|0x\d+\d+(?=.*stage)/gi);
       const word = document.getText(range).toLocaleLowerCase();
       // Create hover for stage image
       const imageMD = new vscode.MarkdownString();
@@ -70,7 +71,7 @@ export function activate(context: vscode.ExtensionContext) {
     provideHover(document, position, token) {
       const range = document.getWordRangeAtPosition(
         position,
-        /0x\d+\w+(?=.*char)|0x\d+\d+(?=.*char)/
+        /0x\d+\w+(?=.*char)|0x\d+\d+(?=.*char)/gi
       );
       const word = document.getText(range);
       // Hex math for character assist values
@@ -112,8 +113,7 @@ export function activate(context: vscode.ExtensionContext) {
       }
     },
   });
-  // Display hover text using the contents from the ASM_DEF object
-  // let labelHover = new RegExp(/[a-zA-Z]+[a-zA-Z_\\_0-9]+:/gi);
+  // Hover ASM_DEF definitions
   vscode.languages.registerHoverProvider("sh4asm", {
     provideHover(document, position, token) {
       const range = document.getWordRangeAtPosition(position);
