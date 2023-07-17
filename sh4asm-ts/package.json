@@ -2,7 +2,7 @@
   "name": "sh4asm-ts",
   "displayName": "sh4asm extension",
   "description": "sh4 helper",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "Magnetro & TVIndustries",
   "license": "MIT",
   "repository": {
@@ -30,6 +30,10 @@
     ],
     "snippets": [
 
+      {
+        "language": "sh4asm",
+        "path": "./snippets/mvc2_textcolors.code-snippets"
+      },
       {
         "language": "sh4asm",
         "path": "./snippets/mvc2_snippets_general.code-snippets"

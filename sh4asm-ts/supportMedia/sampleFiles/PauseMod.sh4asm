@@ -570,12 +570,45 @@ rematchMenu_p1_inputRead:
   0x40 ; Ryu β
   0x80 ; Ryu γ
 
-  0x00 ; char
-  0x01 ; char
-  0x00 ; Ryu γ
-  0x01
-  Test~!
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0x09 ; text
+  0x0B ; text
+  0x1B ; text
+  0x20 ; text
+  0x23 ; text
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   0x00 ; if already picked, stop polling input 0x00 char 0x01 stage
   0x0b ; char 0x0B stage

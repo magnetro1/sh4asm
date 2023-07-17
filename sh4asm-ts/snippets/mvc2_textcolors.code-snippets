@@ -1,0 +1,186 @@
+{
+  "Red": {
+    "prefix": "textcolor.Red",
+    "body": "0x09 ; text Red"
+  },
+  "Gold Gradient": {
+    "prefix": "textcolor.Gold Gradient",
+    "body": "0x0b ; text Gold Gradient"
+  },
+  "Dark Blue Gradient": {
+    "prefix": "textcolor.Dark Blue Gradient",
+    "body": "0x0c ; text Dark Blue Gradient"
+  },
+  "Lime Green Gradient": {
+    "prefix": "textcolor.Lime Green Gradient",
+    "body": "0x0d ; text Lime Green Gradient"
+  },
+  "Light Gray Gradient*": {
+    "prefix": "textcolor.Light Gray Gradient*",
+    "body": "0x0e ; text Light Gray Gradient*"
+  },
+  "Pink Gradient*": {
+    "prefix": "textcolor.Pink Gradient*",
+    "body": "0x0f ; text Pink Gradient*"
+  },
+  "Gray Gradient": {
+    "prefix": "textcolor.Gray Gradient",
+    "body": "0x10 ; text Gray Gradient"
+  },
+  "Cyan-Blue Gradient*": {
+    "prefix": "textcolor.Cyan-Blue Gradient*",
+    "body": "0x11 ; text Cyan-Blue Gradient*"
+  },
+  "Light Gray Gradient": {
+    "prefix": "textcolor.Light Gray Gradient",
+    "body": "0x12 ; text Light Gray Gradient"
+  },
+  "Green Gradient": {
+    "prefix": "textcolor.Green Gradient",
+    "body": "0x13 ; text Green Gradient"
+  },
+  "Lime Green Gradient*": {
+    "prefix": "textcolor.Lime Green Gradient*",
+    "body": "0x14 ; text Lime Green Gradient*"
+  },
+  "Blue Gradient": {
+    "prefix": "textcolor.Blue Gradient",
+    "body": "0x15 ; text Blue Gradient"
+  },
+  "Violet": {
+    "prefix": "textcolor.Violet",
+    "body": "0x17 ; text Violet"
+  },
+  "Aqua Blue": {
+    "prefix": "textcolor.Aqua Blue",
+    "body": "0x18 ; text Aqua Blue"
+  },
+  "Yellow Gradient": {
+    "prefix": "textcolor.Yellow Gradient",
+    "body": "0x19 ; text Yellow Gradient"
+  },
+  "Yellow Orange Gradient": {
+    "prefix": "textcolor.Yellow Orange Gradient",
+    "body": "0x1a ; text Yellow Orange Gradient"
+  },
+  "Salmon Gradient": {
+    "prefix": "textcolor.Salmon Gradient",
+    "body": "0x1b ; text Salmon Gradient"
+  },
+  "Redish Magenta Gradient": {
+    "prefix": "textcolor.Redish Magenta Gradient",
+    "body": "0x1c ; text Redish Magenta Gradient"
+  },
+  "White": {
+    "prefix": "textcolor.White",
+    "body": "0x1d ; text White"
+  },
+  "Pink Red*": {
+    "prefix": "textcolor.Pink Red*",
+    "body": "0x1e ; text Pink Red*"
+  },
+  "White*": {
+    "prefix": "textcolor.White*",
+    "body": "0x1f ; text White*"
+  },
+  "Pink Red": {
+    "prefix": "textcolor.Pink Red",
+    "body": "0x20 ; text Pink Red"
+  },
+  "Cyan": {
+    "prefix": "textcolor.Cyan",
+    "body": "0x21 ; text Cyan"
+  },
+  "Golden Yellow": {
+    "prefix": "textcolor.Golden Yellow",
+    "body": "0x22 ; text Golden Yellow"
+  },
+  "Bright Orange": {
+    "prefix": "textcolor.Bright Orange",
+    "body": "0x23 ; text Bright Orange"
+  },
+  "ArtyClick Red": {
+    "prefix": "textcolor.ArtyClick Red",
+    "body": "0x24 ; text ArtyClick Red"
+  },
+  "Bright Neon Pink": {
+    "prefix": "textcolor.Bright Neon Pink",
+    "body": "0x25 ; text Bright Neon Pink"
+  },
+  "Bright Lavender": {
+    "prefix": "textcolor.Bright Lavender",
+    "body": "0x26 ; text Bright Lavender"
+  },
+  "Periwinkle": {
+    "prefix": "textcolor.Periwinkle",
+    "body": "0x27 ; text Periwinkle"
+  },
+  "Washed Out Green": {
+    "prefix": "textcolor.Washed Out Green",
+    "body": "0x28 ; text Washed Out Green"
+  },
+  "Light Greenish Blue": {
+    "prefix": "textcolor.Light Greenish Blue",
+    "body": "0x29 ; text Light Greenish Blue"
+  },
+  "Pale Turquoise": {
+    "prefix": "textcolor.Pale Turquoise",
+    "body": "0x2a ; text Pale Turquoise"
+  },
+  "Baby Blue": {
+    "prefix": "textcolor.Baby Blue",
+    "body": "0x2b ; text Baby Blue"
+  },
+  "Periwinkle Blue": {
+    "prefix": "textcolor.Periwinkle Blue",
+    "body": "0x2c ; text Periwinkle Blue"
+  },
+  "Light Purple": {
+    "prefix": "textcolor.Light Purple",
+    "body": "0x2d ; text Light Purple"
+  },
+  "Neon Pink": {
+    "prefix": "textcolor.Neon Pink",
+    "body": "0x2e ; text Neon Pink"
+  },
+  "Razzle Dazzle Rose": {
+    "prefix": "textcolor.Razzle Dazzle Rose",
+    "body": "0x2f ; text Razzle Dazzle Rose"
+  },
+  "Dark Neon Pink": {
+    "prefix": "textcolor.Dark Neon Pink",
+    "body": "0x30 ; text Dark Neon Pink"
+  },
+  "Radical Red": {
+    "prefix": "textcolor.Radical Red",
+    "body": "0x31 ; text Radical Red"
+  },
+  "Orange Peel": {
+    "prefix": "textcolor.Orange Peel",
+    "body": "0x32 ; text Orange Peel"
+  },
+  "Rubber Ducky Yellow": {
+    "prefix": "textcolor.Rubber Ducky Yellow",
+    "body": "0x33 ; text Rubber Ducky Yellow"
+  },
+  "White/Yellow Gradient": {
+    "prefix": "textcolor.White/Yellow Gradient",
+    "body": "0x34 ; text White/Yellow Gradient"
+  },
+  "White/Red Gradient": {
+    "prefix": "textcolor.White/Red Gradient",
+    "body": "0x35 ; text White/Red Gradient"
+  },
+  "White/Purple Gradient": {
+    "prefix": "textcolor.White/Purple Gradient",
+    "body": "0x36 ; text White/Purple Gradient"
+  },
+  "White/Cyan Gradient": {
+    "prefix": "textcolor.White/Cyan Gradient",
+    "body": "0x37 ; text White/Cyan Gradient"
+  },
+  "Ochre": {
+    "prefix": "textcolor.Ochre",
+    "body": "0x38 ; text Ochre"
+  },
+}

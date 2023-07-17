@@ -4,12 +4,14 @@ import * as path from "path";
 
 import { MVC2GEN_CONSTANTS } from "./sh4asm_staticData";
 import { stages_Hex_2_Names } from "./sh4asm_staticData";
+import { fontColors } from "./sh4asm_staticData";
 import { ASM_DEF } from "./sh4asm_staticData";
 
 
 
 const thumbsPath = "supportMedia/characterThumbnails";
 const stagesPath = "supportMedia/stagesThumbnails";
+const textsPath = "supportMedia/colorFonts";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand("sh4asm.helloWorld", () => {
@@ -42,6 +44,31 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(disposable);
   context.subscriptions.push(box);
 
+  // Hover text-color definition
+  vscode.languages.registerHoverProvider("sh4asm", {
+    provideHover(document, position, token) {
+      const range = document.getWordRangeAtPosition(position, /0x0[a-zA-Z](?=.*text)|0x\d+\w+(?=.*text)|0x\d+\d+(?=.*text)/gi);
+      const word = document.getText(range).toLocaleLowerCase();
+      // Create hover for text image
+      const imageMD = new vscode.MarkdownString();
+      imageMD.baseUri = vscode.Uri.file(
+        path.join(context.extensionPath, textsPath, path.sep)
+      );
+      let imageHover = imageMD.appendMarkdown(`![text](${imageMD.baseUri}/colorFontID_${word}.png)`
+      );
+      let dataMD = new vscode.MarkdownString();
+      dataMD.appendMarkdown(`\n\nName: ${fontColors[word]}\n\n`);
+      dataMD.appendCodeblock(`Hex: ${word}`, "sh4asm");
+      dataMD.appendCodeblock(`Decimal: ${parseInt(word, 16)}`, "sh4asm");
+      const dataHover = dataMD;
+
+      // Return hover if stage is found
+      if (Object.keys(staticData.fontColors).includes(word)) {
+        return new vscode.Hover([imageHover, dataHover]);
+      }
+    }
+  });
+
   // Hover stage definition
   vscode.languages.registerHoverProvider("sh4asm", {
     provideHover(document, position, token) {
@@ -66,6 +93,7 @@ export function activate(context: vscode.ExtensionContext) {
       }
     }
   });
+
   // Hover character definition
   vscode.languages.registerHoverProvider("sh4asm", {
     provideHover(document, position, token) {
